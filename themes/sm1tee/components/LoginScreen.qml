@@ -9,14 +9,7 @@ Item {
     signal toggleLayoutPopup
 
     state: "normal"
-    property bool stateChanging: false
-    function safeStateChange(newState) { // This is probably overkill, but whatever
-        if (!stateChanging) {
-            stateChanging = true;
-            state = newState;
-            stateChanging = false;
-        }
-    }
+
     onStateChanged: {
         if (state === "normal") {
             resetFocus();
@@ -39,7 +32,7 @@ Item {
 
     function login() {
         if (password.text.length > 0 || !userNeedsPassword) {
-            safeStateChange("authenticating");
+            state = "authenticating";
             sddm.login(userName, password.text, sessionIndex);
         }
     }
@@ -48,7 +41,7 @@ Item {
             loginContainer.scale = 0.0;
         }
         function onLoginFailed() {
-            safeStateChange("normal");
+            state = "normal";
             loginMessage.warn(textConstants.loginFailed || "Login failed", "error");
             password.text = "";
         }
@@ -66,8 +59,23 @@ Item {
     }
 
     function updateCapsLock() {
-        if (root.capsLockOn && loginScreen.state !== "authenticating") {
-            loginMessage.warn(textConstants.capslockWarning || "Caps Lock is on", "warning");
+        _updateLockWarnings();
+    }
+
+    function updateNumLock() {
+        _updateLockWarnings();
+    }
+
+    function _updateLockWarnings() {
+        if (loginScreen.state === "authenticating") return;
+        var warnings = [];
+        if (root.capsLockOn)
+            warnings.push(Config.capsLockWarningText);
+        if (!root.numLockOn)
+            warnings.push(Config.numLockWarningText);
+
+        if (warnings.length > 0) {
+            loginMessage.warn(warnings.join(Config.warningMessageLockLayout === "column" ? "\n" : "  •  "), "warning");
         } else {
             loginMessage.clear();
         }
@@ -132,10 +140,10 @@ Item {
             width: orientation === "horizontal" ? loginScreen.width - Config.loginAreaMargin * 2 : Config.avatarActiveSize
             height: orientation === "horizontal" ? Config.avatarActiveSize : loginScreen.height - Config.loginAreaMargin * 2
             onOpenUserList: {
-                safeStateChange("selectingUser");
+                state = "selectingUser";
             }
             onCloseUserList: {
-                safeStateChange("normal");
+                state = "normal";
                 loginScreen.resetFocus(); // resetFocus with escape even if the selector is not open
             }
             onUserChanged: (index, name, realName, icon, needsPassword) => {
@@ -285,19 +293,19 @@ Item {
 
             Text {
                 id: loginMessage
-                property bool capslockWarning: false
+                property bool lockWarning: false
                 font.pixelSize: Config.warningMessageFontSize
                 font.family: Config.warningMessageFontFamily
                 font.weight: Config.warningMessageFontWeight
+                horizontalAlignment: Text.AlignHCenter
                 color: Config.warningMessageNormalColor
-                visible: text !== "" && loginScreen.state !== "authenticating" && (capslockWarning ? loginScreen.userNeedsPassword : true)
+                visible: text !== "" && loginScreen.state !== "authenticating" && (lockWarning ? loginScreen.userNeedsPassword : true)
                 opacity: visible ? 1.0 : 0.0
                 anchors.top: loginArea.bottom
                 anchors.topMargin: visible ? Config.warningMessageMarginTop : 0
 
                 Component.onCompleted: {
-                    if (root.capsLockOn)
-                        loginMessage.warn(textConstants.capslockWarning || "Caps Lock is on", "warning");
+                    loginScreen._updateLockWarnings();
 
                     if (Config.loginAreaPosition === "left") {
                         anchors.left = parent.left;
@@ -322,16 +330,14 @@ Item {
                 }
 
                 function warn(message, type) {
-                    clear();
                     text = message;
                     color = type === "error" ? Config.warningMessageErrorColor : (type === "warning" ? Config.warningMessageWarningColor : Config.warningMessageNormalColor);
-                    if (message === (textConstants.capslockWarning || "Caps Lock is on"))
-                        capslockWarning = true;
+                    lockWarning = (type === "warning");
                 }
 
                 function clear() {
                     text = "";
-                    capslockWarning = false;
+                    lockWarning = false;
                 }
             }
         }
@@ -352,6 +358,8 @@ Item {
             password.text = "";
         } else if (event.key === Qt.Key_CapsLock) {
             root.capsLockOn = !root.capsLockOn;
+        } else if (event.key === Qt.Key_NumLock) {
+            root.numLockOn = !root.numLockOn;
         }
         event.accepted = true;
     }
@@ -363,7 +371,7 @@ Item {
         hoverEnabled: true
         onClicked: {
             if (loginScreen.state === "selectingUser") {
-                safeStateChange("normal");
+                state = "normal";
             }
         }
         onWheel: event => {

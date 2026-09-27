@@ -142,6 +142,9 @@ QtObject {
     property color warningMessageWarningColor: config.stringValue("LoginScreen.LoginArea.WarningMessage/warning-color") || "#FFFFFF" // @desc:Color of the warning message for warnings.
     property color warningMessageErrorColor: config.stringValue("LoginScreen.LoginArea.WarningMessage/error-color") || "#FFFFFF" // @desc:Color of the warning message for error messages.
     property int warningMessageMarginTop: config.intValue("LoginScreen.LoginArea.WarningMessage/margin-top") // @desc:Distance of the warning message from the password field/login button.
+    property string warningMessageLockLayout: config.stringValue("LoginScreen.LoginArea.WarningMessage/lock-layout") || "inline" // @possible:'inline' | 'column' @desc:How to display Caps Lock and Num Lock warnings when both are active.
+    property string capsLockWarningText: config.stringValue("LoginScreen.LoginArea.WarningMessage/capslock-text") || "Нажата клавиша Caps Lock" // @desc:Text shown when Caps Lock is on. Set to match your system language.
+    property string numLockWarningText: config.stringValue("LoginScreen.LoginArea.WarningMessage/numlock-text") || "Num Lock выключен" // @desc:Text shown when Num Lock is off. Set to match your system language.
 
     // [LoginScreen.MenuArea.Buttons]
     property int menuAreaButtonsMarginTop: config.intValue("LoginScreen.MenuArea.Buttons/margin-top") // @desc:Top margin of the menu buttons.

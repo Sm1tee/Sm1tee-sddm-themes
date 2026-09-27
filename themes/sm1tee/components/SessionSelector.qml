@@ -26,7 +26,7 @@ ColumnLayout {
     ListView {
         id: sessionList
         Layout.preferredWidth: parent.width
-        Layout.preferredHeight: Math.min((sessionModel ? sessionModel.rowCount() : 0) * (Config.menuAreaPopupsItemHeight + spacing), Config.menuAreaPopupsMaxHeight)
+        Layout.preferredHeight: Math.min((sessionModel ? sessionModel.count : 0) * (Config.menuAreaPopupsItemHeight + spacing), Config.menuAreaPopupsMaxHeight)
         orientation: ListView.Vertical
         interactive: true
         clip: true
@@ -34,7 +34,7 @@ ColumnLayout {
         spacing: Config.menuAreaPopupsSpacing
         highlightFollowsCurrentItem: true
         highlightMoveDuration: 0
-        contentHeight: sessionModel.rowCount() * (Config.menuAreaPopupsItemHeight + spacing)
+        contentHeight: sessionModel.count * (Config.menuAreaPopupsItemHeight + spacing)
 
         ScrollBar.vertical: ScrollBar {
             id: scrollbar
@@ -128,17 +128,19 @@ ColumnLayout {
 
     Keys.onPressed: function (event) {
         if (event.key === Qt.Key_Down) {
-            if (sessionModel.rowCount() > 0) {
-                sessionList.currentIndex = (sessionList.currentIndex + sessionModel.rowCount() + 1) % sessionModel.rowCount();
+            if (sessionModel.count > 0) {
+                sessionList.currentIndex = (sessionList.currentIndex + sessionModel.count + 1) % sessionModel.count;
             }
         } else if (event.key === Qt.Key_Up) {
-            if (sessionModel.rowCount() > 0) {
-                sessionList.currentIndex = (sessionList.currentIndex + sessionModel.rowCount() - 1) % sessionModel.rowCount();
+            if (sessionModel.count > 0) {
+                sessionList.currentIndex = (sessionList.currentIndex + sessionModel.count - 1) % sessionModel.count;
             }
         } else if (event.key == Qt.Key_Return || event.key == Qt.Key_Enter || event.key === Qt.Key_Space) {
             selector.close();
         } else if (event.key === Qt.Key_CapsLock) {
             root.capsLockOn = !root.capsLockOn;
+        } else if (event.key === Qt.Key_NumLock) {
+            root.numLockOn = !root.numLockOn;
         }
     }
 }

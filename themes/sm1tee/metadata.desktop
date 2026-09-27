@@ -9,7 +9,7 @@ MainScript=Main.qml
 TranslationsDirectory=translations
 QtVersion=6
 
-ConfigFile=configs/window2.conf
+ConfigFile=configs/hends.conf
 
 ; ConfigFile=configs/space.conf
 ; ConfigFile=configs/space2.conf
@@ -37,3 +37,9 @@ ConfigFile=configs/window2.conf
 ; ConfigFile=configs/tree.conf
 ; ConfigFile=configs/harry.conf
 ; ConfigFile=configs/solder.conf
+; ConfigFile=configs/cyber.conf
+; ConfigFile=configs/hends.conf
+; ConfigFile=configs/hollow.conf
+; ConfigFile=configs/horror.conf
+; ConfigFile=configs/queen.conf
+; ConfigFile=configs/queen2.conf

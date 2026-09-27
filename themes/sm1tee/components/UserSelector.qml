@@ -94,7 +94,7 @@ Item {
                 source: model.icon
                 active: index === userList.currentIndex
                 opacity: active ? 1.0 : Config.avatarInactiveOpacity
-                enabled: userModel.rowCount() > 1 // No need to open the selector if there's only one user
+                enabled: userModel.count > 1 // No need to open the selector if there's only one user
                 tooltipText: active && selector.listUsers ? "Close user selection" : (active && !listUsers ? "Select user" : `Select user ${model.name}`)
                 showTooltip: selector.focus && !listUsers && active
 
@@ -143,19 +143,22 @@ Item {
             selector.focus = false;
             event.accepted = true;
         } else if ((selector.orientation === "horizontal" && event.key == Qt.Key_Left) || (selector.orientation === "vertical" && event.key == Qt.Key_Up)) {
-            if (userModel.rowCount() > 0) {
-                userList.currentIndex = (userList.currentIndex + userModel.rowCount() - 1) % userModel.rowCount();
+            if (userModel.count > 0) {
+                userList.currentIndex = (userList.currentIndex + userModel.count - 1) % userModel.count;
             }
             selector.focus = true;
             event.accepted = true;
         } else if ((selector.orientation === "horizontal" && event.key == Qt.Key_Right) || (selector.orientation === "vertical" && event.key == Qt.Key_Down)) {
-            if (userModel.rowCount() > 0) {
-                userList.currentIndex = (userList.currentIndex + userModel.rowCount() + 1) % userModel.rowCount();
+            if (userModel.count > 0) {
+                userList.currentIndex = (userList.currentIndex + userModel.count + 1) % userModel.count;
             }
             selector.focus = true;
             event.accepted = true;
         } else if (event.key === Qt.Key_CapsLock) {
             root.capsLockOn = !root.capsLockOn;
+            event.accepted = true;
+        } else if (event.key === Qt.Key_NumLock) {
+            root.numLockOn = !root.numLockOn;
             event.accepted = true;
         } else {
             // Do not steal other keys

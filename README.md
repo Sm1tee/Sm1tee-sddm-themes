@@ -139,11 +139,11 @@ https://github.com/user-attachments/assets/12f9cff2-40af-487b-b39a-d1c93a24fbfd
 
 | Дистрибутив | Статус | Команда установки |
 |-------------|--------|-------------------|
-| 🐧 **Arch Linux** / Manjaro / EndeavourOS | ✅ Полная поддержка | `pacman -S --needed sddm qt6-svg qt6-virtualkeyboard qt6-multimedia-ffmpeg` |
-| 🔵 **Fedora** | ✅ Полная поддержка | `dnf install sddm qt6-qtsvg qt6-qtvirtualkeyboard qt6-qtmultimedia` |
-| 🦎 **openSUSE** | ✅ Полная поддержка | `zypper install sddm-qt6 libQt6Svg6 qt6-virtualkeyboard qt6-multimedia` |
-| 🟠 **Ubuntu** / Debian / Pop!_OS / Mint | ✅ Полная поддержка | `apt install sddm qt6-svg-dev qt6-virtualkeyboard-dev qt6-multimedia-dev` |
-| 🌊 **Void Linux** | ✅ Полная поддержка | `xbps-install sddm qt6-svg qt6-virtualkeyboard qt6-multimedia` |
+| 🐧 **Arch Linux** / Manjaro / EndeavourOS | ✅ Полная поддержка | `pacman -S --needed sddm qt6-svg qt6-virtualkeyboard qt6-multimedia-ffmpeg imagemagick` |
+| 🔵 **Fedora** | ✅ Полная поддержка | `dnf install sddm qt6-qtsvg qt6-qtvirtualkeyboard qt6-qtmultimedia ImageMagick` |
+| 🦎 **openSUSE** | ✅ Полная поддержка | `zypper install sddm-qt6 libQt6Svg6 qt6-virtualkeyboard qt6-multimedia ImageMagick` |
+| 🟠 **Ubuntu** / Debian / Pop!_OS / Mint | ✅ Полная поддержка | `apt install sddm qt6-svg-dev qml6-module-qtquick-virtualkeyboard qml6-module-qtmultimedia imagemagick` |
+| 🌊 **Void Linux** | ✅ Полная поддержка | `xbps-install sddm qt6-svg qt6-virtualkeyboard qt6-multimedia ImageMagick` |
 
 </div>
 
@@ -158,6 +158,7 @@ https://github.com/user-attachments/assets/12f9cff2-40af-487b-b39a-d1c93a24fbfd
 | **qt6-svg** | Любая | 🔴 Обязательно |
 | **qt6-virtualkeyboard** | Любая | 🔴 Обязательно |
 | **qt6-multimedia** | Любая | 🔴 Обязательно |
+| **ImageMagick** | Любая | 🟡 Для обработки аватаров |
 
 ---
 
@@ -266,7 +267,7 @@ wget -qO- https://raw.githubusercontent.com/Sm1tee/sddm-theme/main/install.sh | 
 <summary><strong>🐧 Arch Linux</strong></summary>
 
 ```bash
-sudo pacman -S --needed sddm qt6-svg qt6-virtualkeyboard qt6-multimedia-ffmpeg
+sudo pacman -S --needed sddm qt6-svg qt6-virtualkeyboard qt6-multimedia-ffmpeg imagemagick
 ```
 </details>
 
@@ -274,7 +275,7 @@ sudo pacman -S --needed sddm qt6-svg qt6-virtualkeyboard qt6-multimedia-ffmpeg
 <summary><strong>🔵 Fedora</strong></summary>
 
 ```bash
-sudo dnf install sddm qt6-qtsvg qt6-qtvirtualkeyboard qt6-qtmultimedia
+sudo dnf install sddm qt6-qtsvg qt6-qtvirtualkeyboard qt6-qtmultimedia ImageMagick
 ```
 </details>
 
@@ -282,7 +283,7 @@ sudo dnf install sddm qt6-qtsvg qt6-qtvirtualkeyboard qt6-qtmultimedia
 <summary><strong>🦎 OpenSUSE</strong></summary>
 
 ```bash
-sudo zypper install sddm-qt6 libQt6Svg6 qt6-virtualkeyboard qt6-virtualkeyboard-imports qt6-multimedia qt6-multimedia-imports
+sudo zypper install sddm-qt6 libQt6Svg6 qt6-virtualkeyboard qt6-virtualkeyboard-imports qt6-multimedia qt6-multimedia-imports ImageMagick
 ```
 </details>
 
@@ -293,7 +294,7 @@ sudo zypper install sddm-qt6 libQt6Svg6 qt6-virtualkeyboard qt6-virtualkeyboard-
 sudo apt update
 ```
 ```bash
-sudo apt install sddm qt6-svg-dev qt6-virtualkeyboard-dev qt6-multimedia-dev
+sudo apt install sddm qt6-svg-dev qml6-module-qtquick-virtualkeyboard qml6-module-qtmultimedia imagemagick
 ```
 </details>
 
@@ -301,7 +302,7 @@ sudo apt install sddm qt6-svg-dev qt6-virtualkeyboard-dev qt6-multimedia-dev
 <summary><strong>🌊 Void Linux</strong></summary>
 
 ```bash
-sudo xbps-install sddm qt6-svg qt6-virtualkeyboard qt6-multimedia
+sudo xbps-install sddm qt6-svg qt6-virtualkeyboard qt6-multimedia ImageMagick
 ```
 </details>
 
@@ -364,7 +365,7 @@ sudo nano /usr/share/sddm/themes/sm1tee/metadata.desktop
 <summary><strong>🐧 Arch Linux</strong></summary>
 
 ```bash
-sudo pacman -S --needed sddm qt6-svg qt6-virtualkeyboard qt6-multimedia-ffmpeg
+sudo pacman -S --needed sddm qt6-svg qt6-virtualkeyboard qt6-multimedia-ffmpeg imagemagick
 ```
 </details>
 
@@ -372,7 +373,7 @@ sudo pacman -S --needed sddm qt6-svg qt6-virtualkeyboard qt6-multimedia-ffmpeg
 <summary><strong>🔵 Fedora</strong></summary>
 
 ```bash
-sudo dnf install sddm qt6-qtsvg qt6-qtvirtualkeyboard qt6-qtmultimedia
+sudo dnf install sddm qt6-qtsvg qt6-qtvirtualkeyboard qt6-qtmultimedia ImageMagick
 ```
 </details>
 
@@ -380,7 +381,7 @@ sudo dnf install sddm qt6-qtsvg qt6-qtvirtualkeyboard qt6-qtmultimedia
 <summary><strong>🦎 OpenSUSE</strong></summary>
 
 ```bash
-sudo zypper install sddm-qt6 libQt6Svg6 qt6-virtualkeyboard qt6-virtualkeyboard-imports qt6-multimedia qt6-multimedia-imports
+sudo zypper install sddm-qt6 libQt6Svg6 qt6-virtualkeyboard qt6-virtualkeyboard-imports qt6-multimedia qt6-multimedia-imports ImageMagick
 ```
 </details>
 
@@ -391,7 +392,7 @@ sudo zypper install sddm-qt6 libQt6Svg6 qt6-virtualkeyboard qt6-virtualkeyboard-
 sudo apt update
 ```
 ```bash
-sudo apt install sddm qt6-svg-dev qt6-virtualkeyboard-dev qt6-multimedia-dev
+sudo apt install sddm qt6-svg-dev qml6-module-qtquick-virtualkeyboard qml6-module-qtmultimedia imagemagick
 ```
 </details>
 
@@ -399,7 +400,7 @@ sudo apt install sddm qt6-svg-dev qt6-virtualkeyboard-dev qt6-multimedia-dev
 <summary><strong>🌊 Void Linux</strong></summary>
 
 ```bash
-sudo xbps-install sddm qt6-svg qt6-virtualkeyboard qt6-multimedia
+sudo xbps-install sddm qt6-svg qt6-virtualkeyboard qt6-multimedia ImageMagick
 ```
 </details>
 
@@ -501,13 +502,31 @@ GreeterEnvironment=QML2_IMPORT_PATH=/usr/share/sddm/themes/sm1tee/components/,QT
 
 ### 👤 Установка аватара
 
-Чтобы установить свой аватар, который будет отображаться на экране входа, выполните следующую команду в терминале. Она скопирует его в нужное место.
+Автоматический установщик умеет принимать обычные PNG/JPG/JPEG картинки. Он сам обрежет изображение по центру, уменьшит до `512x512`, сохранит как PNG, выставит права и пропишет аватар для SDDM.
+
+Если вы не выберете свой аватар, установщик поставит дефолтный аватар темы только в том случае, если у пользователя ещё нет аватара.
+
+Для ручной замены самый простой вариант — положить готовую картинку в домашнюю папку пользователя под именем `.face.icon`:
 
 ```bash
-sudo cp /полный/путь/к/аватару.png /var/lib/AccountsService/icons/$USER
+magick /полный/путь/к/картинке.jpg -auto-orient -resize '512x512^' -gravity center -extent 512x512 PNG32:"$HOME/.face.icon"
+chmod 644 "$HOME/.face.icon"
 ```
 
-*   **Замените** `путь/к/вашему/аватару.png` на реальный путь к вашему файлу.
+Если дистрибутив использует AccountsService, дополнительно установите тот же файл туда:
+
+```bash
+sudo install -m 644 "$HOME/.face.icon" "/var/lib/AccountsService/icons/$USER"
+```
+
+В файле `/var/lib/AccountsService/users/имя_пользователя` должна быть строка:
+
+```ini
+[User]
+Icon=/var/lib/AccountsService/icons/имя_пользователя
+```
+
+Дефолтная аватарка темы лежит в `icons/user-default.png`. Если хотите заменить именно её, используйте PNG `512x512` с правами `644`.
 
 ### 🔍 Предварительный просмотр темы
 

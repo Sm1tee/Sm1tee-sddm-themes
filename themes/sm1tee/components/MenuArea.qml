@@ -73,10 +73,10 @@ Item {
                 }
 
                 onOpened: {
-                    loginScreen.safeStateChange("popup");
+                    loginScreen.state = "popup";
                     [x, y] = menuArea.calculatePopupPos(Config.sessionPopupDirection, Config.sessionPopupAlign, popup, sessionButton);
                 }
-                onClosed: loginScreen.safeStateChange("normal")
+                onClosed: loginScreen.state = "normal"
 
                 modal: true
                 popupType: Popup.Item
@@ -197,20 +197,20 @@ Item {
                 }
 
                 onOpened: {
-                    loginScreen.safeStateChange("popup");
+                    loginScreen.state = "popup";
                     if (layoutSelector) {
                         layoutSelector.forceUpdate();
                     }
                     [x, y] = menuArea.calculatePopupPos(Config.layoutPopupDirection, Config.layoutPopupAlign, popup, layoutButton);
                 }
-                
+
                 onImplicitHeightChanged: {
                     if (visible) {
                         [x, y] = menuArea.calculatePopupPos(Config.layoutPopupDirection, Config.layoutPopupAlign, popup, layoutButton);
                     }
                 }
 
-                onClosed: loginScreen.safeStateChange("normal")
+                onClosed: loginScreen.state = "normal"
 
                 modal: true
                 popupType: Popup.Item
@@ -326,10 +326,10 @@ Item {
                 }
 
                 onOpened: {
-                    loginScreen.safeStateChange("popup");
+                    loginScreen.state = "popup";
                     [x, y] = menuArea.calculatePopupPos(Config.powerPopupDirection, Config.powerPopupAlign, popup, powerButton);
                 }
-                onClosed: loginScreen.safeStateChange("normal")
+                onClosed: loginScreen.state = "normal"
 
                 modal: true
                 popupType: Popup.Item

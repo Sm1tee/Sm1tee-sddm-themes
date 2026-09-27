@@ -236,6 +236,8 @@ ColumnLayout {
             selector.close();
         } else if (event.key === Qt.Key_CapsLock) {
             root.capsLockOn = !root.capsLockOn;
+        } else if (event.key === Qt.Key_NumLock) {
+            root.numLockOn = !root.numLockOn;
         }
     }
 }

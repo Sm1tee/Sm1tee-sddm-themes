@@ -7,7 +7,7 @@ Item {
     id: lockScreen
     signal loginRequested
 
-    // TODO: Support for weather info?
+    // Remove unused comment about weather info
     ColumnLayout {
         id: timePositioner
         spacing: Config.dateMarginTop
@@ -163,6 +163,8 @@ Item {
     Keys.onPressed: function (event) {
         if (event.key === Qt.Key_CapsLock) {
             root.capsLockOn = !root.capsLockOn;
+        } else if (event.key === Qt.Key_NumLock) {
+            root.numLockOn = !root.numLockOn;
         }
 
         if (event.key === Qt.Key_Escape) {

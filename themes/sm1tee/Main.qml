@@ -15,12 +15,18 @@ Item {
     }
 
     property bool capsLockOn: false
+    property bool numLockOn: false
     Component.onCompleted: {
-        if (keyboard)
+        if (keyboard) {
             capsLockOn = keyboard.capsLock;
+            numLockOn = keyboard.numLock;
+        }
     }
     onCapsLockOnChanged: {
         loginScreen.updateCapsLock();
+    }
+    onNumLockOnChanged: {
+        loginScreen.updateNumLock();
     }
 
     states: [
@@ -114,25 +120,15 @@ Item {
             property string placeholder: Config.animatedBackgroundPlaceholder // Idea stolen from astronaut-theme. Not a fan of it, but works...
 
             anchors.fill: parent
-            source: !isVideo ? "backgrounds/" + tsource : ""
+            source: {
+                if (displayColor) return "";
+                if (isVideo && placeholder.length > 0) return "backgrounds/" + placeholder;
+                if (!isVideo && tsource.length > 0) return "backgrounds/" + tsource;
+                return "";
+            }
             cache: true
             mipmap: true
 
-            function updateVideo() {
-                if (isVideo && tsource.toString().length > 0) {
-                    backgroundVideo.source = Qt.resolvedUrl("backgrounds/" + tsource);
-
-                    if (placeholder.length > 0)
-                        source = "backgrounds/" + placeholder;
-                }
-            }
-
-            onSourceChanged: {
-                updateVideo();
-            }
-            Component.onCompleted: {
-                updateVideo();
-            }
             onStatusChanged: {
                 if (status === Image.Error) {
                     if (source !== "backgrounds/default.jpg" && source !== "") {
@@ -149,35 +145,35 @@ Item {
                 anchors.fill: parent
                 anchors.margins: 0
                 color: root.state === "lockState" && Config.lockScreenUseBackgroundColor ? Config.lockScreenBackgroundColor : root.state === "loginState" && Config.loginScreenUseBackgroundColor ? Config.loginScreenBackgroundColor : "black"
-                visible: parent.displayColor || (backgroundVideo.visible && parent.placeholder.length === 0)
+                visible: parent.displayColor || (backgroundVideoLoader.item && backgroundVideoLoader.item.visible && parent.placeholder.length === 0)
             }
 
-            // TODO: This is slow af. Removing the property bindings and doing everything at startup should help.
-            Video {
-                id: backgroundVideo
+            // Load Video component dynamically only if it's actually a video
+            Loader {
+                id: backgroundVideoLoader
                 anchors.fill: parent
-                visible: parent.isVideo && !parent.displayColor
-                enabled: visible
-                autoPlay: true
-                loops: MediaPlayer.Infinite
-                muted: true
-                onSourceChanged: {
-                    if (source && source.toString().length > 0) {
-                        backgroundVideo.play();
-                    }
-                }
-                onErrorOccurred: function (error) {
-                    if (error !== MediaPlayer.NoError && (!backgroundImage.placeholder || backgroundImage.placeholder.length === 0)) {
-                        backgroundImage.displayColor = true;
-                    }
-                }
-            }
+                active: backgroundImage.isVideo && !backgroundImage.displayColor
 
-            // Overkill, but fine...
-            Component.onDestruction: {
-                if (backgroundVideo) {
-                    backgroundVideo.stop();
-                    backgroundVideo.source = "";
+                sourceComponent: Video {
+                    id: backgroundVideo
+                    autoPlay: true
+                    loops: MediaPlayer.Infinite
+                    muted: true
+                    source: backgroundImage.tsource.toString().length > 0 ? Qt.resolvedUrl("backgrounds/" + backgroundImage.tsource) : ""
+
+                    onSourceChanged: {
+                        if (source && source.toString().length > 0) {
+                            play();
+                        }
+                    }
+                    onErrorOccurred: function (error) {
+                        if (error !== MediaPlayer.NoError && (!backgroundImage.placeholder || backgroundImage.placeholder.length === 0)) {
+                            backgroundImage.displayColor = true;
+                        }
+                    }
+                    Component.onDestruction: {
+                        stop();
+                    }
                 }
             }
         }
