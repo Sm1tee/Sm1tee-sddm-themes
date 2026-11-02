@@ -100,6 +100,7 @@ Item {
         y: geometry.y
         width: geometry.width
         height: geometry.height
+        clip: true
 
         // AnimatedImage { // `.gif`s are seg faulting with multi monitors... QT/SDDM issue?
         Image {
@@ -120,6 +121,10 @@ Item {
             property string placeholder: Config.animatedBackgroundPlaceholder // Idea stolen from astronaut-theme. Not a fan of it, but works...
 
             anchors.fill: parent
+            anchors.margins: {
+                var b = root.state === "lockState" ? Config.lockScreenBlur : Config.loginScreenBlur;
+                return b > 0 ? -Math.max(b, 60) : 0;
+            }
             source: {
                 if (displayColor) return "";
                 if (isVideo && placeholder.length > 0) return "backgrounds/" + placeholder;
@@ -184,6 +189,7 @@ Item {
             anchors.fill: backgroundImage
             blurEnabled: backgroundImage.visible && blurMax > 0
             blur: blurMax > 0 ? 1.0 : 0.0
+            autoPaddingEnabled: false
         }
 
         Item {

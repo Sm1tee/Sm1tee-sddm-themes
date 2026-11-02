@@ -28,6 +28,7 @@ Item {
         Text {
             id: date
             Layout.alignment: Config.clockAlign === "left" ? Qt.AlignLeft : (Config.clockAlign === "right" ? Qt.AlignRight : Qt.AlignHCenter)
+            horizontalAlignment: Config.clockAlign === "left" ? Text.AlignLeft : (Config.clockAlign === "right" ? Text.AlignRight : Text.AlignHCenter)
             visible: Config.dateDisplay
             font.pixelSize: Config.dateFontSize
             font.family: Config.dateFontFamily

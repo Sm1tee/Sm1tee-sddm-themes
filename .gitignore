@@ -1,0 +1,35 @@
+# AI Assistants & Agents metadata
+AGENTS.md
+CLAUDE.md
+CHATGPT.md
+.agents/
+.claude/
+.opencode/
+opencode.json
+skills-lock.json
+.codegraph/
+.gemini/
+
+# Temporary files and logs
+tmp/
+temp/
+*.log
+*.tmp
+*~
+*.bak
+
+# System and OS files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+*Zone.Identifier
+
+# IDE and Editor configurations
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Python / build caches
+__pycache__/
+*.py[cod]

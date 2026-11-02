@@ -35,7 +35,7 @@ QtObject {
 
     // [LockScreen.Date]
     property bool dateDisplay: config['LockScreen.Date/display'] === "false" ? false : true // @desc:Whether or not to display the date in the lock screen.
-    property string dateFormat: config.stringValue("LockScreen.Date/format") || "dddd, MMMM dd, yyyy" // @desc:Format string used for the date.
+    property string dateFormat: (config.stringValue("LockScreen.Date/format") || "dddd, MMMM dd, yyyy").replace(/\\n/g, "\n") // @desc:Format string used for the date.
     property string dateFontFamily: config.stringValue("LockScreen.Date/font-family") || "RedHatDisplay" // @desc:Font family used for the date.
     property int dateFontSize: config.intValue("LockScreen.Date/font-size") || 14 // @desc:Font size of the date.
     property int dateFontWeight: config.intValue("LockScreen.Date/font-weight") || 400 // @desc:Font weight of the date. 400 = regular, 600 = bold, 800 = black
@@ -124,6 +124,7 @@ QtObject {
     property int loginButtonFontWeight: config.intValue("LoginScreen.LoginArea.LoginButton/font-weight") || 600 // @desc:Font weight of the label of the login button. 400 = regular, 600 = bold, 800 = black
 
     // [LoginScreen.LoginArea.Spinner]
+    property bool spinnerDisplayIcon: config.boolValue('LoginScreen.LoginArea.Spinner/display-icon') // @desc:Whether or not to display the spinning icon. Defaults to false.
     property bool spinnerDisplayText: config['LoginScreen.LoginArea.Spinner/display-text'] === "false" ? false : true // @desc:Whether or not to display the text with the spinning icon.
     property string spinnerText: config.stringValue("LoginScreen.LoginArea.Spinner/text") || "Logging in" // @desc:Text to be displayed with the spinning icon.
     property string spinnerFontFamily: config.stringValue("LoginScreen.LoginArea.Spinner/font-family") || "RedHatDisplay" // @desc:Font family of the text to be displayed with the spinning icon.

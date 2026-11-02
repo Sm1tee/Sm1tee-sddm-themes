@@ -440,31 +440,50 @@ choose_installation_type() {
 
 # Функция для показа доступных тем
 show_available_themes() {
-    echo -e "${WHITE}Доступные темы:${NC}"
+    echo -e "${WHITE}Доступные темы (всего 59):${NC}"
     echo ""
-    echo "apocalypse, bones, demon, explosion, gate, gate2, wizard,"
-    echo "samurai, samurai2, samurai3, samurai4, solder, warrior,"
-    echo "house, house2, house3, house4, house5, tree, window, window2, calmness,"
-    echo "space, space2, witcher, harry"
+    echo "abyss, apocalypse, astronaut, berserk, bones, calmness, cliffside,"
+    echo "crimson, crown_of_thorns, cyber, dark_knight_storm, demon, demon2,"
+    echo "eclipse, ember, explosion, fallen_knight, frost, gargantua, gate,"
+    echo "gate2, goku, greenhouse, halloween, harley, harry, hends,"
+    echo "hollow, horizon, horror, house, house2, house3, house4,"
+    echo "house5, itachi, jinwoo_daggers, jinwoo_monarch, knight_bonfire,"
+    echo "pikachu, queen, queen2, ryomen, sakura, samurai, samurai2,"
+    echo "samurai3, samurai4, sanctuary, solder, space, space2, tree,"
+    echo "warrior, window, window2, witcher, wizard, wraith_king"
     echo ""
 }
 
 # Функция для выбора темы из пронумерованного списка
 select_theme_from_list() {
     local themes=(
-        "apocalypse" "bones" "demon" "explosion" "gate" "gate2" "wizard"
-        "samurai" "samurai2" "samurai3" "samurai4" "solder" "warrior"
-        "house" "house2" "house3" "house4" "house5" "tree" "window" "window2" "calmness"
-        "space" "space2" "witcher" "harry"
+        "abyss" "apocalypse" "astronaut" "berserk" "bones" "calmness" "cliffside"
+        "crimson" "crown_of_thorns" "cyber" "dark_knight_storm" "demon" "demon2"
+        "eclipse" "ember" "explosion" "fallen_knight" "frost" "gargantua" "gate"
+        "gate2" "goku" "greenhouse" "halloween" "harley" "harry" "hends"
+        "hollow" "horizon" "horror" "house" "house2" "house3" "house4"
+        "house5" "itachi" "jinwoo_daggers" "jinwoo_monarch" "knight_bonfire"
+        "pikachu" "queen" "queen2" "ryomen" "sakura" "samurai" "samurai2"
+        "samurai3" "samurai4" "sanctuary" "solder" "space" "space2" "tree"
+        "warrior" "window" "window2" "witcher" "wizard" "wraith_king"
     )
     
-    echo -e "${WHITE}Доступные темы:${NC}"
+    echo -e "${WHITE}Доступные темы (всего ${#themes[@]}):${NC}"
     echo ""
     
-    # Показываем пронумерованный список
-    for i in "${!themes[@]}"; do
-        local num=$((i + 1))
-        printf "${CYAN}%2d)${NC} ${themes[i]}\n" "$num"
+    # Показываем аккуратный список в две колонки
+    for ((i=0; i<${#themes[@]}; i+=2)); do
+        local n1=$((i + 1))
+        local t1="${themes[i]}"
+        local col1=$(printf "${CYAN}%2d)${NC} %-26s" "$n1" "$t1")
+        if [ $((i + 1)) -lt ${#themes[@]} ]; then
+            local n2=$((i + 2))
+            local t2="${themes[i+1]}"
+            local col2=$(printf "${CYAN}%2d)${NC} %-26s" "$n2" "$t2")
+            echo -e "  $col1 $col2"
+        else
+            echo -e "  $col1"
+        fi
     done
     echo ""
     
