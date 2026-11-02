@@ -1,39 +1,38 @@
-# 🎨 SDDM Theme Collection "sm1tee"
-
 <div align="center">
+
+# 🎨 SDDM Theme Collection "sm1tee"
 
 ![SDDM Themes Showcase](docs/banner.jpg)
 
-## 🎬 Видео-демонстрация всех тем
-[![🎥 СМОТРЕТЬ ПОЛНЫЙ ОБЗОР ВСЕХ ТЕМ НА YOUTUBE](https://img.youtube.com/vi/fQhZ7fL-WQc/hqdefault.jpg?1)](https://youtu.be/fQhZ7fL-WQc)
+**Коллекция из 59 потрясающих тем для SDDM с живыми анимированными фонами**
 
-**👆 Нажмите для просмотра демонстрации тем в действии**
-
-[![GitHub Stars](https://img.shields.io/github/stars/Sm1tee/sddm-theme?style=for-the-badge&logo=github&color=gold)](https://github.com/Sm1tee/sddm-theme/stargazers)
-[![GitHub Issues](https://img.shields.io/github/issues/Sm1tee/sddm-theme?style=for-the-badge&logo=github&color=red)](https://github.com/Sm1tee/sddm-theme/issues)
-[![GitHub Forks](https://img.shields.io/github/forks/Sm1tee/sddm-theme?style=for-the-badge&logo=github&color=blue)](https://github.com/Sm1tee/sddm-theme/network)
-
-**Коллекция из 59 потрясающих тем для SDDM с анимированными фонами**
-
-[🚀 Автоустановка](#-автоматическая-установка) • [📥 Ручная установка](#-ручная-установка) • [🎨 Галерея](#-галерея-тем)
+▶️ [Смотреть полный видео-обзор на YouTube](https://youtu.be/fQhZ7fL-WQc)
 
 </div>
 
 ---
 
-## 📊 Статистика проекта
+<details>
+<summary><h3>🎬 Видео-демонстрация всех тем &nbsp; <img src="https://img.shields.io/badge/YouTube-1080p%2060fps-red?style=flat-square&logo=youtube" alt="YouTube" valign="middle" /></h3></summary>
+
+<br>
 
 <div align="center">
 
-![GitHub repo size](https://img.shields.io/github/repo-size/Sm1tee/sddm-theme?style=flat-square&color=blue)
-![GitHub last commit](https://img.shields.io/github/last-commit/Sm1tee/sddm-theme?style=flat-square&color=green)
-![GitHub contributors](https://img.shields.io/github/contributors/Sm1tee/sddm-theme?style=flat-square&color=orange)
+[![🎥 СМОТРЕТЬ ПОЛНЫЙ ОБЗОР ВСЕХ ТЕМ НА YOUTUBE](https://img.youtube.com/vi/fQhZ7fL-WQc/hqdefault.jpg?1)](https://youtu.be/fQhZ7fL-WQc)
+
+**👆 [Нажмите сюда, чтобы открыть видео-обзор на YouTube](https://youtu.be/fQhZ7fL-WQc)**
+
+*В видео показаны живые анимации, плавные переходы, кастомные шрифты и эффекты размытия в реальном времени.*
 
 </div>
 
----
+</details>
 
-## 🎨 Галерея тем
+<details>
+<summary><h3>🎨 Галерея тем &nbsp; <img src="https://img.shields.io/badge/Коллекция-59%20дизайнов-blueviolet?style=flat-square" alt="59 тем" valign="middle" /></h3></summary>
+
+<br>
 
 > ⚠️ **Важно**: Превью тем сделаны в тестовом режиме и могут немного отличаться от реального отображения, так как тестовый режим не позволяет продемонстрировать все возможности тем (анимации, эффекты и т.д.). Иногда github долго грузит видео, нужно просто подождать
 
@@ -310,103 +309,41 @@ https://github.com/user-attachments/assets/c16ee009-cd56-44c6-af8c-751f1afe81cd
 
 </details>
 
----
-
-## 🐧 Поддерживаемые дистрибутивы
-
-<div align="center">
-
-| Дистрибутив | Статус | Команда установки |
-|-------------|--------|-------------------|
-| 🐧 **Arch Linux** / Manjaro / EndeavourOS | ✅ Полная поддержка | `pacman -S --needed sddm qt6-svg qt6-virtualkeyboard qt6-multimedia-ffmpeg imagemagick` |
-| 🔵 **Fedora** | ✅ Полная поддержка | `dnf install sddm qt6-qtsvg qt6-qtvirtualkeyboard qt6-qtmultimedia ImageMagick` |
-| 🦎 **openSUSE** | ✅ Полная поддержка | `zypper install sddm-qt6 libQt6Svg6 qt6-virtualkeyboard qt6-multimedia ImageMagick` |
-| 🟠 **Ubuntu** / Debian / Pop!_OS / Mint | ✅ Полная поддержка | `apt install sddm qt6-svg-dev qml6-module-qtquick-virtualkeyboard qml6-module-qtmultimedia imagemagick` |
-| 🌊 **Void Linux** | ✅ Полная поддержка | `xbps-install sddm qt6-svg qt6-virtualkeyboard qt6-multimedia ImageMagick` |
-
-</div>
-
----
-
-## 📋 Системные требования
-
-| Компонент | Минимальная версия | Статус |
-|-----------|-------------------|--------|
-| **SDDM** | ≥ 0.21 | 🔴 Обязательно |
-| **Qt** | ≥ 6.5 | 🔴 Обязательно |
-| **qt6-svg** | Любая | 🔴 Обязательно |
-| **qt6-virtualkeyboard** | Любая | 🔴 Обязательно |
-| **qt6-multimedia** | Любая | 🔴 Обязательно |
-| **ImageMagick** | Любая | 🟡 Для обработки аватаров |
-
----
-
-## 🚀 Автоматическая установка
+</details>
 
 <details>
-<summary><strong>Развернуть инструкцию по автоматической установке (Рекомендуется)</strong></summary>
+<summary><h3>🚀 Автоматическая установка &nbsp; <img src="https://img.shields.io/badge/Быстрый%20старт-1%20команда-success?style=flat-square" alt="Автоустановка" valign="middle" /></h3></summary>
 
-> **🎉 Рекомендуемый способ!** Интерактивный скрипт установки с пошаговым руководством
+<br>
 
-**📋 Требования:** Убедитесь, что у вас установлены `curl` или `wget` и `bash`
+> 💡 **Рекомендуемый способ!** Интерактивный установщик с автоматическим определением дистрибутива Linux, установкой зависимостей и выбором темы.
+
+**📋 Требования:** Установленные `curl` или `wget` и оболочка `bash`.
 
 <div align="center">
 
-### 🔥 Одна команда — полная установка
+#### 🔥 Быстрая установка в одну команду:
 
-**Для Bash/Zsh:**
-```bash
-bash <(curl -fsSL https://raw.githubusercontent.com/Sm1tee/sddm-theme/main/install.sh)
-```
-
-**Для Fish или универсальный способ:**
+**Через `curl` (универсально для Bash, Zsh, Fish):**
 ```bash
 curl -fsSL https://raw.githubusercontent.com/Sm1tee/sddm-theme/main/install.sh | bash
 ```
 
-**Альтернативный способ (работает везде):**
+**Через `wget`:**
 ```bash
 wget -qO- https://raw.githubusercontent.com/Sm1tee/sddm-theme/main/install.sh | bash
 ```
 
 </div>
 
-### 🤖 Что делает автоустановщик:
+#### 🤖 Что делает автоустановщик:
 
-<table>
-<tr>
-<td width="50%">
+| 🔍 Диагностика и пакеты | 🎨 Настройка и гибкость |
+|---|---|
+| • Автоматически определяет дистрибутив Linux<br>• Проверяет и устанавливает системные зависимости<br>• Поддерживает Arch, Fedora, openSUSE, Ubuntu, Void | • Позволяет скачать все темы или только 1 выбранную<br>• Интерактивный выбор активной темы<br>• Настройка конфигурации SDDM, шрифтов и аватара |
 
-**🔍 Умная диагностика**
-- Автоматически определяет ваш дистрибутив Linux
-- Проверяет системные зависимости
-- Предлагает оптимальные команды установки
-
-**📦 Управление пакетами**
-- Устанавливает все необходимые зависимости
-- Поддерживает 5+ популярных дистрибутивов
-- Показывает подробные объяснения каждого пакета
-
-</td>
-<td width="50%">
-
-**🎨 Гибкая установка**
-- Выбор между полной установкой или одной темой
-- Интерактивный выбор активной темы
-- Автоматическая настройка конфигурации SDDM
-
-**🛠️ Дополнительные возможности**
-- Установка пользовательского аватара
-- Предварительный просмотр темы
-- Подробный отчет о выполненных действиях
-
-</td>
-</tr>
-</table>
-
-### 📋 Интерактивный процесс установки:
-
-```
+#### 📋 Пошаговый процесс работы скрипта:
+```text
 🎨 SDDM Theme sm1tee - Установщик
 
 ШАГ 1: Определение системы ✅
@@ -423,242 +360,126 @@ wget -qO- https://raw.githubusercontent.com/Sm1tee/sddm-theme/main/install.sh | 
 
 </details>
 
----
-
-## 📥 Ручная установка
-
 <details>
-<summary><strong>Развернуть инструкцию по ручной установке</strong></summary>
-
-> 💡 **Совет**: Рекомендуется использовать [автоматическую установку](#-автоматическая-установка) для лучшего опыта
-
-Если предпочитаете ручную установку, выберите один из способов:
-
-<details>
-<summary><strong>👉 Вариант 1: Простая установка (скачать все темы)</strong></summary>
-
-
-### Шаг 1: Установка зависимостей
-
-Выберите команду для вашего дистрибутива:
-
-<details>
-<summary><strong>🐧 Arch Linux</strong></summary>
-
-```bash
-sudo pacman -S --needed sddm qt6-svg qt6-virtualkeyboard qt6-multimedia-ffmpeg imagemagick
-```
-</details>
-
-<details>
-<summary><strong>🔵 Fedora</strong></summary>
-
-```bash
-sudo dnf install sddm qt6-qtsvg qt6-qtvirtualkeyboard qt6-qtmultimedia ImageMagick
-```
-</details>
-
-<details>
-<summary><strong>🦎 OpenSUSE</strong></summary>
-
-```bash
-sudo zypper install sddm-qt6 libQt6Svg6 qt6-virtualkeyboard qt6-virtualkeyboard-imports qt6-multimedia qt6-multimedia-imports ImageMagick
-```
-</details>
-
-<details>
-<summary><strong>🟠 Ubuntu / Debian</strong></summary>
-
-```bash
-sudo apt update
-```
-```bash
-sudo apt install sddm qt6-svg-dev qml6-module-qtquick-virtualkeyboard qml6-module-qtmultimedia imagemagick
-```
-</details>
-
-<details>
-<summary><strong>🌊 Void Linux</strong></summary>
-
-```bash
-sudo xbps-install sddm qt6-svg qt6-virtualkeyboard qt6-multimedia ImageMagick
-```
-</details>
-
-### Шаг 2: Загрузка тем
-
-```bash
-git clone https://github.com/Sm1tee/sddm-theme.git
-```
-
-### Шаг 3: Копирование файлов темы и шрифтов
-
-
-Переходим в скачанную папку
-
-```bash
-cd sddm-theme
-```
-
-Копируем папку с темами
-
-```bash
-sudo cp -r themes/sm1tee /usr/share/sddm/themes/
-```
-
-Копируем шрифты
-
-```bash
-sudo cp -r themes/sm1tee/fonts/* /usr/share/fonts/
-```
-
-```bash
-sudo fc-cache -fv
-```
-
-### Шаг 4: 🎨 Выбор конкретного дизайна
-
-Для смены темы отредактируйте файл метаданных:
-
-```bash
-sudo nano /usr/share/sddm/themes/sm1tee/metadata.desktop
-```
-
-Все доступные варианты тем закомментированы в конце файла.
-
-![swappy-20250701_220231](https://github.com/user-attachments/assets/da488673-dba6-4c11-aee7-88a1eb78f696)
-
-</details>
-
-<details>
-<summary><strong>⭐ Вариант 2: Рекомендуемая установка (только одна тема)</strong></summary>
+<summary><h3>📥 Ручная установка &nbsp; <img src="https://img.shields.io/badge/Sparse%20Checkout-Экономия%20трафика-informational?style=flat-square" alt="Ручная установка" valign="middle" /></h3></summary>
 
 <br>
-Этот репозиторий содержит много больших видео-файлов. Чтобы не скачивать их все, вы можете загрузить только ту тему, которая вам нужна.
 
-### Шаг 1: Установка зависимостей
+> 💡 **Совет:** Полный репозиторий со всеми 59 видео-темами весит более 1 ГБ. Рекомендуется использовать **Вариант 1 (Sparse Checkout)**, чтобы загрузить только одну нужную тему (~20–30 МБ).
 
-Выберите команду для вашего дистрибутива:
+---
 
-<details>
-<summary><strong>🐧 Arch Linux</strong></summary>
+#### ⭐ Вариант 1: Установка только ОДНОЙ темы (Sparse Checkout — без лишних файлов)
 
-```bash
-sudo pacman -S --needed sddm qt6-svg qt6-virtualkeyboard qt6-multimedia-ffmpeg imagemagick
-```
-</details>
-
-<details>
-<summary><strong>🔵 Fedora</strong></summary>
-
-```bash
-sudo dnf install sddm qt6-qtsvg qt6-qtvirtualkeyboard qt6-qtmultimedia ImageMagick
-```
-</details>
-
-<details>
-<summary><strong>🦎 OpenSUSE</strong></summary>
-
-```bash
-sudo zypper install sddm-qt6 libQt6Svg6 qt6-virtualkeyboard qt6-virtualkeyboard-imports qt6-multimedia qt6-multimedia-imports ImageMagick
-```
-</details>
-
-<details>
-<summary><strong>🟠 Ubuntu / Debian</strong></summary>
-
-```bash
-sudo apt update
-```
-```bash
-sudo apt install sddm qt6-svg-dev qml6-module-qtquick-virtualkeyboard qml6-module-qtmultimedia imagemagick
-```
-</details>
-
-<details>
-<summary><strong>🌊 Void Linux</strong></summary>
-
-```bash
-sudo xbps-install sddm qt6-svg qt6-virtualkeyboard qt6-multimedia ImageMagick
-```
-</details>
-
-### Шаг 2: Клонирование структуры репозитория
-
-Эта команда создаст папку `sddm-theme`, но еще **не будет скачивать содержимое файлов**. Это сэкономит трафик.
-
+**Шаг 1: Клонирование структуры репозитория (без тяжёлых файлов):**
 ```bash
 git clone --filter=blob:none --sparse https://github.com/Sm1tee/sddm-theme.git
 cd sddm-theme
 ```
 
-### Шаг 3: Выбор и загрузка вашей темы
-
-Теперь укажите, какую именно тему вы хотите скачать. **Замените `НАЗВАНИЕ_ТЕМЫ`** в команде ниже на имя понравившейся темы из [Галереи](#-галерея-тем) (например: `witcher`, `samurai`, `bones`, `apocalypse` и т.д.).
-
-
-> ⚠️ **Важно**: Замените НАЗВАНИЕ_ТЕМЫ в трех местах в команде ниже
-
+**Шаг 2: Выбор и загрузка нужной темы:**
+Замените `НАЗВАНИЕ_ТЕМЫ` на ID выбранной темы из Галереи (например: `witcher`, `dark_knight_storm`, `space`, `apocalypse` и т.д.):
 
 ```bash
-# Шаблон команды для скачивания одной темы
-git sparse-checkout set --no-cone   "/README.md"   "themes/sm1tee/components/"   "themes/sm1tee/fonts/"   "themes/sm1tee/icons/"   "/themes/sm1tee/Main.qml"   "/themes/sm1tee/metadata.desktop"   "/themes/sm1tee/qmldir"   "/themes/sm1tee/configs/НАЗВАНИЕ_ТЕМЫ.conf"   "/themes/sm1tee/backgrounds/НАЗВАНИЕ_ТЕМЫ.mp4"   "/themes/sm1tee/backgrounds/НАЗВАНИЕ_ТЕМЫ.png"
+git sparse-checkout set --no-cone \
+  "/README.md" \
+  "themes/sm1tee/components/" \
+  "themes/sm1tee/fonts/" \
+  "themes/sm1tee/icons/" \
+  "/themes/sm1tee/Main.qml" \
+  "/themes/sm1tee/metadata.desktop" \
+  "/themes/sm1tee/qmldir" \
+  "/themes/sm1tee/configs/НАЗВАНИЕ_ТЕМЫ.conf" \
+  "/themes/sm1tee/backgrounds/НАЗВАНИЕ_ТЕМЫ.mp4" \
+  "/themes/sm1tee/backgrounds/НАЗВАНИЕ_ТЕМЫ.png"
 ```
 
 <details>
-<summary><strong>Нажмите, чтобы увидеть пример для темы "witcher"</strong></summary>
-
-Если вы хотите скачать тему "witcher", команда будет выглядеть так:
+<summary><strong>Нажмите, чтобы увидеть готовый пример для темы <code>witcher</code></strong></summary>
 
 ```bash
-git sparse-checkout set --no-cone   "/README.md"   "themes/sm1tee/components/"   "themes/sm1tee/fonts/"   "themes/sm1tee/icons/"   "/themes/sm1tee/Main.qml"   "/themes/sm1tee/metadata.desktop"   "/themes/sm1tee/qmldir"   "/themes/sm1tee/configs/witcher.conf"   "/themes/sm1tee/backgrounds/witcher.mp4"   "/docs/previews/witcher.jpg"
+git sparse-checkout set --no-cone \
+  "/README.md" \
+  "themes/sm1tee/components/" \
+  "themes/sm1tee/fonts/" \
+  "themes/sm1tee/icons/" \
+  "/themes/sm1tee/Main.qml" \
+  "/themes/sm1tee/metadata.desktop" \
+  "/themes/sm1tee/qmldir" \
+  "/themes/sm1tee/configs/witcher.conf" \
+  "/themes/sm1tee/backgrounds/witcher.mp4" \
+  "/themes/sm1tee/backgrounds/witcher.png"
 ```
 </details>
 
-### Шаг 4: Копирование файлов темы и шрифтов
-
-Теперь, когда нужные файлы загружены, можно скопировать их в системные папки.
-
-Копируем папку с темами
-
+**Шаг 3: Копирование файлов темы и шрифтов:**
 ```bash
 sudo cp -r themes/sm1tee /usr/share/sddm/themes/
-```
-
-
-Копируем шрифты
-
-```bash
 sudo cp -r themes/sm1tee/fonts/* /usr/share/fonts/
-```
-
-```bash
 sudo fc-cache -fv
 ```
 
-### Шаг 5: Редактирование файла metadata.desktop
+**Шаг 4: Активация выбранной темы в `metadata.desktop`:**
+```bash
+sudo nano /usr/share/sddm/themes/sm1tee/metadata.desktop
+```
+Укажите название вашего конфигурационного файла в строке `ConfigFile=configs/НАЗВАНИЕ_ТЕМЫ.conf` (например: `ConfigFile=configs/witcher.conf`). В конце файла закомментирован список всех 59 тем для удобного выбора.
 
-Найдите в файле  metadata.desktop
+---
 
+#### 📦 Вариант 2: Загрузка всех 59 тем целиком
+
+```bash
+git clone https://github.com/Sm1tee/sddm-theme.git
+cd sddm-theme
+
+sudo cp -r themes/sm1tee /usr/share/sddm/themes/
+sudo cp -r themes/sm1tee/fonts/* /usr/share/fonts/
+sudo fc-cache -fv
+```
+
+После копирования выберите желаемую тему в файле:
 ```bash
 sudo nano /usr/share/sddm/themes/sm1tee/metadata.desktop
 ```
 
-Секцию ConfigFile=configs/ в конце файла и укажите тему которую вы скачали
+</details>
 
-Например ConfigFile=configs/witcher.conf
+<details>
+<summary><h3>🐧 Поддерживаемые дистрибутивы &nbsp; <img src="https://img.shields.io/badge/Linux-Arch%20%7C%20Fedora%20%7C%20openSUSE%20%7C%20Ubuntu-blue?style=flat-square&logo=linux" alt="Дистрибутивы" valign="middle" /></h3></summary>
 
-В подвале файла есть закомментированные варианты со всеми названиями тем, не трогайте их - они нужны только для удобства замены тем, менять нужно только незакомментированную строку ConfigFile=configs/
+<br>
 
-![swappy-20250701_220231](https://github.com/user-attachments/assets/da488673-dba6-4c11-aee7-88a1eb78f696)
+| Дистрибутив | Статус | Команда установки зависимостей |
+|---|:---:|---|
+| 🐧 **Arch Linux** / Manjaro / EndeavourOS | ✅ | `pacman -S --needed sddm qt6-svg qt6-virtualkeyboard qt6-multimedia-ffmpeg imagemagick` |
+| 🔵 **Fedora** | ✅ | `dnf install sddm qt6-qtsvg qt6-qtvirtualkeyboard qt6-qtmultimedia ImageMagick` |
+| 🦎 **openSUSE** | ✅ | `zypper install sddm-qt6 libQt6Svg6 qt6-virtualkeyboard qt6-multimedia ImageMagick` |
+| 🟠 **Ubuntu** / Debian / Mint / Pop!_OS | ✅ | `apt install sddm qt6-svg-dev qml6-module-qtquick-virtualkeyboard qml6-module-qtmultimedia imagemagick` |
+| 🌊 **Void Linux** | ✅ | `xbps-install sddm qt6-svg qt6-virtualkeyboard qt6-multimedia ImageMagick` |
 
 </details>
 
----
+<details>
+<summary><h3>📋 Системные требования &nbsp; <img src="https://img.shields.io/badge/SDDM%20≥%200.21-Qt%206.5+-orange?style=flat-square" alt="Требования" valign="middle" /></h3></summary>
 
-## ⚙️ Настройка (только для ручной установки)
+<br>
 
-### 🔧 Конфигурация SDDM
+| Компонент | Минимальная версия | Назначение | Статус |
+|---|:---:|---|:---:|
+| **SDDM** | ≥ 0.21 | Дисплейный менеджер входа | 🔴 Обязательно |
+| **Qt** | ≥ 6.5 | Базовый фреймворк QML | 🔴 Обязательно |
+| **qt6-svg** | Любая | Векторные иконки интерфейса | 🔴 Обязательно |
+| **qt6-virtualkeyboard** | Любая | Сенсорная экранная клавиатура | 🔴 Обязательно |
+| **qt6-multimedia** | Любая | Воспроизведение видео-фонов (MP4) | 🔴 Обязательно |
+| **ImageMagick** | Любая | Автоматическая обработка аватаров (512x512) | 🟡 Опционально |
+
+</details>
+
+<details>
+<summary><h3>⚙️ Настройка конфигурации SDDM &nbsp; <img src="https://img.shields.io/badge/Конфигурация-/etc/sddm.conf-darkgreen?style=flat-square" alt="Конфигурация" valign="middle" /></h3></summary>
+
+<br>
 
 Откройте конфигурационный файл SDDM:
 
@@ -666,7 +487,7 @@ sudo nano /usr/share/sddm/themes/sm1tee/metadata.desktop
 sudo nano /etc/sddm.conf
 ```
 
-Добавьте или измените следующие секции:
+Добавьте или обновите следующие секции:
 
 ```ini
 [Theme]
@@ -674,133 +495,142 @@ sudo nano /etc/sddm.conf
 Current=sm1tee
 
 [General]
-# Включаем виртуальную клавиатуру и указываем путь к компонентам темы
+# Включаем виртуальную клавиатуру и пути к модулям темы
 InputMethod=qtvirtualkeyboard
 GreeterEnvironment=QML2_IMPORT_PATH=/usr/share/sddm/themes/sm1tee/components/,QT_IM_MODULE=qtvirtualkeyboard
 ```
 
-### 👤 Установка аватара
+#### 🔄 Переключение дизайна темы
 
-Автоматический установщик умеет принимать обычные PNG/JPG/JPEG картинки. Он сам обрежет изображение по центру, уменьшит до `512x512`, сохранит как PNG, выставит права и пропишет аватар для SDDM.
-
-Если вы не выберете свой аватар, установщик поставит дефолтный аватар темы только в том случае, если у пользователя ещё нет аватара.
-
-Для ручной замены самый простой вариант — положить готовую картинку в домашнюю папку пользователя под именем `.face.icon`:
-
+Для быстрой смены темы отредактируйте:
 ```bash
-magick /полный/путь/к/картинке.jpg -auto-orient -resize '512x512^' -gravity center -extent 512x512 PNG32:"$HOME/.face.icon"
+sudo nano /usr/share/sddm/themes/sm1tee/metadata.desktop
+```
+Измените строку `ConfigFile=configs/<название_темы>.conf` на нужный дизайн (все варианты закомментированы в конце файла для удобства).
+
+</details>
+
+<details>
+<summary><h3>👤 Установка пользовательского аватара &nbsp; <img src="https://img.shields.io/badge/Кастомизация-.face.icon-yellow?style=flat-square" alt="Аватар" valign="middle" /></h3></summary>
+
+<br>
+
+Скрипт автоустановки умеет сам конвертировать и устанавливать любую картинку. Для ручной установки:
+
+**1. Домашняя папка (`.face.icon`):**
+```bash
+magick /полный/путь/к/картинке.jpg -auto-orient -resize 512x512^ -gravity center -extent 512x512 PNG32:"$HOME/.face.icon"
 chmod 644 "$HOME/.face.icon"
 ```
 
-Если дистрибутив использует AccountsService, дополнительно установите тот же файл туда:
-
+**2. Для дистрибутивов с AccountsService (Ubuntu, Fedora, Arch с GNOME):**
 ```bash
 sudo install -m 644 "$HOME/.face.icon" "/var/lib/AccountsService/icons/$USER"
 ```
 
-В файле `/var/lib/AccountsService/users/имя_пользователя` должна быть строка:
-
+В файле `/var/lib/AccountsService/users/$USER` должна быть строка:
 ```ini
 [User]
-Icon=/var/lib/AccountsService/icons/имя_пользователя
+Icon=/var/lib/AccountsService/icons/ваше_имя_пользователя
 ```
 
-Дефолтная аватарка темы лежит в `icons/user-default.png`. Если хотите заменить именно её, используйте PNG `512x512` с правами `644`.
+*Дефолтный аватар темы расположен в `icons/user-default.png`.*
 
-### 🔍 Предварительный просмотр темы
+</details>
 
-Вы можете просмотреть тему без перезагрузки системы:
+<details>
+<summary><h3>🔍 Предварительный просмотр темы &nbsp; <img src="https://img.shields.io/badge/Без%20перезагрузки-test--mode-crimson?style=flat-square" alt="Тест" valign="middle" /></h3></summary>
+
+<br>
+
+Вы можете проверить внешний вид темы в отдельном окне прямо в рабочей системе, без необходимости выходить из сессии или перезагружать ПК:
 
 ```bash
 QT_QPA_PLATFORM=xcb sddm-greeter-qt6 --test-mode --theme /usr/share/sddm/themes/sm1tee
 ```
 
-> � **Совевт**: Используйте тестовый режим для быстрой проверки настроек темы перед применением.
-
-### 🔄 Применение изменений
-
-Перезагрузите систему для применения настроек:
-
-```bash
-sudo reboot
-```
+> 💡 **Совет**: Используйте тестовый режим для быстрой проверки внешнего вида, шрифтов и фона перед окончательным применением.
 
 </details>
 
----
-
-## 📁 Структура проекта
-
-```
-sddm/themes/sm1tee/
-├── 📁 backgrounds/          # Фоны (PNG + MP4)
-├── 📁 components/           # QML компоненты
-├── 📁 configs/              # Конфигурационные файлы
-├── 📁 docs/                 # Документация
-├── 📁 fonts/                # Кастомные шрифты
-├── 📁 icons/                # Иконки и символы
-├── � bMain.qml              # Главный файл темы
-├── � moetadata.desktop      # Метаданные темы
-└── 📄 qmldir                # QML модули
-```
-
----
-
-## 🛠️ Решение проблем
-
 <details>
-<summary><strong>❓ Тема не загружается</strong></summary>
+<summary><h3>📁 Структура проекта &nbsp; <img src="https://img.shields.io/badge/Архитектура-Файлы%20и%20папки-lightgrey?style=flat-square" alt="Структура" valign="middle" /></h3></summary>
 
-1. Убедитесь, что все зависимости установлены
-2. Проверьте права доступа к папке темы: `sudo chmod -R 755 /usr/share/sddm/themes/sm1tee`
-3. Проверьте конфигурацию SDDM: `sudo sddm --test-mode --theme /usr/share/sddm/themes/sm1tee`
-</details>
-
-<details>
-<summary><strong>🎥 Видео-фон не воспроизводится</strong></summary>
-
-1. Убедитесь, что установлен `qt6-multimedia`
-2. Проверьте наличие кодеков для MP4
-3. Попробуйте другую тему с статичным фоном
-</details>
-
-<details>
-<summary><strong>🔤 Шрифты не отображаются корректно</strong></summary>
-
-1. Убедитесь, что шрифты установлены: `sudo cp -r sddm/themes/sm1tee/fonts/* /usr/share/fonts/`
-2. Обновите кэш шрифтов: `sudo fc-cache -fv`
-</details>
-
-<details>
-<summary><strong>🤖 Скрипт автоустановки не работает</strong></summary>
-
-1. Проверьте подключение к интернету
-2. Убедитесь, что установлены `curl` и `bash`
-3. Попробуйте скачать скрипт вручную: `wget https://raw.githubusercontent.com/Sm1tee/sddm-theme/main/install.sh && bash install.sh`
-4. Проверьте права на выполнение: `chmod +x install.sh`
-</details>
-
-<details>
-<summary><strong>🤖 Любые другие проблемы</strong></summary>
 <br>
-Приложите содержание данной инструкции и описание своей проблемы в диалог с любым чат ботом (например ChatGPT) и вы получите развернутое решение. 
+
+```
+themes/sm1tee/
+├── 📁 backgrounds/          # Живые видео-фоны (MP4) и статические обои (PNG)
+├── 📁 components/           # Модульные QML-компоненты интерфейса
+├── 📁 configs/              # 59 конфигурационных файлов (.conf) со стилями и координатами
+├── 📁 docs/                 # Превью, скриншоты и графические баннеры
+├── 📁 fonts/                # Кастомные шрифты для тем
+├── 📁 icons/                # Системные иконки и дефолтный аватар
+├── 📄 Main.qml              # Главный файл темы SDDM
+├── 📄 metadata.desktop      # Метаданные темы и выбор активного .conf
+└── 📄 qmldir                # Регистрация QML-модулей
+```
+
 </details>
 
----
+<details>
+<summary><h3>🛠️ Решение проблем (FAQ) &nbsp; <img src="https://img.shields.io/badge/Помощь-Частые%20вопросы-blue?style=flat-square" alt="FAQ" valign="middle" /></h3></summary>
 
-## 🙏 Благодарности
+<br>
 
-Эта тема является форком и глубокой переработкой проекта **SilentSDDM** от [uiriansan](https://github.com/uiriansan). Большое спасибо автору за проделанную работу, которая послужила основой для этого проекта.
+<details>
+<summary><strong>❓ Тема не отображается или появляется стандартный экран</strong></summary>
+
+1. Проверьте, что в `/etc/sddm.conf` в секции `[Theme]` указано `Current=sm1tee`.
+2. Проверьте права на директорию темы: `sudo chmod -R 755 /usr/share/sddm/themes/sm1tee`.
+3. Запустите тест в терминале для выявления ошибок: `QT_QPA_PLATFORM=xcb sddm-greeter-qt6 --test-mode --theme /usr/share/sddm/themes/sm1tee`.
+</details>
+
+<details>
+<summary><strong>🎥 Видео-фон черный или не воспроизводится</strong></summary>
+
+1. Убедитесь, что установлен пакет `qt6-multimedia` (в Arch: `qt6-multimedia-ffmpeg`).
+2. Проверьте установку кодеков FFmpeg / GStreamer в системе.
+3. Убедитесь, что файл видео существует по пути `/usr/share/sddm/themes/sm1tee/backgrounds/<тема>.mp4`.
+</details>
+
+<details>
+<summary><strong>🔤 Кастомные шрифты не отображаются (дефолтный шрифт)</strong></summary>
+
+1. Убедитесь, что шрифты скопированы в `/usr/share/fonts/`: `sudo cp -r themes/sm1tee/fonts/* /usr/share/fonts/`.
+2. Обновите системный кэш шрифтов: `sudo fc-cache -fv`.
+</details>
+
+<details>
+<summary><strong>🤖 Скрипт автоустановки выдает ошибку</strong></summary>
+
+1. Проверьте интернет-соединение.
+2. Убедитесь, что в системе установлены `curl` или `wget` и оболочка `bash`.
+3. Попробуйте скачать скрипт напрямую: `curl -fsSL https://raw.githubusercontent.com/Sm1tee/sddm-theme/main/install.sh > install.sh && bash install.sh`.
+</details>
+
+<details>
+<summary><strong>💡 Любые другие проблемы</strong></summary>
+
+Скопируйте вывод терминала или ошибку тестового режима `sddm-greeter-qt6 --test-mode` и отправьте в диалог с любой языковой моделью (ChatGPT, Claude и т.д.) для мгновенного нахождения решения.
+</details>
+
+</details>
+
+<details>
+<summary><h3>🙏 Благодарности и первоисточник &nbsp; <img src="https://img.shields.io/badge/Credits-SilentSDDM-ff69b4?style=flat-square" alt="Credits" valign="middle" /></h3></summary>
+
+<br>
+
+Эта тема создана на основе проекта **SilentSDDM** от [uiriansan](https://github.com/uiriansan). Искренняя благодарность автору за проделанную базовую работу, архитектуру компонентов и вдохновение!
+
+</details>
 
 ---
 
 <div align="center">
 
 ![Footer](https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12&height=100&section=footer)
-
-**⭐ Понравилось? Поставьте звездочку!**
-
-[![GitHub](https://img.shields.io/badge/GitHub-Sm1tee-black?style=for-the-badge&logo=github)](https://github.com/Sm1tee)
 
 Made with ❤️ by [Sm1tee](https://github.com/Sm1tee)
 
