@@ -15,7 +15,7 @@
 
 **Коллекция из 59 потрясающих тем для SDDM с анимированными фонами**
 
-[🚀 Автоустановка](#-автоматическая-установка) • [📥 Ручная установка](#-ручная-установка) • [🎯 Особенности](#-особенности) • [🎨 Галерея](#-галерея-тем)
+[🚀 Автоустановка](#-автоматическая-установка) • [📥 Ручная установка](#-ручная-установка) • [🎨 Галерея](#-галерея-тем)
 
 </div>
 
@@ -43,34 +43,38 @@
 <summary><strong>⚔️ Тёмное Фэнтези и Владыки</strong></summary>
 
 ### `dark_knight_storm`
-![dark_knight_storm](themes/sm1tee/backgrounds/dark_knight_storm.png)
+![dark_knight_storm](docs/previews/dark_knight_storm.jpg)
 
 ### `knight_bonfire`
-![knight_bonfire](themes/sm1tee/backgrounds/knight_bonfire.png)
+![knight_bonfire](docs/previews/knight_bonfire.jpg)
 
 ### `fallen_knight`
-![fallen_knight](themes/sm1tee/backgrounds/fallen_knight.png)
+![fallen_knight](docs/previews/fallen_knight.jpg)
 
 ### `crown_of_thorns`
-![crown_of_thorns](themes/sm1tee/backgrounds/crown_of_thorns.png)
+![crown_of_thorns](docs/previews/crown_of_thorns.jpg)
 
 ### `berserk`
-![berserk](themes/sm1tee/backgrounds/berserk.png)
+![berserk](docs/previews/berserk.jpg)
 
 ### `witcher`
 https://github.com/user-attachments/assets/0df28a63-bf20-42b6-bee3-128567862dab
+![witcher](docs/previews/witcher.jpg)
+
 
 ### `wraith_king`
-![wraith_king](themes/sm1tee/backgrounds/wraith_king.png)
+![wraith_king](docs/previews/wraith_king.jpg)
 
 ### `queen`
-![queen](themes/sm1tee/backgrounds/queen.png)
+![queen](docs/previews/queen.jpg)
 
 ### `queen2`
-![queen2](themes/sm1tee/backgrounds/queen2.png)
+![queen2](docs/previews/queen2.jpg)
 
 ### `warrior`
 https://github.com/user-attachments/assets/7d63be93-2fe9-4d48-b720-2f3538143f23
+![warrior](docs/previews/warrior.jpg)
+
 
 </details>
 
@@ -78,25 +82,25 @@ https://github.com/user-attachments/assets/7d63be93-2fe9-4d48-b720-2f3538143f23
 <summary><strong>⛩️ Аниме и Solo Leveling</strong></summary>
 
 ### `jinwoo_monarch`
-![jinwoo_monarch](themes/sm1tee/backgrounds/jinwoo_monarch.png)
+![jinwoo_monarch](docs/previews/jinwoo_monarch.jpg)
 
 ### `jinwoo_daggers`
-![jinwoo_daggers](themes/sm1tee/backgrounds/jinwoo_daggers.png)
+![jinwoo_daggers](docs/previews/jinwoo_daggers.jpg)
 
 ### `itachi`
-![itachi](themes/sm1tee/backgrounds/itachi.png)
+![itachi](docs/previews/itachi.jpg)
 
 ### `ryomen`
-![ryomen](themes/sm1tee/backgrounds/ryomen.png)
+![ryomen](docs/previews/ryomen.jpg)
 
 ### `sanctuary`
-![sanctuary](themes/sm1tee/backgrounds/sanctuary.png)
+![sanctuary](docs/previews/sanctuary.jpg)
 
 ### `goku`
-![goku](themes/sm1tee/backgrounds/goku.png)
+![goku](docs/previews/goku.jpg)
 
 ### `pikachu`
-![pikachu](themes/sm1tee/backgrounds/pikachu.png)
+![pikachu](docs/previews/pikachu.jpg)
 
 </details>
 
@@ -105,21 +109,29 @@ https://github.com/user-attachments/assets/7d63be93-2fe9-4d48-b720-2f3538143f23
 
 ### `samurai`
 https://github.com/user-attachments/assets/d485b2d1-37b3-4e40-b4af-c2a3f1bca4fa
+![samurai](docs/previews/samurai.jpg)
+
 
 ### `samurai2`
 https://github.com/user-attachments/assets/65ebe9aa-77f0-4e10-94d4-981b6464c437
+![samurai2](docs/previews/samurai2.jpg)
+
 
 ### `samurai3`
 https://github.com/user-attachments/assets/c1146770-13fa-40fb-a092-4334ff9dbb1b
+![samurai3](docs/previews/samurai3.jpg)
+
 
 ### `samurai4`
 https://github.com/user-attachments/assets/956994f3-fcf9-41a9-b025-16d2d75ca35a
+![samurai4](docs/previews/samurai4.jpg)
+
 
 ### `sakura`
-![sakura](themes/sm1tee/backgrounds/sakura.png)
+![sakura](docs/previews/sakura.jpg)
 
 ### `hends`
-![hends](themes/sm1tee/backgrounds/hends.png)
+![hends](docs/previews/hends.jpg)
 
 </details>
 
@@ -128,24 +140,28 @@ https://github.com/user-attachments/assets/956994f3-fcf9-41a9-b025-16d2d75ca35a
 
 ### `space`
 https://github.com/user-attachments/assets/b633c1b4-478d-4318-9eb1-f6c01502074f
+![space](docs/previews/space.jpg)
+
 
 ### `space2`
 https://github.com/user-attachments/assets/36e83a35-50c0-4168-b54e-2fa680a7847e
+![space2](docs/previews/space2.jpg)
+
 
 ### `astronaut`
-![astronaut](themes/sm1tee/backgrounds/astronaut.png)
+![astronaut](docs/previews/astronaut.jpg)
 
 ### `gargantua`
-![gargantua](themes/sm1tee/backgrounds/gargantua.png)
+![gargantua](docs/previews/gargantua.jpg)
 
 ### `cyber`
-![cyber](themes/sm1tee/backgrounds/cyber.png)
+![cyber](docs/previews/cyber.jpg)
 
 ### `horizon`
-![horizon](themes/sm1tee/backgrounds/horizon.png)
+![horizon](docs/previews/horizon.jpg)
 
 ### `eclipse`
-![eclipse](themes/sm1tee/backgrounds/eclipse.png)
+![eclipse](docs/previews/eclipse.jpg)
 
 </details>
 
@@ -153,31 +169,39 @@ https://github.com/user-attachments/assets/36e83a35-50c0-4168-b54e-2fa680a7847e
 <summary><strong>💀 Хоррор и Мистика</strong></summary>
 
 ### `halloween`
-![halloween](themes/sm1tee/backgrounds/halloween.png)
+![halloween](docs/previews/halloween.jpg)
 
 ### `bones`
 https://github.com/user-attachments/assets/1b17916c-1a90-4f4c-b868-863fbbb8de70
+![bones](docs/previews/bones.jpg)
+
 
 ### `demon`
 https://github.com/user-attachments/assets/21628957-90e1-4136-9e61-8861c6424fee
+![demon](docs/previews/demon.jpg)
+
 
 ### `demon2`
-![demon2](themes/sm1tee/backgrounds/demon2.png)
+![demon2](docs/previews/demon2.jpg)
 
 ### `horror`
-![horror](themes/sm1tee/backgrounds/horror.png)
+![horror](docs/previews/horror.jpg)
 
 ### `abyss`
-![abyss](themes/sm1tee/backgrounds/abyss.png)
+![abyss](docs/previews/abyss.jpg)
 
 ### `hollow`
-![hollow](themes/sm1tee/backgrounds/hollow.png)
+![hollow](docs/previews/hollow.jpg)
 
 ### `harry`
 https://github.com/user-attachments/assets/4effd896-9b76-49ff-97b3-cc0576840ad6
+![harry](docs/previews/harry.jpg)
+
 
 ### `wizard`
 https://github.com/user-attachments/assets/ead28860-b7cd-422a-83ca-96ab4d98773e
+![wizard](docs/previews/wizard.jpg)
+
 
 </details>
 
@@ -186,27 +210,37 @@ https://github.com/user-attachments/assets/ead28860-b7cd-422a-83ca-96ab4d98773e
 
 ### `apocalypse`
 https://github.com/user-attachments/assets/384bfa7d-f1ec-4f60-a897-511669d8679c
+![apocalypse](docs/previews/apocalypse.jpg)
+
 
 ### `explosion`
 https://github.com/user-attachments/assets/91ec7ca3-baad-4fca-828d-b2d32a8f253f
+![explosion](docs/previews/explosion.jpg)
+
 
 ### `harley`
-![harley](themes/sm1tee/backgrounds/harley.png)
+![harley](docs/previews/harley.jpg)
 
 ### `solder`
 https://github.com/user-attachments/assets/3f4f615f-9c79-4c46-b06d-b38a25e859aa
+![solder](docs/previews/solder.jpg)
+
 
 ### `ember`
-![ember](themes/sm1tee/backgrounds/ember.png)
+![ember](docs/previews/ember.jpg)
 
 ### `frost`
-![frost](themes/sm1tee/backgrounds/frost.png)
+![frost](docs/previews/frost.jpg)
 
 ### `gate`
 https://github.com/user-attachments/assets/7298fc6d-3156-4875-bcb2-b7c98ffd4d39
+![gate](docs/previews/gate.jpg)
+
 
 ### `gate2`
 https://github.com/user-attachments/assets/12f9cff2-40af-487b-b39a-d1c93a24fbfd
+![gate2](docs/previews/gate2.jpg)
+
 
 </details>
 
@@ -214,55 +248,60 @@ https://github.com/user-attachments/assets/12f9cff2-40af-487b-b39a-d1c93a24fbfd
 <summary><strong>🏠 Дома и Пейзажи</strong></summary>
 
 ### `cliffside`
-![cliffside](themes/sm1tee/backgrounds/cliffside.png)
+![cliffside](docs/previews/cliffside.jpg)
 
 ### `calmness`
 https://github.com/user-attachments/assets/b5346394-a891-4719-b8dd-c551ad70d295
+![calmness](docs/previews/calmness.jpg)
+
 
 ### `greenhouse`
-![greenhouse](themes/sm1tee/backgrounds/greenhouse.png)
+![greenhouse](docs/previews/greenhouse.jpg)
 
 ### `tree`
 https://github.com/user-attachments/assets/036092c8-2297-48d0-9440-10f289da746f
+![tree](docs/previews/tree.jpg)
+
 
 ### `window`
 https://github.com/user-attachments/assets/c954cbfd-0fb5-4363-a22c-d8c0a743e275
+![window](docs/previews/window.jpg)
+
 
 ### `window2`
 https://github.com/user-attachments/assets/ff328d6c-f958-465c-b2f2-1cee0ae71643
+![window2](docs/previews/window2.jpg)
+
 
 ### `house`
 https://github.com/user-attachments/assets/fb803c22-50cb-45d1-a144-d3df8233310e
+![house](docs/previews/house.jpg)
+
 
 ### `house2`
 https://github.com/user-attachments/assets/7444a19f-2be3-480f-8096-5aa3134fea0a
+![house2](docs/previews/house2.jpg)
+
 
 ### `house3`
 https://github.com/user-attachments/assets/9e54422f-a6ad-4ff7-a0ea-4f52f56039cc
+![house3](docs/previews/house3.jpg)
+
 
 ### `house4`
 https://github.com/user-attachments/assets/bf56b52a-c41c-4f78-b8da-da1ed2f8e3b9
+![house4](docs/previews/house4.jpg)
+
 
 ### `house5`
 https://github.com/user-attachments/assets/c16ee009-cd56-44c6-af8c-751f1afe81cd
+![house5](docs/previews/house5.jpg)
+
 
 ### `crimson`
-![crimson](themes/sm1tee/backgrounds/crimson.png)
+![crimson](docs/previews/crimson.jpg)
 
 </details>
-
----
-
-## 🎯 Особенности
-
-| 🎨 **Визуальные возможности** | ⚡ **Функциональность** | 🛠️ **Удобство** |
-|---|---|---|
-| ✨ **59** уникальных тем | 📱 Виртуальная клавиатура | 🚀 Автоматическая установка |
-| 🎬 Анимированные **MP4** фоны | 🌐 Мультиязычность | 🔧 Простая настройка |
-| 🎨 Кастомные шрифты | 🔐 Современный UI | ⚡ Быстрое переключение |
-| 🖼️ Поддержка аватаров | 🎮 Игровые стили | 👀 Предварительный просмотр |
-
-
 
 ---
 
@@ -565,7 +604,7 @@ git sparse-checkout set --no-cone   "/README.md"   "themes/sm1tee/components/"  
 Если вы хотите скачать тему "witcher", команда будет выглядеть так:
 
 ```bash
-git sparse-checkout set --no-cone   "/README.md"   "themes/sm1tee/components/"   "themes/sm1tee/fonts/"   "themes/sm1tee/icons/"   "/themes/sm1tee/Main.qml"   "/themes/sm1tee/metadata.desktop"   "/themes/sm1tee/qmldir"   "/themes/sm1tee/configs/witcher.conf"   "/themes/sm1tee/backgrounds/witcher.mp4"   "/themes/sm1tee/backgrounds/witcher.png"
+git sparse-checkout set --no-cone   "/README.md"   "themes/sm1tee/components/"   "themes/sm1tee/fonts/"   "themes/sm1tee/icons/"   "/themes/sm1tee/Main.qml"   "/themes/sm1tee/metadata.desktop"   "/themes/sm1tee/qmldir"   "/themes/sm1tee/configs/witcher.conf"   "/themes/sm1tee/backgrounds/witcher.mp4"   "/docs/previews/witcher.jpg"
 ```
 </details>
 
