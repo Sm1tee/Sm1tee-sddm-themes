@@ -13,7 +13,7 @@
 ---
 
 <details>
-<summary><h3>🎬 Видео-демонстрация всех тем &nbsp; <img src="https://img.shields.io/badge/YouTube-1080p%2060fps-red?style=flat-square&logo=youtube" alt="YouTube" valign="middle" /></h3></summary>
+<summary><font size="4"><strong>🎬 Видео-демонстрация всех тем</strong></font> &nbsp; <img src="https://img.shields.io/badge/YouTube-1080p%2060fps-red?style=flat-square&logo=youtube" alt="YouTube" valign="middle" /></summary>
 
 <br>
 
@@ -30,7 +30,7 @@
 </details>
 
 <details>
-<summary><h3>🎨 Галерея тем &nbsp; <img src="https://img.shields.io/badge/Коллекция-59%20дизайнов-blueviolet?style=flat-square" alt="59 тем" valign="middle" /></h3></summary>
+<summary><font size="4"><strong>🎨 Галерея тем</strong></font> &nbsp; <img src="https://img.shields.io/badge/Коллекция-59%20дизайнов-blueviolet?style=flat-square" alt="59 тем" valign="middle" /></summary>
 
 <br>
 
@@ -312,7 +312,7 @@ https://github.com/user-attachments/assets/c16ee009-cd56-44c6-af8c-751f1afe81cd
 </details>
 
 <details>
-<summary><h3>🚀 Автоматическая установка &nbsp; <img src="https://img.shields.io/badge/Быстрый%20старт-1%20команда-success?style=flat-square" alt="Автоустановка" valign="middle" /></h3></summary>
+<summary><font size="4"><strong>🚀 Автоматическая установка</strong></font> &nbsp; <img src="https://img.shields.io/badge/Быстрый%20старт-1%20команда-success?style=flat-square" alt="Автоустановка" valign="middle" /></summary>
 
 <br>
 
@@ -326,12 +326,12 @@ https://github.com/user-attachments/assets/c16ee009-cd56-44c6-af8c-751f1afe81cd
 
 **Через `curl` (универсально для Bash, Zsh, Fish):**
 ```bash
-curl -fsSL https://raw.githubusercontent.com/Sm1tee/sddm-theme/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/Sm1tee/Sm1tee-sddm-themes/main/install.sh | bash
 ```
 
 **Через `wget`:**
 ```bash
-wget -qO- https://raw.githubusercontent.com/Sm1tee/sddm-theme/main/install.sh | bash
+wget -qO- https://raw.githubusercontent.com/Sm1tee/Sm1tee-sddm-themes/main/install.sh | bash
 ```
 
 </div>
@@ -361,7 +361,7 @@ wget -qO- https://raw.githubusercontent.com/Sm1tee/sddm-theme/main/install.sh | 
 </details>
 
 <details>
-<summary><h3>📥 Ручная установка &nbsp; <img src="https://img.shields.io/badge/Sparse%20Checkout-Экономия%20трафика-informational?style=flat-square" alt="Ручная установка" valign="middle" /></h3></summary>
+<summary><font size="4"><strong>📥 Ручная установка</strong></font> &nbsp; <img src="https://img.shields.io/badge/Sparse%20Checkout-Экономия%20трафика-informational?style=flat-square" alt="Ручная установка" valign="middle" /></summary>
 
 <br>
 
@@ -373,8 +373,8 @@ wget -qO- https://raw.githubusercontent.com/Sm1tee/sddm-theme/main/install.sh | 
 
 **Шаг 1: Клонирование структуры репозитория (без тяжёлых файлов):**
 ```bash
-git clone --filter=blob:none --sparse https://github.com/Sm1tee/sddm-theme.git
-cd sddm-theme
+git clone --filter=blob:none --sparse https://github.com/Sm1tee/Sm1tee-sddm-themes.git
+cd Sm1tee-sddm-themes
 ```
 
 **Шаг 2: Выбор и загрузка нужной темы:**
@@ -430,8 +430,8 @@ sudo nano /usr/share/sddm/themes/sm1tee/metadata.desktop
 #### 📦 Вариант 2: Загрузка всех 59 тем целиком
 
 ```bash
-git clone https://github.com/Sm1tee/sddm-theme.git
-cd sddm-theme
+git clone https://github.com/Sm1tee/Sm1tee-sddm-themes.git
+cd Sm1tee-sddm-themes
 
 sudo cp -r themes/sm1tee /usr/share/sddm/themes/
 sudo cp -r themes/sm1tee/fonts/* /usr/share/fonts/
@@ -446,7 +446,7 @@ sudo nano /usr/share/sddm/themes/sm1tee/metadata.desktop
 </details>
 
 <details>
-<summary><h3>🐧 Поддерживаемые дистрибутивы &nbsp; <img src="https://img.shields.io/badge/Linux-Arch%20%7C%20Fedora%20%7C%20openSUSE%20%7C%20Ubuntu-blue?style=flat-square&logo=linux" alt="Дистрибутивы" valign="middle" /></h3></summary>
+<summary><font size="4"><strong>🐧 Поддерживаемые дистрибутивы</strong></font> &nbsp; <img src="https://img.shields.io/badge/Linux-Arch%20%7C%20Fedora%20%7C%20openSUSE%20%7C%20Ubuntu-blue?style=flat-square&logo=linux" alt="Дистрибутивы" valign="middle" /></summary>
 
 <br>
 
@@ -461,7 +461,7 @@ sudo nano /usr/share/sddm/themes/sm1tee/metadata.desktop
 </details>
 
 <details>
-<summary><h3>📋 Системные требования &nbsp; <img src="https://img.shields.io/badge/SDDM%20≥%200.21-Qt%206.5+-orange?style=flat-square" alt="Требования" valign="middle" /></h3></summary>
+<summary><font size="4"><strong>📋 Системные требования</strong></font> &nbsp; <img src="https://img.shields.io/badge/SDDM%20≥%200.21-Qt%206.5+-orange?style=flat-square" alt="Требования" valign="middle" /></summary>
 
 <br>
 
@@ -477,7 +477,7 @@ sudo nano /usr/share/sddm/themes/sm1tee/metadata.desktop
 </details>
 
 <details>
-<summary><h3>⚙️ Настройка конфигурации SDDM &nbsp; <img src="https://img.shields.io/badge/Конфигурация-/etc/sddm.conf-darkgreen?style=flat-square" alt="Конфигурация" valign="middle" /></h3></summary>
+<summary><font size="4"><strong>⚙️ Настройка конфигурации SDDM</strong></font> &nbsp; <img src="https://img.shields.io/badge/Конфигурация-/etc/sddm.conf-darkgreen?style=flat-square" alt="Конфигурация" valign="middle" /></summary>
 
 <br>
 
@@ -511,7 +511,7 @@ sudo nano /usr/share/sddm/themes/sm1tee/metadata.desktop
 </details>
 
 <details>
-<summary><h3>👤 Установка пользовательского аватара &nbsp; <img src="https://img.shields.io/badge/Кастомизация-.face.icon-yellow?style=flat-square" alt="Аватар" valign="middle" /></h3></summary>
+<summary><font size="4"><strong>👤 Установка пользовательского аватара</strong></font> &nbsp; <img src="https://img.shields.io/badge/Кастомизация-.face.icon-yellow?style=flat-square" alt="Аватар" valign="middle" /></summary>
 
 <br>
 
@@ -539,7 +539,7 @@ Icon=/var/lib/AccountsService/icons/ваше_имя_пользователя
 </details>
 
 <details>
-<summary><h3>🔍 Предварительный просмотр темы &nbsp; <img src="https://img.shields.io/badge/Без%20перезагрузки-test--mode-crimson?style=flat-square" alt="Тест" valign="middle" /></h3></summary>
+<summary><font size="4"><strong>🔍 Предварительный просмотр темы</strong></font> &nbsp; <img src="https://img.shields.io/badge/Без%20перезагрузки-test--mode-crimson?style=flat-square" alt="Тест" valign="middle" /></summary>
 
 <br>
 
@@ -554,7 +554,7 @@ QT_QPA_PLATFORM=xcb sddm-greeter-qt6 --test-mode --theme /usr/share/sddm/themes/
 </details>
 
 <details>
-<summary><h3>📁 Структура проекта &nbsp; <img src="https://img.shields.io/badge/Архитектура-Файлы%20и%20папки-lightgrey?style=flat-square" alt="Структура" valign="middle" /></h3></summary>
+<summary><font size="4"><strong>📁 Структура проекта</strong></font> &nbsp; <img src="https://img.shields.io/badge/Архитектура-Файлы%20и%20папки-lightgrey?style=flat-square" alt="Структура" valign="middle" /></summary>
 
 <br>
 
@@ -574,7 +574,7 @@ themes/sm1tee/
 </details>
 
 <details>
-<summary><h3>🛠️ Решение проблем (FAQ) &nbsp; <img src="https://img.shields.io/badge/Помощь-Частые%20вопросы-blue?style=flat-square" alt="FAQ" valign="middle" /></h3></summary>
+<summary><font size="4"><strong>🛠️ Решение проблем (FAQ)</strong></font> &nbsp; <img src="https://img.shields.io/badge/Помощь-Частые%20вопросы-blue?style=flat-square" alt="FAQ" valign="middle" /></summary>
 
 <br>
 
@@ -606,7 +606,7 @@ themes/sm1tee/
 
 1. Проверьте интернет-соединение.
 2. Убедитесь, что в системе установлены `curl` или `wget` и оболочка `bash`.
-3. Попробуйте скачать скрипт напрямую: `curl -fsSL https://raw.githubusercontent.com/Sm1tee/sddm-theme/main/install.sh > install.sh && bash install.sh`.
+3. Попробуйте скачать скрипт напрямую: `curl -fsSL https://raw.githubusercontent.com/Sm1tee/Sm1tee-sddm-themes/main/install.sh > install.sh && bash install.sh`.
 </details>
 
 <details>
@@ -618,7 +618,7 @@ themes/sm1tee/
 </details>
 
 <details>
-<summary><h3>🙏 Благодарности и первоисточник &nbsp; <img src="https://img.shields.io/badge/Credits-SilentSDDM-ff69b4?style=flat-square" alt="Credits" valign="middle" /></h3></summary>
+<summary><font size="4"><strong>🙏 Благодарности и первоисточник</strong></font> &nbsp; <img src="https://img.shields.io/badge/Credits-SilentSDDM-ff69b4?style=flat-square" alt="Credits" valign="middle" /></summary>
 
 <br>
 

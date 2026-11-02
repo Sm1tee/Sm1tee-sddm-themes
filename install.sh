@@ -521,8 +521,8 @@ select_theme_from_list() {
 download_repository() {
     print_step_header "ШАГ 4: Загрузка всех тем с GitHub                            "
     
-    local repo_url="https://github.com/Sm1tee/sddm-theme.git"
-    local target_dir="sddm-theme"
+    local repo_url="https://github.com/Sm1tee/Sm1tee-sddm-themes.git"
+    local target_dir="Sm1tee-sddm-themes"
     
     echo -e "${BLUE}Буду загружать все темы из репозитория GitHub.${NC}"
     echo -e "Репозиторий: $repo_url"
@@ -564,8 +564,8 @@ download_single_theme() {
     local theme_name="$1"
     print_step_header "ШАГ 4: Загрузка темы '$theme_name' с GitHub                   "
     
-    local repo_url="https://github.com/Sm1tee/sddm-theme.git"
-    local target_dir="sddm-theme"
+    local repo_url="https://github.com/Sm1tee/Sm1tee-sddm-themes.git"
+    local target_dir="Sm1tee-sddm-themes"
     
     echo -e "${BLUE}Буду загружать только файлы для темы '$theme_name'.${NC}"
     echo -e "Это сэкономит время и трафик, загрузив только нужные файлы."
@@ -630,7 +630,12 @@ download_single_theme() {
 install_theme_files() {
     print_step_header "ШАГ 5: Установка файлов темы в систему                       "
     
-    local source_dir="sddm-theme/themes/sm1tee"
+    local source_dir="Sm1tee-sddm-themes/themes/sm1tee"
+    if [ ! -d "$source_dir" ] && [ -d "themes/sm1tee" ]; then
+        source_dir="themes/sm1tee"
+    elif [ ! -d "$source_dir" ] && [ -d "sddm-theme/themes/sm1tee" ]; then
+        source_dir="sddm-theme/themes/sm1tee"
+    fi
     local target_dir="/usr/share/sddm/themes/sm1tee"
     
     echo -e "${BLUE}Буду копировать файлы темы в системную папку SDDM.${NC}"
@@ -678,7 +683,12 @@ install_theme_files() {
 install_fonts() {
     print_step_header "ШАГ 6: Установка шрифтов темы                                "
     
-    local source_dir="sddm-theme/themes/sm1tee/fonts"
+    local source_dir="Sm1tee-sddm-themes/themes/sm1tee/fonts"
+    if [ ! -d "$source_dir" ] && [ -d "themes/sm1tee/fonts" ]; then
+        source_dir="themes/sm1tee/fonts"
+    elif [ ! -d "$source_dir" ] && [ -d "sddm-theme/themes/sm1tee/fonts" ]; then
+        source_dir="sddm-theme/themes/sm1tee/fonts"
+    fi
     local target_dir="/usr/share/fonts"
     
     if [ ! -d "$source_dir" ]; then
@@ -846,6 +856,7 @@ find_default_avatar_source() {
     local candidates=(
         "/usr/share/sddm/themes/sm1tee/icons/user-default.png"
         "themes/sm1tee/icons/user-default.png"
+        "Sm1tee-sddm-themes/themes/sm1tee/icons/user-default.png"
         "sddm-theme/themes/sm1tee/icons/user-default.png"
     )
 
@@ -1190,7 +1201,7 @@ show_final_report() {
     echo ""
     
     echo -e "${PURPLE}Made with ❤️  by Sm1tee${NC}"
-    echo -e "${BLUE}GitHub: https://github.com/Sm1tee/sddm-theme${NC}"
+    echo -e "${BLUE}GitHub: https://github.com/Sm1tee/Sm1tee-sddm-themes${NC}"
 }
 
 # Основная функция
@@ -1233,7 +1244,7 @@ main() {
     case $INSTALL_TYPE in
         "full")
             if download_repository; then
-                cd sddm-theme
+                cd Sm1tee-sddm-themes
                 select_theme_from_list
                 cd ..
             else
@@ -1255,12 +1266,14 @@ main() {
     install_fonts
     
     # Очистка временных файлов
-    if [ -d "sddm-theme" ]; then
-        echo -e "${BLUE}${INFO} Удаление временной папки sddm-theme...${NC}"
-        rm -rf "sddm-theme"
-        echo -e "${GREEN}${CHECK} Временная папка удалена${NC}"
-        add_to_report "Очистка временных файлов" "performed"
-    fi
+    for tmp_dir in "Sm1tee-sddm-themes" "sddm-theme"; do
+        if [ -d "$tmp_dir" ]; then
+            echo -e "${BLUE}${INFO} Удаление временной папки $tmp_dir...${NC}"
+            rm -rf "$tmp_dir"
+            echo -e "${GREEN}${CHECK} Временная папка $tmp_dir удалена${NC}"
+            add_to_report "Очистка временных файлов" "performed"
+        fi
+    done
     
     # Настройка
     configure_theme "$selected_theme"
