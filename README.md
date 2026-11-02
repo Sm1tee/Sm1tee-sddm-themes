@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![Header](https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12&height=200&section=header&text=SDDM%20Themes&fontSize=50&fontColor=fff&animation=fadeIn&fontAlignY=35&desc=59%20потрясающих%20тем%20с%20анимированными%20фонами&descAlignY=55&descSize=18)
+![SDDM Themes Showcase](docs/banner.jpg)
 
 ## 🎬 Видео-демонстрация всех тем
 [![🎥 СМОТРЕТЬ ПОЛНЫЙ ОБЗОР ВСЕХ ТЕМ НА YOUTUBE](https://img.youtube.com/vi/fQhZ7fL-WQc/hqdefault.jpg?1)](https://youtu.be/fQhZ7fL-WQc)
