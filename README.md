@@ -43,7 +43,7 @@
 
 ### `dark_knight_storm`
 
-![dark_knight_storm](docs/previews/dark_knight_storm.jpg)
+![dark_knight_storm](docs/previews/dark_knight_storm.gif)
 
 ### `knight_bonfire`
 
