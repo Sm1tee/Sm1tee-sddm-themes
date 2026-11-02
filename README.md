@@ -43,38 +43,44 @@
 <summary><strong>⚔️ Тёмное Фэнтези и Владыки</strong></summary>
 
 ### `dark_knight_storm`
+
 ![dark_knight_storm](docs/previews/dark_knight_storm.jpg)
 
 ### `knight_bonfire`
+
 ![knight_bonfire](docs/previews/knight_bonfire.jpg)
 
 ### `fallen_knight`
+
 ![fallen_knight](docs/previews/fallen_knight.jpg)
 
 ### `crown_of_thorns`
+
 ![crown_of_thorns](docs/previews/crown_of_thorns.jpg)
 
 ### `berserk`
+
 ![berserk](docs/previews/berserk.jpg)
 
 ### `witcher`
-https://github.com/user-attachments/assets/0df28a63-bf20-42b6-bee3-128567862dab
-![witcher](docs/previews/witcher.jpg)
 
+https://github.com/user-attachments/assets/0df28a63-bf20-42b6-bee3-128567862dab
 
 ### `wraith_king`
+
 ![wraith_king](docs/previews/wraith_king.jpg)
 
 ### `queen`
+
 ![queen](docs/previews/queen.jpg)
 
 ### `queen2`
+
 ![queen2](docs/previews/queen2.jpg)
 
 ### `warrior`
-https://github.com/user-attachments/assets/7d63be93-2fe9-4d48-b720-2f3538143f23
-![warrior](docs/previews/warrior.jpg)
 
+https://github.com/user-attachments/assets/7d63be93-2fe9-4d48-b720-2f3538143f23
 
 </details>
 
@@ -82,24 +88,31 @@ https://github.com/user-attachments/assets/7d63be93-2fe9-4d48-b720-2f3538143f23
 <summary><strong>⛩️ Аниме и Solo Leveling</strong></summary>
 
 ### `jinwoo_monarch`
+
 ![jinwoo_monarch](docs/previews/jinwoo_monarch.jpg)
 
 ### `jinwoo_daggers`
+
 ![jinwoo_daggers](docs/previews/jinwoo_daggers.jpg)
 
 ### `itachi`
+
 ![itachi](docs/previews/itachi.jpg)
 
 ### `ryomen`
+
 ![ryomen](docs/previews/ryomen.jpg)
 
 ### `sanctuary`
+
 ![sanctuary](docs/previews/sanctuary.jpg)
 
 ### `goku`
+
 ![goku](docs/previews/goku.jpg)
 
 ### `pikachu`
+
 ![pikachu](docs/previews/pikachu.jpg)
 
 </details>
@@ -108,29 +121,27 @@ https://github.com/user-attachments/assets/7d63be93-2fe9-4d48-b720-2f3538143f23
 <summary><strong>🏯 Самураи и Восток</strong></summary>
 
 ### `samurai`
-https://github.com/user-attachments/assets/d485b2d1-37b3-4e40-b4af-c2a3f1bca4fa
-![samurai](docs/previews/samurai.jpg)
 
+https://github.com/user-attachments/assets/d485b2d1-37b3-4e40-b4af-c2a3f1bca4fa
 
 ### `samurai2`
-https://github.com/user-attachments/assets/65ebe9aa-77f0-4e10-94d4-981b6464c437
-![samurai2](docs/previews/samurai2.jpg)
 
+https://github.com/user-attachments/assets/65ebe9aa-77f0-4e10-94d4-981b6464c437
 
 ### `samurai3`
-https://github.com/user-attachments/assets/c1146770-13fa-40fb-a092-4334ff9dbb1b
-![samurai3](docs/previews/samurai3.jpg)
 
+https://github.com/user-attachments/assets/c1146770-13fa-40fb-a092-4334ff9dbb1b
 
 ### `samurai4`
-https://github.com/user-attachments/assets/956994f3-fcf9-41a9-b025-16d2d75ca35a
-![samurai4](docs/previews/samurai4.jpg)
 
+https://github.com/user-attachments/assets/956994f3-fcf9-41a9-b025-16d2d75ca35a
 
 ### `sakura`
+
 ![sakura](docs/previews/sakura.jpg)
 
 ### `hends`
+
 ![hends](docs/previews/hends.jpg)
 
 </details>
@@ -139,28 +150,31 @@ https://github.com/user-attachments/assets/956994f3-fcf9-41a9-b025-16d2d75ca35a
 <summary><strong>🌌 Космос и Киберпанк</strong></summary>
 
 ### `space`
-https://github.com/user-attachments/assets/b633c1b4-478d-4318-9eb1-f6c01502074f
-![space](docs/previews/space.jpg)
 
+https://github.com/user-attachments/assets/b633c1b4-478d-4318-9eb1-f6c01502074f
 
 ### `space2`
-https://github.com/user-attachments/assets/36e83a35-50c0-4168-b54e-2fa680a7847e
-![space2](docs/previews/space2.jpg)
 
+https://github.com/user-attachments/assets/36e83a35-50c0-4168-b54e-2fa680a7847e
 
 ### `astronaut`
+
 ![astronaut](docs/previews/astronaut.jpg)
 
 ### `gargantua`
+
 ![gargantua](docs/previews/gargantua.jpg)
 
 ### `cyber`
+
 ![cyber](docs/previews/cyber.jpg)
 
 ### `horizon`
+
 ![horizon](docs/previews/horizon.jpg)
 
 ### `eclipse`
+
 ![eclipse](docs/previews/eclipse.jpg)
 
 </details>
@@ -169,39 +183,40 @@ https://github.com/user-attachments/assets/36e83a35-50c0-4168-b54e-2fa680a7847e
 <summary><strong>💀 Хоррор и Мистика</strong></summary>
 
 ### `halloween`
+
 ![halloween](docs/previews/halloween.jpg)
 
 ### `bones`
-https://github.com/user-attachments/assets/1b17916c-1a90-4f4c-b868-863fbbb8de70
-![bones](docs/previews/bones.jpg)
 
+https://github.com/user-attachments/assets/1b17916c-1a90-4f4c-b868-863fbbb8de70
 
 ### `demon`
-https://github.com/user-attachments/assets/21628957-90e1-4136-9e61-8861c6424fee
-![demon](docs/previews/demon.jpg)
 
+https://github.com/user-attachments/assets/21628957-90e1-4136-9e61-8861c6424fee
 
 ### `demon2`
+
 ![demon2](docs/previews/demon2.jpg)
 
 ### `horror`
+
 ![horror](docs/previews/horror.jpg)
 
 ### `abyss`
+
 ![abyss](docs/previews/abyss.jpg)
 
 ### `hollow`
+
 ![hollow](docs/previews/hollow.jpg)
 
 ### `harry`
-https://github.com/user-attachments/assets/4effd896-9b76-49ff-97b3-cc0576840ad6
-![harry](docs/previews/harry.jpg)
 
+https://github.com/user-attachments/assets/4effd896-9b76-49ff-97b3-cc0576840ad6
 
 ### `wizard`
-https://github.com/user-attachments/assets/ead28860-b7cd-422a-83ca-96ab4d98773e
-![wizard](docs/previews/wizard.jpg)
 
+https://github.com/user-attachments/assets/ead28860-b7cd-422a-83ca-96ab4d98773e
 
 </details>
 
@@ -209,38 +224,36 @@ https://github.com/user-attachments/assets/ead28860-b7cd-422a-83ca-96ab4d98773e
 <summary><strong>☢️ Постапокалипсис и Экшен</strong></summary>
 
 ### `apocalypse`
-https://github.com/user-attachments/assets/384bfa7d-f1ec-4f60-a897-511669d8679c
-![apocalypse](docs/previews/apocalypse.jpg)
 
+https://github.com/user-attachments/assets/384bfa7d-f1ec-4f60-a897-511669d8679c
 
 ### `explosion`
-https://github.com/user-attachments/assets/91ec7ca3-baad-4fca-828d-b2d32a8f253f
-![explosion](docs/previews/explosion.jpg)
 
+https://github.com/user-attachments/assets/91ec7ca3-baad-4fca-828d-b2d32a8f253f
 
 ### `harley`
+
 ![harley](docs/previews/harley.jpg)
 
 ### `solder`
-https://github.com/user-attachments/assets/3f4f615f-9c79-4c46-b06d-b38a25e859aa
-![solder](docs/previews/solder.jpg)
 
+https://github.com/user-attachments/assets/3f4f615f-9c79-4c46-b06d-b38a25e859aa
 
 ### `ember`
+
 ![ember](docs/previews/ember.jpg)
 
 ### `frost`
+
 ![frost](docs/previews/frost.jpg)
 
 ### `gate`
-https://github.com/user-attachments/assets/7298fc6d-3156-4875-bcb2-b7c98ffd4d39
-![gate](docs/previews/gate.jpg)
 
+https://github.com/user-attachments/assets/7298fc6d-3156-4875-bcb2-b7c98ffd4d39
 
 ### `gate2`
-https://github.com/user-attachments/assets/12f9cff2-40af-487b-b39a-d1c93a24fbfd
-![gate2](docs/previews/gate2.jpg)
 
+https://github.com/user-attachments/assets/12f9cff2-40af-487b-b39a-d1c93a24fbfd
 
 </details>
 
@@ -248,57 +261,51 @@ https://github.com/user-attachments/assets/12f9cff2-40af-487b-b39a-d1c93a24fbfd
 <summary><strong>🏠 Дома и Пейзажи</strong></summary>
 
 ### `cliffside`
+
 ![cliffside](docs/previews/cliffside.jpg)
 
 ### `calmness`
-https://github.com/user-attachments/assets/b5346394-a891-4719-b8dd-c551ad70d295
-![calmness](docs/previews/calmness.jpg)
 
+https://github.com/user-attachments/assets/b5346394-a891-4719-b8dd-c551ad70d295
 
 ### `greenhouse`
+
 ![greenhouse](docs/previews/greenhouse.jpg)
 
 ### `tree`
-https://github.com/user-attachments/assets/036092c8-2297-48d0-9440-10f289da746f
-![tree](docs/previews/tree.jpg)
 
+https://github.com/user-attachments/assets/036092c8-2297-48d0-9440-10f289da746f
 
 ### `window`
-https://github.com/user-attachments/assets/c954cbfd-0fb5-4363-a22c-d8c0a743e275
-![window](docs/previews/window.jpg)
 
+https://github.com/user-attachments/assets/c954cbfd-0fb5-4363-a22c-d8c0a743e275
 
 ### `window2`
-https://github.com/user-attachments/assets/ff328d6c-f958-465c-b2f2-1cee0ae71643
-![window2](docs/previews/window2.jpg)
 
+https://github.com/user-attachments/assets/ff328d6c-f958-465c-b2f2-1cee0ae71643
 
 ### `house`
-https://github.com/user-attachments/assets/fb803c22-50cb-45d1-a144-d3df8233310e
-![house](docs/previews/house.jpg)
 
+https://github.com/user-attachments/assets/fb803c22-50cb-45d1-a144-d3df8233310e
 
 ### `house2`
-https://github.com/user-attachments/assets/7444a19f-2be3-480f-8096-5aa3134fea0a
-![house2](docs/previews/house2.jpg)
 
+https://github.com/user-attachments/assets/7444a19f-2be3-480f-8096-5aa3134fea0a
 
 ### `house3`
-https://github.com/user-attachments/assets/9e54422f-a6ad-4ff7-a0ea-4f52f56039cc
-![house3](docs/previews/house3.jpg)
 
+https://github.com/user-attachments/assets/9e54422f-a6ad-4ff7-a0ea-4f52f56039cc
 
 ### `house4`
-https://github.com/user-attachments/assets/bf56b52a-c41c-4f78-b8da-da1ed2f8e3b9
-![house4](docs/previews/house4.jpg)
 
+https://github.com/user-attachments/assets/bf56b52a-c41c-4f78-b8da-da1ed2f8e3b9
 
 ### `house5`
-https://github.com/user-attachments/assets/c16ee009-cd56-44c6-af8c-751f1afe81cd
-![house5](docs/previews/house5.jpg)
 
+https://github.com/user-attachments/assets/c16ee009-cd56-44c6-af8c-751f1afe81cd
 
 ### `crimson`
+
 ![crimson](docs/previews/crimson.jpg)
 
 </details>
