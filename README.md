@@ -43,43 +43,43 @@
 
 ### `dark_knight_storm`
 
-![dark_knight_storm](docs/previews/dark_knight_storm.gif)
+![dark_knight_storm](docs/previews/dark_knight_storm.jpg)
 
 ### `knight_bonfire`
 
-![knight_bonfire](docs/previews/knight_bonfire.gif)
+![knight_bonfire](docs/previews/knight_bonfire.jpg)
 
 ### `fallen_knight`
 
-![fallen_knight](docs/previews/fallen_knight.gif)
+![fallen_knight](docs/previews/fallen_knight.jpg)
 
 ### `crown_of_thorns`
 
-![crown_of_thorns](docs/previews/crown_of_thorns.gif)
+![crown_of_thorns](docs/previews/crown_of_thorns.jpg)
 
 ### `berserk`
 
-![berserk](docs/previews/berserk.gif)
+![berserk](docs/previews/berserk.jpg)
 
 ### `witcher`
 
-![witcher](docs/previews/witcher.gif)
+![witcher](docs/previews/witcher.jpg)
 
 ### `wraith_king`
 
-![wraith_king](docs/previews/wraith_king.gif)
+![wraith_king](docs/previews/wraith_king.jpg)
 
 ### `queen`
 
-![queen](docs/previews/queen.gif)
+![queen](docs/previews/queen.jpg)
 
 ### `queen2`
 
-![queen2](docs/previews/queen2.gif)
+![queen2](docs/previews/queen2.jpg)
 
 ### `warrior`
 
-![warrior](docs/previews/warrior.gif)
+![warrior](docs/previews/warrior.jpg)
 
 </details>
 
@@ -88,31 +88,31 @@
 
 ### `jinwoo_monarch`
 
-![jinwoo_monarch](docs/previews/jinwoo_monarch.gif)
+![jinwoo_monarch](docs/previews/jinwoo_monarch.jpg)
 
 ### `jinwoo_daggers`
 
-![jinwoo_daggers](docs/previews/jinwoo_daggers.gif)
+![jinwoo_daggers](docs/previews/jinwoo_daggers.jpg)
 
 ### `itachi`
 
-![itachi](docs/previews/itachi.gif)
+![itachi](docs/previews/itachi.jpg)
 
 ### `ryomen`
 
-![ryomen](docs/previews/ryomen.gif)
+![ryomen](docs/previews/ryomen.jpg)
 
 ### `sanctuary`
 
-![sanctuary](docs/previews/sanctuary.gif)
+![sanctuary](docs/previews/sanctuary.jpg)
 
 ### `goku`
 
-![goku](docs/previews/goku.gif)
+![goku](docs/previews/goku.jpg)
 
 ### `pikachu`
 
-![pikachu](docs/previews/pikachu.gif)
+![pikachu](docs/previews/pikachu.jpg)
 
 </details>
 
@@ -121,27 +121,27 @@
 
 ### `samurai`
 
-![samurai](docs/previews/samurai.gif)
+![samurai](docs/previews/samurai.jpg)
 
 ### `samurai2`
 
-![samurai2](docs/previews/samurai2.gif)
+![samurai2](docs/previews/samurai2.jpg)
 
 ### `samurai3`
 
-![samurai3](docs/previews/samurai3.gif)
+![samurai3](docs/previews/samurai3.jpg)
 
 ### `samurai4`
 
-![samurai4](docs/previews/samurai4.gif)
+![samurai4](docs/previews/samurai4.jpg)
 
 ### `sakura`
 
-![sakura](docs/previews/sakura.gif)
+![sakura](docs/previews/sakura.jpg)
 
 ### `hends`
 
-![hends](docs/previews/hends.gif)
+![hends](docs/previews/hends.jpg)
 
 </details>
 
@@ -150,31 +150,31 @@
 
 ### `space`
 
-![space](docs/previews/space.gif)
+![space](docs/previews/space.jpg)
 
 ### `space2`
 
-![space2](docs/previews/space2.gif)
+![space2](docs/previews/space2.jpg)
 
 ### `astronaut`
 
-![astronaut](docs/previews/astronaut.gif)
+![astronaut](docs/previews/astronaut.jpg)
 
 ### `gargantua`
 
-![gargantua](docs/previews/gargantua.gif)
+![gargantua](docs/previews/gargantua.jpg)
 
 ### `cyber`
 
-![cyber](docs/previews/cyber.gif)
+![cyber](docs/previews/cyber.jpg)
 
 ### `horizon`
 
-![horizon](docs/previews/horizon.gif)
+![horizon](docs/previews/horizon.jpg)
 
 ### `eclipse`
 
-![eclipse](docs/previews/eclipse.gif)
+![eclipse](docs/previews/eclipse.jpg)
 
 </details>
 
@@ -183,39 +183,39 @@
 
 ### `halloween`
 
-![halloween](docs/previews/halloween.gif)
+![halloween](docs/previews/halloween.jpg)
 
 ### `bones`
 
-![bones](docs/previews/bones.gif)
+![bones](docs/previews/bones.jpg)
 
 ### `demon`
 
-![demon](docs/previews/demon.gif)
+![demon](docs/previews/demon.jpg)
 
 ### `demon2`
 
-![demon2](docs/previews/demon2.gif)
+![demon2](docs/previews/demon2.jpg)
 
 ### `horror`
 
-![horror](docs/previews/horror.gif)
+![horror](docs/previews/horror.jpg)
 
 ### `abyss`
 
-![abyss](docs/previews/abyss.gif)
+![abyss](docs/previews/abyss.jpg)
 
 ### `hollow`
 
-![hollow](docs/previews/hollow.gif)
+![hollow](docs/previews/hollow.jpg)
 
 ### `harry`
 
-![harry](docs/previews/harry.gif)
+![harry](docs/previews/harry.jpg)
 
 ### `wizard`
 
-![wizard](docs/previews/wizard.gif)
+![wizard](docs/previews/wizard.jpg)
 
 </details>
 
@@ -224,35 +224,35 @@
 
 ### `apocalypse`
 
-![apocalypse](docs/previews/apocalypse.gif)
+![apocalypse](docs/previews/apocalypse.jpg)
 
 ### `explosion`
 
-![explosion](docs/previews/explosion.gif)
+![explosion](docs/previews/explosion.jpg)
 
 ### `harley`
 
-![harley](docs/previews/harley.gif)
+![harley](docs/previews/harley.jpg)
 
 ### `solder`
 
-![solder](docs/previews/solder.gif)
+![solder](docs/previews/solder.jpg)
 
 ### `ember`
 
-![ember](docs/previews/ember.gif)
+![ember](docs/previews/ember.jpg)
 
 ### `frost`
 
-![frost](docs/previews/frost.gif)
+![frost](docs/previews/frost.jpg)
 
 ### `gate`
 
-![gate](docs/previews/gate.gif)
+![gate](docs/previews/gate.jpg)
 
 ### `gate2`
 
-![gate2](docs/previews/gate2.gif)
+![gate2](docs/previews/gate2.jpg)
 
 </details>
 
@@ -261,51 +261,51 @@
 
 ### `cliffside`
 
-![cliffside](docs/previews/cliffside.gif)
+![cliffside](docs/previews/cliffside.jpg)
 
 ### `calmness`
 
-![calmness](docs/previews/calmness.gif)
+![calmness](docs/previews/calmness.jpg)
 
 ### `greenhouse`
 
-![greenhouse](docs/previews/greenhouse.gif)
+![greenhouse](docs/previews/greenhouse.jpg)
 
 ### `tree`
 
-![tree](docs/previews/tree.gif)
+![tree](docs/previews/tree.jpg)
 
 ### `window`
 
-![window](docs/previews/window.gif)
+![window](docs/previews/window.jpg)
 
 ### `window2`
 
-![window2](docs/previews/window2.gif)
+![window2](docs/previews/window2.jpg)
 
 ### `house`
 
-![house](docs/previews/house.gif)
+![house](docs/previews/house.jpg)
 
 ### `house2`
 
-![house2](docs/previews/house2.gif)
+![house2](docs/previews/house2.jpg)
 
 ### `house3`
 
-![house3](docs/previews/house3.gif)
+![house3](docs/previews/house3.jpg)
 
 ### `house4`
 
-![house4](docs/previews/house4.gif)
+![house4](docs/previews/house4.jpg)
 
 ### `house5`
 
-![house5](docs/previews/house5.gif)
+![house5](docs/previews/house5.jpg)
 
 ### `crimson`
 
-![crimson](docs/previews/crimson.gif)
+![crimson](docs/previews/crimson.jpg)
 
 </details>
 
