@@ -2,522 +2,749 @@
 
 <div align="center">
 
-![Header](https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12&height=220&section=header&text=SDDM%20Themes%20sm1tee&fontSize=46&fontColor=fff&animation=fadeIn&fontAlignY=38&desc=59%20кинематографичных%20тем%20с%20живыми%20видео-фонами%2060%20FPS&descAlignY=62&descSize=18)
+![Header](https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12&height=200&section=header&text=SDDM%20Themes&fontSize=50&fontColor=fff&animation=fadeIn&fontAlignY=35&desc=59%20потрясающих%20тем%20с%20анимированными%20фонами&descAlignY=55&descSize=18)
 
-[![🎥 СМОТРЕТЬ ОБЗОР НА YOUTUBE](https://img.youtube.com/vi/fQhZ7fL-WQc/hqdefault.jpg?1)](https://youtu.be/fQhZ7fL-WQc)
+## 🎬 Видео-демонстрация всех тем
+[![🎥 СМОТРЕТЬ ПОЛНЫЙ ОБЗОР ВСЕХ ТЕМ НА YOUTUBE](https://img.youtube.com/vi/fQhZ7fL-WQc/hqdefault.jpg?1)](https://youtu.be/fQhZ7fL-WQc)
 
-**🎬 Нажмите на изображение выше для просмотра демонстрации тем в действии**
+**👆 Нажмите для просмотра демонстрации тем в действии**
 
-<br>
+[![GitHub Stars](https://img.shields.io/github/stars/Sm1tee/sddm-theme?style=for-the-badge&logo=github&color=gold)](https://github.com/Sm1tee/sddm-theme/stargazers)
+[![GitHub Issues](https://img.shields.io/github/issues/Sm1tee/sddm-theme?style=for-the-badge&logo=github&color=red)](https://github.com/Sm1tee/sddm-theme/issues)
+[![GitHub Forks](https://img.shields.io/github/forks/Sm1tee/sddm-theme?style=for-the-badge&logo=github&color=blue)](https://github.com/Sm1tee/sddm-theme/network)
 
-[![Themes Count](https://img.shields.io/badge/Themes-59%20Designs-blueviolet?style=for-the-badge&logo=artstation&logoColor=white)](#-галерея-и-коллекция-тем-59-дизайнов)
-[![SDDM Version](https://img.shields.io/badge/SDDM-%E2%89%A5%200.21-0078D4?style=for-the-badge&logo=linux&logoColor=white)](#-системные-требования)
-[![Qt Version](https://img.shields.io/badge/Qt-6.5+-41CD52?style=for-the-badge&logo=qt&logoColor=white)](#-системные-требования)
-[![Video Quality](https://img.shields.io/badge/Video-60%20FPS%20MP4-red?style=for-the-badge&logo=youtube&logoColor=white)](#-особенности-темы)
-[![License](https://img.shields.io/badge/License-GPL--3.0-orange?style=for-the-badge&logo=gnu&logoColor=white)](#-благодарности)
+**Коллекция из 59 потрясающих тем для SDDM с анимированными фонами**
 
-[![GitHub Stars](https://img.shields.io/github/stars/Sm1tee/sddm-theme?style=flat-square&logo=github&color=gold)](https://github.com/Sm1tee/sddm-theme/stargazers)
-[![GitHub Forks](https://img.shields.io/github/forks/Sm1tee/sddm-theme?style=flat-square&logo=github&color=blue)](https://github.com/Sm1tee/sddm-theme/network)
-[![GitHub Issues](https://img.shields.io/github/issues/Sm1tee/sddm-theme?style=flat-square&logo=github&color=red)](https://github.com/Sm1tee/sddm-theme/issues)
-[![Repo Size](https://img.shields.io/github/repo-size/Sm1tee/sddm-theme?style=flat-square&color=blueviolet)](https://github.com/Sm1tee/sddm-theme)
-
-**Самая масштабная и визуально выверенная коллекция анимированных тем для дисплейного менеджера SDDM (Qt6).**  
-Каждая тема доведена до идеала: строгая 2-цветная палитра, гармоничные авторские шрифты, компактный однострочный календарь, контрастный спиннер загрузки и аппаратное воспроизведение фонов в 60 FPS.
+[🚀 Автоустановка](#-автоматическая-установка) • [📥 Ручная установка](#-ручная-установка) • [🎯 Особенности](#-особенности) • [🎨 Галерея](#-галерея-тем)
 
 </div>
 
 ---
 
-## 📌 Быстрая навигация
+## 📊 Статистика проекта
 
-- ⚡ [**Главная фишка: Установка только 1 темы (без загрузки гигабайтов)**](#-главная-фишка-установка-только-одной-темы-без-скачивания-всего-набора)
-- 🚀 [**Автоматическая установка (в 1 команду)**](#-быстрая-автоматическая-установка)
-- 🎨 [**Коллекция и галерея тем (59 готовых дизайнов)**](#-галерея-и-коллекция-тем-59-дизайнов)
-  - [⚔️ I. Тёмное Фэнтези и Владыки](#1-тёмное-фэнтези-и-владыки-10-тем)
-  - [⛩️ II. Аниме, Манга и Solo Leveling](#2-аниме-манга-и-solo-leveling-7-тем)
-  - [🗡️ III. Путь Самурая и Восточные Клинки](#3-путь-самурая-и-восточные-клинки-6-тем)
-  - [🌌 IV. Глубокий Космос и Киберпанк](#4-глубокий-космос-и-киберпанк-7-тем)
-  - [💀 V. Хоррор, Оккультизм и Тёмная Магия](#5-хоррор-оккультизм-и-тёмная-магия-9-тем)
-  - [☢️ VI. Постапокалипсис и Боевой Экшен](#6-постапокалипсис-и-боевой-экшен-8-тем)
-  - [🌿 VII. Атмосфера, Природа и Уютные Пейзажи](#7-атмосфера-природа-и-уютные-пейзажи-12-тем)
-- 🐧 [**Поддерживаемые дистрибутивы**](#-поддерживаемые-дистрибутивы)
-- 📋 [**Системные требования**](#-системные-требования)
-- 📥 [**Полная ручная установка**](#-ручная-установка-всех-тем)
-- ⚙️ [**Настройка конфигурации SDDM**](#-настройка-конфигурации-sddm)
-- 🔄 [**Быстрое переключение дизайнов**](#-быстрое-переключение-дизайнов)
-- 👤 [**Установка собственного аватара**](#-установка-пользовательского-аватара)
-- 🔍 [**Предварительный просмотр темы**](#-предварительный-просмотр-без-перезагрузки)
-- ❓ [**Решение проблем (FAQ)**](#-решение-проблем-faq)
+<div align="center">
+
+![GitHub repo size](https://img.shields.io/github/repo-size/Sm1tee/sddm-theme?style=flat-square&color=blue)
+![GitHub last commit](https://img.shields.io/github/last-commit/Sm1tee/sddm-theme?style=flat-square&color=green)
+![GitHub contributors](https://img.shields.io/github/contributors/Sm1tee/sddm-theme?style=flat-square&color=orange)
+
+</div>
 
 ---
 
-## ⚡ Главная фишка: Установка только одной темы (без скачивания всего набора)
+## 🎨 Галерея тем
 
-> 💡 **Экономьте интернет-трафик и место на диске!**  
-> Полный репозиторий с **59 темами** и 60 FPS видео-обоями весит **более 1 ГБ**.  
-> Если вам приглянулась конкретная тема (например, `dark_knight_storm` или `jinwoo_monarch`), вам **не нужно скачивать все видео**! Вы можете загрузить **только одну тему** — размер загрузки составит всего **~20–30 МБ**!
+> ⚠️ **Важно**: Превью тем сделаны в тестовом режиме и могут немного отличаться от реального отображения, так как тестовый режим не позволяет продемонстрировать все возможности тем (анимации, эффекты и т.д.). Иногда github долго грузит видео, нужно просто подождать
 
-Выберите удобный вариант установки:
-
-### 🔹 Вариант А: Интерактивный авто-установщик (в 1 команду)
-
-Скрипт сам спросит, какую тему загрузить, использует технологию Git Sparse Checkout и всё настроит автоматически:
-
-```bash
-bash <(curl -fsSL https://raw.githubusercontent.com/Sm1tee/sddm-theme/main/install.sh)
-```
-
-В появившемся меню:
-1. Выберите пункт: `2) Быстрая установка (только одна выбранная тема)`
-2. Введите номер понравившейся темы из наглядного списка на экране.
-
----
-
-### 🔹 Вариант Б: Ручная загрузка 1 темы (Git Sparse Checkout)
-
-Если вы хотите выполнить установку вручную в консоли:
-
-```bash
-# 1. Скачиваем репозиторий без тяжёлых файлов фонов
-git clone --filter=blob:none --sparse https://github.com/Sm1tee/sddm-theme.git
-cd sddm-theme
-
-# 2. Укажите ID желаемой темы из галереи ниже (например: dark_knight_storm, itachi, cliffside)
-export THEME="dark_knight_storm"
-
-# 3. Скачиваем движок и файлы ТОЛЬКО выбранной темы
-git sparse-checkout set --no-cone   "/README.md"   "themes/sm1tee/components/"   "themes/sm1tee/fonts/"   "themes/sm1tee/icons/"   "/themes/sm1tee/Main.qml"   "/themes/sm1tee/metadata.desktop"   "/themes/sm1tee/qmldir"   "/themes/sm1tee/configs/${THEME}.conf"   "/themes/sm1tee/backgrounds/${THEME}.mp4"   "/themes/sm1tee/backgrounds/${THEME}.png"
-
-# 4. Копируем тему и шрифты в систему
-sudo cp -r themes/sm1tee /usr/share/sddm/themes/
-sudo cp -r themes/sm1tee/fonts/* /usr/share/fonts/
-sudo fc-cache -fv
-
-# 5. Активируем выбранную тему одной командой
-sudo sed -i "s|^ConfigFile=.*|ConfigFile=configs/${THEME}.conf|" /usr/share/sddm/themes/sm1tee/metadata.desktop
-```
-
----
-
-## 🚀 Быстрая автоматическая установка
-
-Универсальный интерактивный скрипт с автоматическим определением дистрибутива, установкой зависимостей и настройкой SDDM:
-
-```bash
-bash <(curl -fsSL https://raw.githubusercontent.com/Sm1tee/sddm-theme/main/install.sh)
-```
+Нажмите на категорию, чтобы развернуть превью.
 
 <details>
-<summary><strong>Команды для альтернативных оболочек (Fish / Wget)</strong></summary>
+<summary><strong>⚔️ Тёмное Фэнтези и Владыки</strong></summary>
 
-**Для Fish shell:**
-```bash
-curl -fsSL https://raw.githubusercontent.com/Sm1tee/sddm-theme/main/install.sh | bash
-```
+### `dark_knight_storm`
+![dark_knight_storm](themes/sm1tee/backgrounds/dark_knight_storm.png)
 
-**Через Wget:**
-```bash
-wget -qO- https://raw.githubusercontent.com/Sm1tee/sddm-theme/main/install.sh | bash
-```
-</details>
+### `knight_bonfire`
+![knight_bonfire](themes/sm1tee/backgrounds/knight_bonfire.png)
 
----
+### `fallen_knight`
+![fallen_knight](themes/sm1tee/backgrounds/fallen_knight.png)
 
-## 🎨 Галерея и Коллекция тем (59 дизайнов)
+### `crown_of_thorns`
+![crown_of_thorns](themes/sm1tee/backgrounds/crown_of_thorns.png)
 
-Все 59 тем сгруппированы в **7 стилистических наборов**.  
-Используйте указанный **ID темы** в конфигурации или командах установки.
+### `berserk`
+![berserk](themes/sm1tee/backgrounds/berserk.png)
 
----
+### `witcher`
+https://github.com/user-attachments/assets/0df28a63-bf20-42b6-bee3-128567862dab
 
-### 1. ⚔️ Тёмное Фэнтези и Владыки (10 тем)
-*Мрачный средневековый эпос, пламя спасительного костра, сталь клинков и величие тёмных правителей.*
+### `wraith_king`
+![wraith_king](themes/sm1tee/backgrounds/wraith_king.png)
 
-| ID темы (для установки) | Описание и стиль | Шрифт | Акцент | Позиция UI |
-| :--- | :--- | :--- | :--- | :--- |
-| `dark_knight_storm` | 🌧️ Рыцарь бури под проливным дождём | `Trajan Pro 3` | `#93c5fd` 🧊 | Слева |
-| `knight_bonfire` | 🔥 Рыцарь у костра (Souls-like) | `Trajan Pro 3` | `#f59e0b` 🍯 | Справа |
-| `fallen_knight` | 🌅 Падший рыцарь на фоне заката | `Mason Chronicles` | `#ffb830` ☀️ | Снизу |
-| `crown_of_thorns` | 🥀 Терновый венец и готический сумрак | `DAmiens` | `#cbd5e1` 🩶 | Справа |
-| `berserk` | 🩸 Гатс и кровавое затмение (Берсерк) | `Cattedrale Sliced` | `#ce0519` 🔴 | Слева |
-| `witcher` | 🐺 Геральт из Ривии (Ведьмак) | `Mason Chronicles` | `#930d0d` 🍷 | Слева |
-| `wraith_king` | 👑 Король-призрак из древних руин | `Aniron` | `#38bdf8` 💎 | Справа |
-| `queen` | 👑 Величественная королева на троне | `Trajan Pro 3` | `#ffffff` ⚪ | Справа |
-| `queen2` | 🖤 Тёмная владычица сумрака | `Trajan Pro 3` | `#ffffff` ⚪ | Справа |
-| `warrior` | 🪓 Суровый северный воин | `Lumberjack` | `#eff0c3` 🌾 | Справа |
+### `queen`
+![queen](themes/sm1tee/backgrounds/queen.png)
 
-<details>
-<summary><strong>🎬 Видео-превью набора Тёмного Фэнтези</strong></summary>
+### `queen2`
+![queen2](themes/sm1tee/backgrounds/queen2.png)
 
-https://github.com/user-attachments/assets/384bfa7d-f1ec-4f60-a897-511669d8679c
-
-https://github.com/user-attachments/assets/1b17916c-1a90-4f4c-b868-863fbbb8de70
-
-https://github.com/user-attachments/assets/21628957-90e1-4136-9e61-8861c6424fee
-
-https://github.com/user-attachments/assets/91ec7ca3-baad-4fca-828d-b2d32a8f253f
-
-</details>
-
----
-
-### 2. ⛩️ Аниме, Манга и Solo Leveling (7 тем)
-*Легендарные герои, пробуждение высших сил, пламя глаз и несокрушимая армия теней.*
-
-| ID темы (для установки) | Описание и стиль | Шрифт | Акцент | Позиция UI |
-| :--- | :--- | :--- | :--- | :--- |
-| `jinwoo_monarch` | 🔮 Сон Джин-у: Владыка теней (Solo Leveling) | `Russo One` | `#c084fc` 💜 | Слева |
-| `jinwoo_daggers` | ⚔️ Сон Джин-у: Парные клинки (Solo Leveling) | `Russo One` | `#ff3344` 🔴 | Справа |
-| `itachi` | 👁️ Итачи Учиха: Пламя Шарингана (Наруто) | `Edo SZ HQ` | `#ef4444` 🩸 | Слева |
-| `ryomen` | 👹 Рёмэн Сукуна: Король Проклятий | `ElegantGrassBodyS` | `#d62d19` 🏮 | Справа |
-| `sanctuary` | ⛩️ Зловещее святилище Сукуны | `Edo SZ HQ` | `#f472b6` 🌸 | Слева |
-| `goku` | ⚡ Сон Гоку: Super Saiyan (Dragon Ball) | `Edo SZ HQ` | `#ff7a00` 🍊 | Слева |
-| `pikachu` | ⚡ Неоновый разряд Пикачу (Pokemon) | `Edo SZ HQ` | `#ffcb05` ⚡ | Слева |
-
----
-
-### 3. 🗡️ Путь Самурая и Восточные Клинки (6 тем)
-*Честь ронина, дуэли на закате, цветущие лепестки вишни и рассекающие мглу катаны.*
-
-| ID темы (для установки) | Описание и стиль | Шрифт | Акцент | Позиция UI |
-| :--- | :--- | :--- | :--- | :--- |
-| `samurai` | 🌙 Путь воина: Ронин под ночной луной | `p_Shinobi BB` | `#ff0000` 🔴 | Слева |
-| `samurai2` | 🩸 Кровавый взмах катаны | `DIST Inking` | `#930d0d` 🍷 | Справа |
-| `samurai3` | ⚔️ Стальной клинок в сумраке | `DIST Inking` | `#f9d6aa` 🌕 | Справа |
-| `samurai4` | ❄️ Лазурный сумеречный страж | `DIST Inking` | `#5fe5f7` 🧊 | Справа |
-| `sakura` | 🌸 Цветущая сакура и летящие лепестки | `Edo SZ HQ` | `#d946ef` 🌺 | Справа |
-| `hends` | 🪷 Мистические мудры и печати ниндзя | `Edo SZ HQ` | `#55e8b2` 🌿 | Справа |
-
-<details>
-<summary><strong>🎬 Видео-превью набора Самураев</strong></summary>
-
-https://github.com/user-attachments/assets/d485b2d1-37b3-4e40-b4af-c2a3f1bca4fa
-
-https://github.com/user-attachments/assets/65ebe9aa-77f0-4e10-94d4-981b6464c437
-
-https://github.com/user-attachments/assets/c1146770-13fa-40fb-a092-4334ff9dbb1b
-
-https://github.com/user-attachments/assets/956994f3-fcf9-41a9-b025-16d2d75ca35a
-
-https://github.com/user-attachments/assets/3f4f615f-9c79-4c46-b06d-b38a25e859aa
-
+### `warrior`
 https://github.com/user-attachments/assets/7d63be93-2fe9-4d48-b720-2f3538143f23
 
 </details>
 
----
+<details>
+<summary><strong>⛩️ Аниме и Solo Leveling</strong></summary>
 
-### 4. 🌌 Глубокий Космос и Киберпанк (7 тем)
-*Бескрайний вакуум Вселенной, чёрные дыры, неоновый свет мегаполисов и тишина звёзд.*
+### `jinwoo_monarch`
+![jinwoo_monarch](themes/sm1tee/backgrounds/jinwoo_monarch.png)
 
-| ID темы (для установки) | Описание и стиль | Шрифт | Акцент | Позиция UI |
-| :--- | :--- | :--- | :--- | :--- |
-| `astronaut` | 🧑‍🚀 Одинокий космонавт в открытом вакууме | `Neuropol` | `#ef4444` 🚨 | Справа |
-| `gargantua` | 🪐 Чёрная дыра Гаргантюа (Interstellar) | `Neuropol` | `#f59e0b` ☀️ | Справа |
-| `space` | 🚀 Космическая станция и орбита | `Moscow Metro` | `#f1c04b` 🌟 | Слева |
-| `space2` | 🌌 Глубокий космос и звёздные туманности | `Space Age Cyrillic`| `#4b92f1` 🌐 | Слева |
-| `cyber` | 🏙️ Неоновый футуристичный мегаполис | `Halo Grotesk` | `#d6a652` 💡 | Справа |
-| `horizon` | 🌅 Горизонт событий далёких звёзд | `Trajan Pro 3` | `#00b0ff` 🔷 | Слева |
-| `eclipse` | 🌑 Солнечное коронарное затмение | `Neuropol` | `#38bdf8` ❄️ | Слева |
+### `jinwoo_daggers`
+![jinwoo_daggers](themes/sm1tee/backgrounds/jinwoo_daggers.png)
+
+### `itachi`
+![itachi](themes/sm1tee/backgrounds/itachi.png)
+
+### `ryomen`
+![ryomen](themes/sm1tee/backgrounds/ryomen.png)
+
+### `sanctuary`
+![sanctuary](themes/sm1tee/backgrounds/sanctuary.png)
+
+### `goku`
+![goku](themes/sm1tee/backgrounds/goku.png)
+
+### `pikachu`
+![pikachu](themes/sm1tee/backgrounds/pikachu.png)
+
+</details>
 
 <details>
-<summary><strong>🎬 Видео-превью Космического набора</strong></summary>
+<summary><strong>🏯 Самураи и Восток</strong></summary>
 
+### `samurai`
+https://github.com/user-attachments/assets/d485b2d1-37b3-4e40-b4af-c2a3f1bca4fa
+
+### `samurai2`
+https://github.com/user-attachments/assets/65ebe9aa-77f0-4e10-94d4-981b6464c437
+
+### `samurai3`
+https://github.com/user-attachments/assets/c1146770-13fa-40fb-a092-4334ff9dbb1b
+
+### `samurai4`
+https://github.com/user-attachments/assets/956994f3-fcf9-41a9-b025-16d2d75ca35a
+
+### `sakura`
+![sakura](themes/sm1tee/backgrounds/sakura.png)
+
+### `hends`
+![hends](themes/sm1tee/backgrounds/hends.png)
+
+</details>
+
+<details>
+<summary><strong>🌌 Космос и Киберпанк</strong></summary>
+
+### `space`
 https://github.com/user-attachments/assets/b633c1b4-478d-4318-9eb1-f6c01502074f
 
+### `space2`
 https://github.com/user-attachments/assets/36e83a35-50c0-4168-b54e-2fa680a7847e
 
-https://github.com/user-attachments/assets/b5346394-a891-4719-b8dd-c551ad70d295
+### `astronaut`
+![astronaut](themes/sm1tee/backgrounds/astronaut.png)
 
+### `gargantua`
+![gargantua](themes/sm1tee/backgrounds/gargantua.png)
+
+### `cyber`
+![cyber](themes/sm1tee/backgrounds/cyber.png)
+
+### `horizon`
+![horizon](themes/sm1tee/backgrounds/horizon.png)
+
+### `eclipse`
+![eclipse](themes/sm1tee/backgrounds/eclipse.png)
+
+</details>
+
+<details>
+<summary><strong>💀 Хоррор и Мистика</strong></summary>
+
+### `halloween`
+![halloween](themes/sm1tee/backgrounds/halloween.png)
+
+### `bones`
+https://github.com/user-attachments/assets/1b17916c-1a90-4f4c-b868-863fbbb8de70
+
+### `demon`
+https://github.com/user-attachments/assets/21628957-90e1-4136-9e61-8861c6424fee
+
+### `demon2`
+![demon2](themes/sm1tee/backgrounds/demon2.png)
+
+### `horror`
+![horror](themes/sm1tee/backgrounds/horror.png)
+
+### `abyss`
+![abyss](themes/sm1tee/backgrounds/abyss.png)
+
+### `hollow`
+![hollow](themes/sm1tee/backgrounds/hollow.png)
+
+### `harry`
+https://github.com/user-attachments/assets/4effd896-9b76-49ff-97b3-cc0576840ad6
+
+### `wizard`
+https://github.com/user-attachments/assets/ead28860-b7cd-422a-83ca-96ab4d98773e
+
+</details>
+
+<details>
+<summary><strong>☢️ Постапокалипсис и Экшен</strong></summary>
+
+### `apocalypse`
+https://github.com/user-attachments/assets/384bfa7d-f1ec-4f60-a897-511669d8679c
+
+### `explosion`
+https://github.com/user-attachments/assets/91ec7ca3-baad-4fca-828d-b2d32a8f253f
+
+### `harley`
+![harley](themes/sm1tee/backgrounds/harley.png)
+
+### `solder`
+https://github.com/user-attachments/assets/3f4f615f-9c79-4c46-b06d-b38a25e859aa
+
+### `ember`
+![ember](themes/sm1tee/backgrounds/ember.png)
+
+### `frost`
+![frost](themes/sm1tee/backgrounds/frost.png)
+
+### `gate`
 https://github.com/user-attachments/assets/7298fc6d-3156-4875-bcb2-b7c98ffd4d39
 
+### `gate2`
 https://github.com/user-attachments/assets/12f9cff2-40af-487b-b39a-d1c93a24fbfd
 
 </details>
 
----
-
-### 5. 💀 Хоррор, Оккультизм и Тёмная Магия (9 тем)
-*Атмосфера хэллоуина, танцующие скелеты, пылающая преисподняя и древние заклинания.*
-
-| ID темы (для установки) | Описание и стиль | Шрифт | Акцент | Позиция UI |
-| :--- | :--- | :--- | :--- | :--- |
-| `halloween` | 🎃 Зловещая хэллоуинская деревня | `Creepster Cyrillic`| `#ff7200` 🎃 | Справа |
-| `bones` | 💀 Склеп и танцующие скелеты | `Catacombs` | `#000000` 🩻 | Снизу |
-| `horror` | 👁️ Ночной кошмар в непроглядной тьме | `Edo SZ HQ` | `#ffffff` ⚪ | Справа |
-| `demon` | 🔥 Пылающий демон преисподней | `XBAND Rough AA` | `#eff0c3` 🕯️ | Справа |
-| `demon2` | 👹 Багровый владыка тёмного мира | `NK123` | `#dfa737` 🏮 | Справа |
-| `abyss` | ❄️ Ледяная бездна и неоновый холод | `DIST Inking` | `#00e5ff` 💠 | По центру |
-| `hollow` | 🕳️ Безмолвная пустота и мрак | `Trajan Pro 3` | `#ffffff` ⚪ | Справа |
-| `harry` | ⚡ Волшебный мир Хогвартса | `Harry Potter` | `#f1d327` 🪄 | Слева |
-| `wizard` | 🔮 Древний архимаг рунической магии | `Bulbasaur SP` | `#92dff3` 🌀 | Справа |
-
 <details>
-<summary><strong>🎬 Видео-превью набора Мистики</strong></summary>
+<summary><strong>🏠 Дома и Пейзажи</strong></summary>
 
-https://github.com/user-attachments/assets/ead28860-b7cd-422a-83ca-96ab4d98773e
+### `cliffside`
+![cliffside](themes/sm1tee/backgrounds/cliffside.png)
 
-https://github.com/user-attachments/assets/0df28a63-bf20-42b6-bee3-128567862dab
+### `calmness`
+https://github.com/user-attachments/assets/b5346394-a891-4719-b8dd-c551ad70d295
 
-https://github.com/user-attachments/assets/4effd896-9b76-49ff-97b3-cc0576840ad6
+### `greenhouse`
+![greenhouse](themes/sm1tee/backgrounds/greenhouse.png)
 
-</details>
-
----
-
-### 6. ☢️ Постапокалипсис и Боевой Экшен (8 тем)
-*Ядерные взрывы, руины цивилизации, неоновые бунтари и тактический спецназ.*
-
-| ID темы (для установки) | Описание и стиль | Шрифт | Акцент | Позиция UI |
-| :--- | :--- | :--- | :--- | :--- |
-| `apocalypse` | ☢️ Руины мира после ядерного апокалипсиса| `Eraser` | `#ffffff` ⚪ | По центру |
-| `explosion` | 💥 Ядерный взрыв и ударная волна | `SAIBA-45` | `#e65100` 💥 | Снизу |
-| `harley` | 🃏 Безумная Харли Квинн и неоновый драйв | `SAIBA-45` | `#fe607a` 🎀 | Слева |
-| `solder` | 🪖 Тактический боец специального назначения | `SAIBA-45` | `#fe607a` 🎯 | Справа |
-| `ember` | 🔥 Тлеющие угли и пламя костра | `Bulbasaur SP` | `#ff6b00` 🌋 | Снизу |
-| `frost` | ❄️ Арктический шторм и вечная мерзлота | `Reggae One` | `#38bdf8` 🧊 | Слева |
-| `gate` | 🚧 Запретные врата зоны отчуждения | `Trafaret Kit` | `#eee760` ⚠️ | По центру |
-| `gate2` | 🌀 Пространственные неоновые врата | `Neuropol` | `#feb548` ⚡ | По центру |
-
----
-
-### 7. 🌿 Атмосфера, Природа и Уютные Пейзажи (12 тем)
-*Закаты на утёсах, дождь за стеклом, лесные хижины и медитативная безмятежность.*
-
-| ID темы (для установки) | Описание и стиль | Шрифт | Акцент | Позиция UI |
-| :--- | :--- | :--- | :--- | :--- |
-| `cliffside` | ⛰️ Живописный закатный утёс над облаками | `Edo SZ HQ` | `#fbbf24` 🌅 | По центру |
-| `calmness` | 🧘 Золотой закат и медитативный покой | `NK123` | `#f8eebf` 🌾 | По центру |
-| `greenhouse` | 🪴 Солнечная зелёная оранжерея | `Trajan Pro 3` | `#f59e0b` 🌻 | Слева |
-| `tree` | 🌳 Древо жизни под россыпью звёзд | `BERNIER Shade` | `#f3fec9` 🍃 | Слева |
-| `window` | 🌧️ Капли дождя на ночном стекле | `Halo Grotesk` | `#8fecc4` 💧 | Слева |
-| `window2` | 💡 Тёплый свет в окне ночного города | `Unicephalon` | `#f4f3c9` 🪟 | По центру |
-| `house` | 🏡 Уютный вечерний особняк | `Candice Cyr Regular`|`#2fc2eb` 🌊 | Слева |
-| `house2` | 🌲 Лесная бревенчатая изба на закате | `Magnolia Script`| `#f4b257` 🍂 | Слева |
-| `house3` | 🏯 Традиционный японский двор | `SDK_JP_Web` | `#9db1fa` 🪭 | Справа |
-| `house4` | 🏔️ Уединённый дом на горном склоне | `Bobz Type Cyrillic`|`#f4f3c9` 🌫️ | Справа |
-| `house5` | ❄️ Сказочная заснеженная зимняя изба | `FortunataCYR` | `#7c92da` 🌨️ | По центру |
-| `crimson` | 🌅 Багряный горизонт уходящего солнца | `Dela Gothic One` | `#e63946` 🌇 | Слева |
-
-<details>
-<summary><strong>🎬 Видео-превью набора Уютных Пейзажей</strong></summary>
-
-https://github.com/user-attachments/assets/fb803c22-50cb-45d1-a144-d3df8233310e
-
-https://github.com/user-attachments/assets/7444a19f-2be3-480f-8096-5aa3134fea0a
-
-https://github.com/user-attachments/assets/9e54422f-a6ad-4ff7-a0ea-4f52f56039cc
-
-https://github.com/user-attachments/assets/bf56b52a-c41c-4f78-b8da-da1ed2f8e3b9
-
-https://github.com/user-attachments/assets/c16ee009-cd56-44c6-af8c-751f1afe81cd
-
+### `tree`
 https://github.com/user-attachments/assets/036092c8-2297-48d0-9440-10f289da746f
 
+### `window`
 https://github.com/user-attachments/assets/c954cbfd-0fb5-4363-a22c-d8c0a743e275
 
+### `window2`
 https://github.com/user-attachments/assets/ff328d6c-f958-465c-b2f2-1cee0ae71643
+
+### `house`
+https://github.com/user-attachments/assets/fb803c22-50cb-45d1-a144-d3df8233310e
+
+### `house2`
+https://github.com/user-attachments/assets/7444a19f-2be3-480f-8096-5aa3134fea0a
+
+### `house3`
+https://github.com/user-attachments/assets/9e54422f-a6ad-4ff7-a0ea-4f52f56039cc
+
+### `house4`
+https://github.com/user-attachments/assets/bf56b52a-c41c-4f78-b8da-da1ed2f8e3b9
+
+### `house5`
+https://github.com/user-attachments/assets/c16ee009-cd56-44c6-af8c-751f1afe81cd
+
+### `crimson`
+![crimson](themes/sm1tee/backgrounds/crimson.png)
 
 </details>
 
 ---
 
-## 🎯 Особенности темы
+## 🎯 Особенности
 
-| 🎨 Визуальное совершенство | ⚡ Производительность и движок | 🛠️ Удобство использования |
-| :--- | :--- | :--- |
-| ✨ **59 уникальных тем** на любой вкус | 🚀 Аппаратный декодинг видео 60 FPS | 📦 Выборочная установка (Sparse Checkout) |
-| 🎬 Кинематографичные живые видео-фоны | 🛡️ Устранено размытие краев при блюре | 🚀 Интерактивный установщик в 1 строку |
-| 🖋️ 30+ авторских подобранных шрифтов | ⚙️ Чистый QML (QtQuick / Qt6) | 👤 Встроенный генератор круглых аватарок |
-| 🎨 Строгая двухцветная палитра дизайна | 📱 Встроенная виртуальная клавиатура | 🔍 Предварительный просмотр без перезагрузки |
-| ⏳ Контрастный спиннер авторизации | 🌐 Полная поддержка локализации и кириллицы | 🔄 Смена дизайна одной строкой конфига |
+| 🎨 **Визуальные возможности** | ⚡ **Функциональность** | 🛠️ **Удобство** |
+|---|---|---|
+| ✨ **59** уникальных тем | 📱 Виртуальная клавиатура | 🚀 Автоматическая установка |
+| 🎬 Анимированные **MP4** фоны | 🌐 Мультиязычность | 🔧 Простая настройка |
+| 🎨 Кастомные шрифты | 🔐 Современный UI | ⚡ Быстрое переключение |
+| 🖼️ Поддержка аватаров | 🎮 Игровые стили | 👀 Предварительный просмотр |
+
+
 
 ---
 
 ## 🐧 Поддерживаемые дистрибутивы
 
-Перед установкой установите пакеты для вашей системы:
+<div align="center">
 
-| Дистрибутив | Команда установки пакетов |
-| :--- | :--- |
-| 🐧 **Arch Linux** / Manjaro / EndeavourOS | `sudo pacman -S --needed sddm qt6-svg qt6-virtualkeyboard qt6-multimedia-ffmpeg imagemagick` |
-| 🔵 **Fedora** / RHEL | `sudo dnf install sddm qt6-qtsvg qt6-qtvirtualkeyboard qt6-qtmultimedia ImageMagick` |
-| 🦎 **openSUSE** (Tumbleweed / Leap) | `sudo zypper install sddm-qt6 libQt6Svg6 qt6-virtualkeyboard qt6-multimedia ImageMagick` |
-| 🟠 **Ubuntu** / Debian / Mint / Pop!_OS | `sudo apt update && sudo apt install sddm qt6-svg-dev qml6-module-qtquick-virtualkeyboard qml6-module-qtmultimedia imagemagick` |
-| 🌊 **Void Linux** | `sudo xbps-install sddm qt6-svg qt6-virtualkeyboard qt6-multimedia ImageMagick` |
+| Дистрибутив | Статус | Команда установки |
+|-------------|--------|-------------------|
+| 🐧 **Arch Linux** / Manjaro / EndeavourOS | ✅ Полная поддержка | `pacman -S --needed sddm qt6-svg qt6-virtualkeyboard qt6-multimedia-ffmpeg imagemagick` |
+| 🔵 **Fedora** | ✅ Полная поддержка | `dnf install sddm qt6-qtsvg qt6-qtvirtualkeyboard qt6-qtmultimedia ImageMagick` |
+| 🦎 **openSUSE** | ✅ Полная поддержка | `zypper install sddm-qt6 libQt6Svg6 qt6-virtualkeyboard qt6-multimedia ImageMagick` |
+| 🟠 **Ubuntu** / Debian / Pop!_OS / Mint | ✅ Полная поддержка | `apt install sddm qt6-svg-dev qml6-module-qtquick-virtualkeyboard qml6-module-qtmultimedia imagemagick` |
+| 🌊 **Void Linux** | ✅ Полная поддержка | `xbps-install sddm qt6-svg qt6-virtualkeyboard qt6-multimedia ImageMagick` |
 
-> 💡 **Для пользователей Arch Linux**: Рекомендуется именно `qt6-multimedia-ffmpeg` для аппаратного ускорения видео без задержек.
+</div>
 
 ---
 
 ## 📋 Системные требования
 
-| Компонент | Минимальная версия | Назначение |
-| :--- | :--- | :--- |
-| **SDDM** | ≥ 0.21 | Дисплейный менеджер входа в систему |
-| **Qt** | ≥ 6.5 | Графический фреймворк Qt6 / QML |
-| **qt6-multimedia** | 6.x | Воспроизведение анимированных MP4 фонов |
-| **qt6-svg** | 6.x | Рендеринг векторных иконок интерфейса |
-| **qt6-virtualkeyboard** | 6.x | Сенсорный ввод пароля на планшетах и ноутбуках |
-| **ImageMagick** | Любая | Автоматическое форматирование аватарок (512x512) |
+| Компонент | Минимальная версия | Статус |
+|-----------|-------------------|--------|
+| **SDDM** | ≥ 0.21 | 🔴 Обязательно |
+| **Qt** | ≥ 6.5 | 🔴 Обязательно |
+| **qt6-svg** | Любая | 🔴 Обязательно |
+| **qt6-virtualkeyboard** | Любая | 🔴 Обязательно |
+| **qt6-multimedia** | Любая | 🔴 Обязательно |
+| **ImageMagick** | Любая | 🟡 Для обработки аватаров |
 
 ---
 
-## 📥 Ручная установка (всех тем)
+## 🚀 Автоматическая установка
 
-Если вы хотите скачать весь репозиторий со всеми 59 темами:
+<details>
+<summary><strong>Развернуть инструкцию по автоматической установке (Рекомендуется)</strong></summary>
 
+> **🎉 Рекомендуемый способ!** Интерактивный скрипт установки с пошаговым руководством
+
+**📋 Требования:** Убедитесь, что у вас установлены `curl` или `wget` и `bash`
+
+<div align="center">
+
+### 🔥 Одна команда — полная установка
+
+**Для Bash/Zsh:**
 ```bash
-# 1. Клонируем полный репозиторий
-git clone https://github.com/Sm1tee/sddm-theme.git
-cd sddm-theme
-
-# 2. Устанавливаем файлы темы в систему
-sudo cp -r themes/sm1tee /usr/share/sddm/themes/
-
-# 3. Устанавливаем шрифты
-sudo cp -r themes/sm1tee/fonts/* /usr/share/fonts/
-sudo fc-cache -fv
-
-# 4. Настраиваем SDDM конфигурацию (см. следующий раздел)
+bash <(curl -fsSL https://raw.githubusercontent.com/Sm1tee/sddm-theme/main/install.sh)
 ```
 
+**Для Fish или универсальный способ:**
+```bash
+curl -fsSL https://raw.githubusercontent.com/Sm1tee/sddm-theme/main/install.sh | bash
+```
+
+**Альтернативный способ (работает везде):**
+```bash
+wget -qO- https://raw.githubusercontent.com/Sm1tee/sddm-theme/main/install.sh | bash
+```
+
+</div>
+
+### 🤖 Что делает автоустановщик:
+
+<table>
+<tr>
+<td width="50%">
+
+**🔍 Умная диагностика**
+- Автоматически определяет ваш дистрибутив Linux
+- Проверяет системные зависимости
+- Предлагает оптимальные команды установки
+
+**📦 Управление пакетами**
+- Устанавливает все необходимые зависимости
+- Поддерживает 5+ популярных дистрибутивов
+- Показывает подробные объяснения каждого пакета
+
+</td>
+<td width="50%">
+
+**🎨 Гибкая установка**
+- Выбор между полной установкой или одной темой
+- Интерактивный выбор активной темы
+- Автоматическая настройка конфигурации SDDM
+
+**🛠️ Дополнительные возможности**
+- Установка пользовательского аватара
+- Предварительный просмотр темы
+- Подробный отчет о выполненных действиях
+
+</td>
+</tr>
+</table>
+
+### 📋 Интерактивный процесс установки:
+
+```
+🎨 SDDM Theme sm1tee - Установщик
+
+ШАГ 1: Определение системы ✅
+ШАГ 2: Установка зависимостей SDDM ⚙️
+ШАГ 3: Выбор типа установки 🎯
+ШАГ 4: Загрузка тем с GitHub 📥
+ШАГ 5: Установка файлов темы 📁
+ШАГ 6: Установка шрифтов 🔤
+ШАГ 7: Настройка активной темы 🎨
+ШАГ 8: Настройка конфигурации SDDM ⚙️
+ШАГ 9: Установка аватара (опционально) 👤
+ШАГ 10: Предварительный просмотр 👀
+```
+
+</details>
+
 ---
 
-## ⚙️ Настройка конфигурации SDDM
+## 📥 Ручная установка
 
-Чтобы SDDM использовал тему `sm1tee`, отредактируйте файл `/etc/sddm.conf` (или создайте `/etc/sddm.conf.d/theme.conf`):
+<details>
+<summary><strong>Развернуть инструкцию по ручной установке</strong></summary>
+
+> 💡 **Совет**: Рекомендуется использовать [автоматическую установку](#-автоматическая-установка) для лучшего опыта
+
+Если предпочитаете ручную установку, выберите один из способов:
+
+<details>
+<summary><strong>👉 Вариант 1: Простая установка (скачать все темы)</strong></summary>
+
+
+### Шаг 1: Установка зависимостей
+
+Выберите команду для вашего дистрибутива:
+
+<details>
+<summary><strong>🐧 Arch Linux</strong></summary>
+
+```bash
+sudo pacman -S --needed sddm qt6-svg qt6-virtualkeyboard qt6-multimedia-ffmpeg imagemagick
+```
+</details>
+
+<details>
+<summary><strong>🔵 Fedora</strong></summary>
+
+```bash
+sudo dnf install sddm qt6-qtsvg qt6-qtvirtualkeyboard qt6-qtmultimedia ImageMagick
+```
+</details>
+
+<details>
+<summary><strong>🦎 OpenSUSE</strong></summary>
+
+```bash
+sudo zypper install sddm-qt6 libQt6Svg6 qt6-virtualkeyboard qt6-virtualkeyboard-imports qt6-multimedia qt6-multimedia-imports ImageMagick
+```
+</details>
+
+<details>
+<summary><strong>🟠 Ubuntu / Debian</strong></summary>
+
+```bash
+sudo apt update
+```
+```bash
+sudo apt install sddm qt6-svg-dev qml6-module-qtquick-virtualkeyboard qml6-module-qtmultimedia imagemagick
+```
+</details>
+
+<details>
+<summary><strong>🌊 Void Linux</strong></summary>
+
+```bash
+sudo xbps-install sddm qt6-svg qt6-virtualkeyboard qt6-multimedia ImageMagick
+```
+</details>
+
+### Шаг 2: Загрузка тем
+
+```bash
+git clone https://github.com/Sm1tee/sddm-theme.git
+```
+
+### Шаг 3: Копирование файлов темы и шрифтов
+
+
+Переходим в скачанную папку
+
+```bash
+cd sddm-theme
+```
+
+Копируем папку с темами
+
+```bash
+sudo cp -r themes/sm1tee /usr/share/sddm/themes/
+```
+
+Копируем шрифты
+
+```bash
+sudo cp -r themes/sm1tee/fonts/* /usr/share/fonts/
+```
+
+```bash
+sudo fc-cache -fv
+```
+
+### Шаг 4: 🎨 Выбор конкретного дизайна
+
+Для смены темы отредактируйте файл метаданных:
+
+```bash
+sudo nano /usr/share/sddm/themes/sm1tee/metadata.desktop
+```
+
+Все доступные варианты тем закомментированы в конце файла.
+
+![swappy-20250701_220231](https://github.com/user-attachments/assets/da488673-dba6-4c11-aee7-88a1eb78f696)
+
+</details>
+
+<details>
+<summary><strong>⭐ Вариант 2: Рекомендуемая установка (только одна тема)</strong></summary>
+
+<br>
+Этот репозиторий содержит много больших видео-файлов. Чтобы не скачивать их все, вы можете загрузить только ту тему, которая вам нужна.
+
+### Шаг 1: Установка зависимостей
+
+Выберите команду для вашего дистрибутива:
+
+<details>
+<summary><strong>🐧 Arch Linux</strong></summary>
+
+```bash
+sudo pacman -S --needed sddm qt6-svg qt6-virtualkeyboard qt6-multimedia-ffmpeg imagemagick
+```
+</details>
+
+<details>
+<summary><strong>🔵 Fedora</strong></summary>
+
+```bash
+sudo dnf install sddm qt6-qtsvg qt6-qtvirtualkeyboard qt6-qtmultimedia ImageMagick
+```
+</details>
+
+<details>
+<summary><strong>🦎 OpenSUSE</strong></summary>
+
+```bash
+sudo zypper install sddm-qt6 libQt6Svg6 qt6-virtualkeyboard qt6-virtualkeyboard-imports qt6-multimedia qt6-multimedia-imports ImageMagick
+```
+</details>
+
+<details>
+<summary><strong>🟠 Ubuntu / Debian</strong></summary>
+
+```bash
+sudo apt update
+```
+```bash
+sudo apt install sddm qt6-svg-dev qml6-module-qtquick-virtualkeyboard qml6-module-qtmultimedia imagemagick
+```
+</details>
+
+<details>
+<summary><strong>🌊 Void Linux</strong></summary>
+
+```bash
+sudo xbps-install sddm qt6-svg qt6-virtualkeyboard qt6-multimedia ImageMagick
+```
+</details>
+
+### Шаг 2: Клонирование структуры репозитория
+
+Эта команда создаст папку `sddm-theme`, но еще **не будет скачивать содержимое файлов**. Это сэкономит трафик.
+
+```bash
+git clone --filter=blob:none --sparse https://github.com/Sm1tee/sddm-theme.git
+cd sddm-theme
+```
+
+### Шаг 3: Выбор и загрузка вашей темы
+
+Теперь укажите, какую именно тему вы хотите скачать. **Замените `НАЗВАНИЕ_ТЕМЫ`** в команде ниже на имя понравившейся темы из [Галереи](#-галерея-тем) (например: `witcher`, `samurai`, `bones`, `apocalypse` и т.д.).
+
+
+> ⚠️ **Важно**: Замените НАЗВАНИЕ_ТЕМЫ в трех местах в команде ниже
+
+
+```bash
+# Шаблон команды для скачивания одной темы
+git sparse-checkout set --no-cone   "/README.md"   "themes/sm1tee/components/"   "themes/sm1tee/fonts/"   "themes/sm1tee/icons/"   "/themes/sm1tee/Main.qml"   "/themes/sm1tee/metadata.desktop"   "/themes/sm1tee/qmldir"   "/themes/sm1tee/configs/НАЗВАНИЕ_ТЕМЫ.conf"   "/themes/sm1tee/backgrounds/НАЗВАНИЕ_ТЕМЫ.mp4"   "/themes/sm1tee/backgrounds/НАЗВАНИЕ_ТЕМЫ.png"
+```
+
+<details>
+<summary><strong>Нажмите, чтобы увидеть пример для темы "witcher"</strong></summary>
+
+Если вы хотите скачать тему "witcher", команда будет выглядеть так:
+
+```bash
+git sparse-checkout set --no-cone   "/README.md"   "themes/sm1tee/components/"   "themes/sm1tee/fonts/"   "themes/sm1tee/icons/"   "/themes/sm1tee/Main.qml"   "/themes/sm1tee/metadata.desktop"   "/themes/sm1tee/qmldir"   "/themes/sm1tee/configs/witcher.conf"   "/themes/sm1tee/backgrounds/witcher.mp4"   "/themes/sm1tee/backgrounds/witcher.png"
+```
+</details>
+
+### Шаг 4: Копирование файлов темы и шрифтов
+
+Теперь, когда нужные файлы загружены, можно скопировать их в системные папки.
+
+Копируем папку с темами
+
+```bash
+sudo cp -r themes/sm1tee /usr/share/sddm/themes/
+```
+
+
+Копируем шрифты
+
+```bash
+sudo cp -r themes/sm1tee/fonts/* /usr/share/fonts/
+```
+
+```bash
+sudo fc-cache -fv
+```
+
+### Шаг 5: Редактирование файла metadata.desktop
+
+Найдите в файле  metadata.desktop
+
+```bash
+sudo nano /usr/share/sddm/themes/sm1tee/metadata.desktop
+```
+
+Секцию ConfigFile=configs/ в конце файла и укажите тему которую вы скачали
+
+Например ConfigFile=configs/witcher.conf
+
+В подвале файла есть закомментированные варианты со всеми названиями тем, не трогайте их - они нужны только для удобства замены тем, менять нужно только незакомментированную строку ConfigFile=configs/
+
+![swappy-20250701_220231](https://github.com/user-attachments/assets/da488673-dba6-4c11-aee7-88a1eb78f696)
+
+</details>
+
+---
+
+## ⚙️ Настройка (только для ручной установки)
+
+### 🔧 Конфигурация SDDM
+
+Откройте конфигурационный файл SDDM:
 
 ```bash
 sudo nano /etc/sddm.conf
 ```
 
-Внесите следующие параметры:
+Добавьте или измените следующие секции:
 
 ```ini
 [Theme]
-# Устанавливаем тему sm1tee
+# Устанавливаем sm1tee как текущую тему
 Current=sm1tee
 
 [General]
-# Включаем виртуальную клавиатуру и пути импорта компонентов темы
+# Включаем виртуальную клавиатуру и указываем путь к компонентам темы
 InputMethod=qtvirtualkeyboard
 GreeterEnvironment=QML2_IMPORT_PATH=/usr/share/sddm/themes/sm1tee/components/,QT_IM_MODULE=qtvirtualkeyboard
 ```
 
----
+### 👤 Установка аватара
 
-## 🔄 Быстрое переключение дизайнов
+Автоматический установщик умеет принимать обычные PNG/JPG/JPEG картинки. Он сам обрежет изображение по центру, уменьшит до `512x512`, сохранит как PNG, выставит права и пропишет аватар для SDDM.
 
-Чтобы сменить тему на любую из **59 доступных**:
+Если вы не выберете свой аватар, установщик поставит дефолтный аватар темы только в том случае, если у пользователя ещё нет аватара.
 
-### Способ 1: Одной командой через терминал
+Для ручной замены самый простой вариант — положить готовую картинку в домашнюю папку пользователя под именем `.face.icon`:
+
 ```bash
-# Замените 'jinwoo_monarch' на любую тему из таблицы
-sudo sed -i "s|^ConfigFile=.*|ConfigFile=configs/jinwoo_monarch.conf|" /usr/share/sddm/themes/sm1tee/metadata.desktop
-```
-
-### Способ 2: Через текстовый редактор
-```bash
-sudo nano /usr/share/sddm/themes/sm1tee/metadata.desktop
-```
-Измените строку `ConfigFile=`:
-```ini
-ConfigFile=configs/dark_knight_storm.conf
-```
-*(В подвале файла `metadata.desktop` приведены все 59 вариантов — достаточно раскомментировать нужный).*
-
----
-
-## 👤 Установка пользовательского аватара
-
-Тема автоматически подхватывает аватар пользователя. Чтобы установить аватарку:
-
-### Автоматически через ImageMagick:
-```bash
-# Замените /путь/к/вашему/фото.jpg на реальный путь к картинке
-magick /путь/к/вашему/фото.jpg -auto-orient -resize '512x512^' -gravity center -extent 512x512 PNG32:"$HOME/.face.icon"
+magick /полный/путь/к/картинке.jpg -auto-orient -resize '512x512^' -gravity center -extent 512x512 PNG32:"$HOME/.face.icon"
 chmod 644 "$HOME/.face.icon"
 ```
 
-Если ваш дистрибутив использует `AccountsService` (Ubuntu, Fedora, Arch с GNOME/KDE):
+Если дистрибутив использует AccountsService, дополнительно установите тот же файл туда:
+
 ```bash
 sudo install -m 644 "$HOME/.face.icon" "/var/lib/AccountsService/icons/$USER"
 ```
 
----
+В файле `/var/lib/AccountsService/users/имя_пользователя` должна быть строка:
 
-## 🔍 Предварительный просмотр без перезагрузки
+```ini
+[User]
+Icon=/var/lib/AccountsService/icons/имя_пользователя
+```
 
-Проверить внешний вид темы прямо в текущей графической сессии:
+Дефолтная аватарка темы лежит в `icons/user-default.png`. Если хотите заменить именно её, используйте PNG `512x512` с правами `644`.
+
+### 🔍 Предварительный просмотр темы
+
+Вы можете просмотреть тему без перезагрузки системы:
 
 ```bash
 QT_QPA_PLATFORM=xcb sddm-greeter-qt6 --test-mode --theme /usr/share/sddm/themes/sm1tee
 ```
 
-> 💡 *Совет*: Для закрытия тестового окна нажмите `Alt + F4` или закройте его стандартным крестиком окна.
+> � **Совевт**: Используйте тестовый режим для быстрой проверки настроек темы перед применением.
+
+### 🔄 Применение изменений
+
+Перезагрузите систему для применения настроек:
+
+```bash
+sudo reboot
+```
+
+</details>
 
 ---
 
 ## 📁 Структура проекта
 
 ```
-sddm-theme/
-├── install.sh                  # 🚀 Интерактивный установщик (всё в 1)
-├── themes/
-│   └── sm1tee/
-│       ├── backgrounds/        # 🎬 Живые видео-фоны (MP4) и первые кадры (PNG)
-│       ├── components/         # 🧩 Модульные QML-компоненты интерфейса
-│       ├── configs/            # 🎨 59 конфигурационных файлов дизайнов
-│       ├── fonts/              # 🔤 Коллекция подобранных авторских шрифтов
-│       ├── icons/              # 🖼️ Векторные иконки интерфейса и спиннеры
-│       ├── Main.qml            # ⚡ Главная точка входа движка темы
-│       ├── metadata.desktop    # ⚙️ Файл выбора активного конфига темы
-│       └── qmldir              # 📄 Декларация QML модулей
-└── README.md                   # 📖 Документация проекта
+sddm/themes/sm1tee/
+├── 📁 backgrounds/          # Фоны (PNG + MP4)
+├── 📁 components/           # QML компоненты
+├── 📁 configs/              # Конфигурационные файлы
+├── 📁 docs/                 # Документация
+├── 📁 fonts/                # Кастомные шрифты
+├── 📁 icons/                # Иконки и символы
+├── � bMain.qml              # Главный файл темы
+├── � moetadata.desktop      # Метаданные темы
+└── 📄 qmldir                # QML модули
 ```
 
 ---
 
-## ❓ Решение проблем (FAQ)
+## 🛠️ Решение проблем
 
 <details>
-<summary><strong>🎥 Видео-фон черный или не проигрывается</strong></summary>
+<summary><strong>❓ Тема не загружается</strong></summary>
 
-1. Убедитесь, что установлены мультимедиа-кодеки:
-   - **Arch**: `sudo pacman -S qt6-multimedia-ffmpeg`
-   - **Fedora**: `sudo dnf install qt6-qtmultimedia`
-   - **Ubuntu/Debian**: `sudo apt install qml6-module-qtmultimedia`
-2. Проверьте права на чтение: `sudo chmod -R 755 /usr/share/sddm/themes/sm1tee`
+1. Убедитесь, что все зависимости установлены
+2. Проверьте права доступа к папке темы: `sudo chmod -R 755 /usr/share/sddm/themes/sm1tee`
+3. Проверьте конфигурацию SDDM: `sudo sddm --test-mode --theme /usr/share/sddm/themes/sm1tee`
 </details>
 
 <details>
-<summary><strong>🔤 Шрифты отображаются стандартным системным шрифтом</strong></summary>
+<summary><strong>🎥 Видео-фон не воспроизводится</strong></summary>
 
-1. Убедитесь, что шрифты скопированы в `/usr/share/fonts/`:
-   ```bash
-   sudo cp -r themes/sm1tee/fonts/* /usr/share/fonts/
-   sudo fc-cache -fv
-   ```
+1. Убедитесь, что установлен `qt6-multimedia`
+2. Проверьте наличие кодеков для MP4
+3. Попробуйте другую тему с статичным фоном
 </details>
 
 <details>
-<summary><strong>🌫️ Размытие фона (Blur) срезается по краям экрана</strong></summary>
+<summary><strong>🔤 Шрифты не отображаются корректно</strong></summary>
 
-В текущей версии `Main.qml` этот дефект полностью устранён благодаря механизму отрицательного оффсета марджинов фона и включению обрезки рамки (`mainFrame.clip: true`).
+1. Убедитесь, что шрифты установлены: `sudo cp -r sddm/themes/sm1tee/fonts/* /usr/share/fonts/`
+2. Обновите кэш шрифтов: `sudo fc-cache -fv`
 </details>
 
 <details>
-<summary><strong>🔑 Текст спиннера «Осуществляется вход» сливался с ником</strong></summary>
+<summary><strong>🤖 Скрипт автоустановки не работает</strong></summary>
 
-Во всех 59 конфигурациях цвет спиннера настроен в строгом соответствии с акцентным цветом темы, что обеспечивает чёткий визуальный контраст с белым логином пользователя.
+1. Проверьте подключение к интернету
+2. Убедитесь, что установлены `curl` и `bash`
+3. Попробуйте скачать скрипт вручную: `wget https://raw.githubusercontent.com/Sm1tee/sddm-theme/main/install.sh && bash install.sh`
+4. Проверьте права на выполнение: `chmod +x install.sh`
+</details>
+
+<details>
+<summary><strong>🤖 Любые другие проблемы</strong></summary>
+<br>
+Приложите содержание данной инструкции и описание своей проблемы в диалог с любым чат ботом (например ChatGPT) и вы получите развернутое решение. 
 </details>
 
 ---
 
 ## 🙏 Благодарности
 
-Эта тема является развитием и глубокой переработкой темы **SilentSDDM** от [uiriansan](https://github.com/uiriansan). Выражаем признательность автору за начальную идею и структуру компонентов.
+Эта тема является форком и глубокой переработкой проекта **SilentSDDM** от [uiriansan](https://github.com/uiriansan). Большое спасибо автору за проделанную работу, которая послужила основой для этого проекта.
 
 ---
 
@@ -525,7 +752,7 @@ sddm-theme/
 
 ![Footer](https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12&height=100&section=footer)
 
-**⭐ Понравился проект? Поставьте звёздочку на GitHub!**
+**⭐ Понравилось? Поставьте звездочку!**
 
 [![GitHub](https://img.shields.io/badge/GitHub-Sm1tee-black?style=for-the-badge&logo=github)](https://github.com/Sm1tee)
 
