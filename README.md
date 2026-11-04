@@ -29,14 +29,17 @@
 
 </details>
 
+<hr>
+
 <details>
 <summary><font size="4"><strong>🎨 Галерея тем (59 дизайнов)</strong></font></summary>
 
 <br>
 
-> ⚠️ **Важно**: Превью тем сделаны в тестовом режиме и могут немного отличаться от реального отображения, так как тестовый режим не позволяет продемонстрировать все возможности тем (анимации, эффекты и т.д.). Иногда github долго грузит видео, нужно просто подождать
+⚠️ **Важно:** все 59 превью сняты в разрешении Full HD из реального окна входа SDDM.
+Нажмите на нужную категорию ниже, чтобы развернуть список скриншотов.
 
-Нажмите на категорию, чтобы развернуть превью.
+<dd>
 
 <details>
 <summary><strong>⚔️ Тёмное Фэнтези и Владыки</strong></summary>
@@ -83,6 +86,8 @@
 
 </details>
 
+<hr>
+
 <details>
 <summary><strong>⛩️ Аниме и Solo Leveling</strong></summary>
 
@@ -116,6 +121,8 @@
 
 </details>
 
+<hr>
+
 <details>
 <summary><strong>🏯 Самураи и Восток</strong></summary>
 
@@ -144,6 +151,8 @@
 ![hends](docs/previews/hends.jpg)
 
 </details>
+
+<hr>
 
 <details>
 <summary><strong>🌌 Космос и Киберпанк</strong></summary>
@@ -177,6 +186,8 @@
 ![eclipse](docs/previews/eclipse.jpg)
 
 </details>
+
+<hr>
 
 <details>
 <summary><strong>💀 Хоррор и Мистика</strong></summary>
@@ -219,6 +230,8 @@
 
 </details>
 
+<hr>
+
 <details>
 <summary><strong>☢️ Постапокалипсис и Экшен</strong></summary>
 
@@ -255,6 +268,8 @@
 ![gate2](docs/previews/gate2.jpg)
 
 </details>
+
+<hr>
 
 <details>
 <summary><strong>🏠 Дома и Пейзажи</strong></summary>
@@ -309,16 +324,20 @@
 
 </details>
 
-</details>
+</dd>
 
 <br>
+
+</details>
+
+<hr>
 
 <details>
 <summary><font size="4"><strong>🚀 Автоматическая установка</strong></font></summary>
 
 <br>
 
-> 💡 **Рекомендуемый способ!** Интерактивный установщик автоматически определит ваш дистрибутив Linux, установит нужные пакеты и поможет выбрать тему.
+💡 **Рекомендуемый способ:** Интерактивный установщик автоматически определит ваш дистрибутив Linux, установит нужные пакеты и поможет выбрать тему.
 
 <br>
 
@@ -364,12 +383,14 @@ wget -qO- https://raw.githubusercontent.com/Sm1tee/Sm1tee-sddm-themes/main/insta
 
 </details>
 
+<hr>
+
 <details>
 <summary><font size="4"><strong>📥 Ручная установка</strong></font></summary>
 
 <br>
 
-> 💡 **Совет:** Полный репозиторий весит ~1 ГБ. Если вам нужна только одна тема (~25 МБ), используйте **Способ 1 (Sparse Checkout)**, чтобы не скачивать лишние файлы.
+💡 **Совет:** Полный репозиторий весит ~1 ГБ. Если вам нужна только одна тема (~25 МБ), используйте **Способ 1 (Sparse Checkout)**, чтобы не скачивать лишние файлы.
 
 ---
 
@@ -454,12 +475,14 @@ sudo nano /usr/share/sddm/themes/sm1tee/metadata.desktop
 
 </details>
 
+<hr>
+
 <details>
 <summary><font size="4"><strong>🐧 Поддерживаемые дистрибутивы</strong></font></summary>
 
 <br>
 
-> Команды для установки зависимостей вручную:
+Команды для установки зависимостей вручную:
 
 | Дистрибутив | Статус | Команда установки пакетов |
 |---|:---:|---|
@@ -472,6 +495,8 @@ sudo nano /usr/share/sddm/themes/sm1tee/metadata.desktop
 <br>
 
 </details>
+
+<hr>
 
 <details>
 <summary><font size="4"><strong>📋 Системные требования</strong></font></summary>
@@ -491,12 +516,14 @@ sudo nano /usr/share/sddm/themes/sm1tee/metadata.desktop
 
 </details>
 
+<hr>
+
 <details>
 <summary><font size="4"><strong>⚙️ Настройка конфигурации SDDM</strong></font></summary>
 
 <br>
 
-> 💡 **Важно:** после копирования файлов обязательно укажите тему `sm1tee` в главном конфигурационном файле SDDM.
+💡 **Важно:** после копирования файлов обязательно укажите тему `sm1tee` в главном конфигурационном файле SDDM.
 
 ---
 
@@ -536,6 +563,8 @@ ConfigFile=configs/dark_knight_storm.conf
 <br>
 
 </details>
+
+<hr>
 
 <details>
 <summary><font size="4"><strong>👤 Установка пользовательского аватара</strong></font></summary>
@@ -580,12 +609,14 @@ chmod 644 "$HOME/.face.icon"
 
 </details>
 
+<hr>
+
 <details>
 <summary><font size="4"><strong>🔍 Предварительный просмотр темы</strong></font></summary>
 
 <br>
 
-> 💡 Вы можете протестировать любую тему в отдельном окне прямо в вашей рабочей сессии, не перезагружая компьютер и не выходя из системы.
+💡 Вы можете протестировать любую тему в отдельном окне прямо в вашей рабочей сессии, не перезагружая компьютер и не выходя из системы.
 
 ---
 
@@ -610,6 +641,8 @@ QT_QPA_PLATFORM=xcb sddm-greeter-qt6 --test-mode --theme /usr/share/sddm/themes/
 
 </details>
 
+<hr>
+
 <details>
 <summary><font size="4"><strong>📁 Структура проекта</strong></font></summary>
 
@@ -632,10 +665,14 @@ themes/sm1tee/
 
 </details>
 
+<hr>
+
 <details>
 <summary><font size="4"><strong>🛠️ Решение проблем (FAQ)</strong></font></summary>
 
 <br>
+
+<dd>
 
 ### ❓ Частые вопросы и диагностика
 
@@ -658,6 +695,8 @@ themes/sm1tee/
 
 </details>
 
+<hr>
+
 <details>
 <summary><strong>2. Видео-фон чёрный или не воспроизводится</strong></summary>
 
@@ -671,6 +710,8 @@ themes/sm1tee/
 <br>
 
 </details>
+
+<hr>
 
 <details>
 <summary><strong>3. Кастомные шрифты не отображаются (вместо них стандартный шрифт)</strong></summary>
@@ -690,6 +731,8 @@ themes/sm1tee/
 
 </details>
 
+<hr>
+
 <details>
 <summary><strong>4. Скрипт автоустановки выдаёт ошибку</strong></summary>
 
@@ -707,6 +750,8 @@ themes/sm1tee/
 
 </details>
 
+<hr>
+
 <details>
 <summary><strong>5. Другие вопросы и диагностика</strong></summary>
 
@@ -722,9 +767,13 @@ QT_QPA_PLATFORM=xcb sddm-greeter-qt6 --test-mode --theme /usr/share/sddm/themes/
 
 </details>
 
+</dd>
+
 <br>
 
 </details>
+
+<hr>
 
 <details>
 <summary><font size="4"><strong>🙏 Благодарности и первоисточник</strong></font></summary>
@@ -748,3 +797,5 @@ QT_QPA_PLATFORM=xcb sddm-greeter-qt6 --test-mode --theme /usr/share/sddm/themes/
 Made with ❤️ by [Sm1tee](https://github.com/Sm1tee)
 
 </div>
+
+</dd>
