@@ -318,38 +318,28 @@
 
 <br>
 
-> [!TIP]
-> **Рекомендуемый способ!** Интерактивный установщик с автоматическим определением дистрибутива Linux, установкой зависимостей и выбором темы.
+> 💡 **Рекомендуемый способ!** Интерактивный установщик автоматически определит ваш дистрибутив Linux, установит нужные пакеты и поможет выбрать тему.
 
 <br>
 
-### ⚡ Быстрая установка в одну команду
-
-<div align="center">
-
-**Через `curl` (универсально для Bash, Zsh, Fish):**
+#### ⚡ Вариант 1: через `curl` (универсально для Bash, Zsh, Fish)
 ```bash
 curl -fsSL https://raw.githubusercontent.com/Sm1tee/Sm1tee-sddm-themes/main/install.sh | bash
 ```
 
-**Через `wget`:**
+#### ⚡ Вариант 2: через `wget`
 ```bash
 wget -qO- https://raw.githubusercontent.com/Sm1tee/Sm1tee-sddm-themes/main/install.sh | bash
 ```
 
-</div>
+<details>
+<summary><strong>🔍 Подробнее: что делает скрипт и как он работает</strong></summary>
 
----
-
-### 🤖 Возможности автоустановщика
+<br>
 
 | 🔍 Диагностика и пакеты | 🎨 Настройка и гибкость |
 |---|---|
 | • Автоматически определяет дистрибутив Linux<br>• Проверяет и устанавливает системные зависимости<br>• Поддерживает Arch, Fedora, openSUSE, Ubuntu, Void | • Позволяет скачать все темы или только 1 выбранную<br>• Интерактивный выбор активной темы<br>• Настройка конфигурации SDDM, шрифтов и аватара |
-
----
-
-### 📋 Пошаговый сценарий установки
 
 ```text
 🎨 SDDM Theme sm1tee - Установщик
@@ -372,29 +362,26 @@ wget -qO- https://raw.githubusercontent.com/Sm1tee/Sm1tee-sddm-themes/main/insta
 
 <br>
 
+</details>
+
 <details>
 <summary><font size="4"><strong>📥 Ручная установка</strong></font></summary>
 
 <br>
 
-> [!NOTE]
-> Полный репозиторий со всеми 59 видео-темами весит около 1 ГБ. Рекомендуется использовать **Вариант 1 (Sparse Checkout)**, чтобы загрузить только одну нужную тему (~20–30 МБ).
+> 💡 **Совет:** Полный репозиторий весит ~1 ГБ. Если вам нужна только одна тема (~25 МБ), используйте **Способ 1 (Sparse Checkout)**, чтобы не скачивать лишние файлы.
 
-<br>
+---
 
-### ⭐ Вариант 1: Установка одной выбранной темы (Sparse Checkout)
+### 🔹 Способ 1: Установка одной темы (Sparse Checkout — экономия места)
 
-Экономит трафик и место на диске — скачиваются только файлы выбранного дизайна.
-
-#### 1️⃣ Клонирование структуры репозитория:
+**Шаг 1. Клонировать структуру репозитория (без тяжёлых файлов):**
 ```bash
 git clone --filter=blob:none --sparse https://github.com/Sm1tee/Sm1tee-sddm-themes.git
 cd Sm1tee-sddm-themes
 ```
 
-#### 2️⃣ Загрузка файлов нужной темы:
-Замените `НАЗВАНИЕ_ТЕМЫ` на ID выбранной темы из Галереи (например: `witcher`, `dark_knight_storm`, `space`, `apocalypse` и т.д.):
-
+**Шаг 2. Скачать нужную тему (замените `НАЗВАНИЕ_ТЕМЫ` на ID из Галереи):**
 ```bash
 git sparse-checkout set --no-cone \
   "/README.md" \
@@ -432,26 +419,22 @@ git sparse-checkout set --no-cone \
 
 </details>
 
-#### 3️⃣ Копирование файлов темы и шрифтов:
+**Шаг 3. Скопировать файлы темы и шрифтов в систему:**
 ```bash
 sudo cp -r themes/sm1tee /usr/share/sddm/themes/
 sudo cp -r themes/sm1tee/fonts/* /usr/share/fonts/
 sudo fc-cache -fv
 ```
 
-#### 4️⃣ Активация темы в `metadata.desktop`:
+**Шаг 4. Активировать тему в `metadata.desktop`:**
 ```bash
-sudo nano /usr/share/sddm/themes/sm1tee/metadata.desktop
+sudo sed -i "s|^ConfigFile=configs/.*\.conf|ConfigFile=configs/НАЗВАНИЕ_ТЕМЫ.conf|" /usr/share/sddm/themes/sm1tee/metadata.desktop
 ```
-Укажите название конфигурации в строке:
-```ini
-ConfigFile=configs/НАЗВАНИЕ_ТЕМЫ.conf
-```
-*(например: `ConfigFile=configs/witcher.conf`)*
+*(либо откройте файл через `sudo nano /usr/share/sddm/themes/sm1tee/metadata.desktop` и укажите конфиг вручную)*
 
 ---
 
-### 📦 Вариант 2: Загрузка всех 59 тем целиком
+### 🔹 Способ 2: Загрузка всех 59 тем целиком
 
 ```bash
 git clone https://github.com/Sm1tee/Sm1tee-sddm-themes.git
@@ -471,14 +454,12 @@ sudo nano /usr/share/sddm/themes/sm1tee/metadata.desktop
 
 </details>
 
-<br>
-
 <details>
 <summary><font size="4"><strong>🐧 Поддерживаемые дистрибутивы</strong></font></summary>
 
 <br>
 
-### 📦 Команды установки зависимостей по дистрибутивам
+> Команды для установки зависимостей вручную:
 
 | Дистрибутив | Статус | Команда установки пакетов |
 |---|:---:|---|
@@ -492,89 +473,84 @@ sudo nano /usr/share/sddm/themes/sm1tee/metadata.desktop
 
 </details>
 
-<br>
-
 <details>
 <summary><font size="4"><strong>📋 Системные требования</strong></font></summary>
 
 <br>
 
-### ⚙️ Необходимые компоненты системы
-
-| Компонент | Минимальная версия | Назначение | Статус |
+| Компонент | Минимальная версия | Назначение | Важность |
 |---|:---:|---|:---:|
 | **SDDM** | ≥ 0.21 | Дисплейный менеджер входа | 🔴 Обязательно |
 | **Qt** | ≥ 6.5 | Базовый фреймворк QML | 🔴 Обязательно |
 | **qt6-svg** | Любая | Векторные иконки интерфейса | 🔴 Обязательно |
 | **qt6-virtualkeyboard** | Любая | Сенсорная экранная клавиатура | 🔴 Обязательно |
 | **qt6-multimedia** | Любая | Воспроизведение видео-фонов (MP4) | 🔴 Обязательно |
-| **ImageMagick** | Любая | Автоматическая обработка аватаров (512x512) | 🟡 Опционально |
+| **ImageMagick** | Любая | Автоматическая обработка аватаров (512×512) | 🟡 Опционально |
 
 <br>
 
 </details>
-
-<br>
 
 <details>
 <summary><font size="4"><strong>⚙️ Настройка конфигурации SDDM</strong></font></summary>
 
 <br>
 
-### 1️⃣ Настройка основного файла `/etc/sddm.conf`
+> 💡 **Важно:** после копирования файлов обязательно укажите тему `sm1tee` в главном конфигурационном файле SDDM.
 
-Откройте конфигурационный файл SDDM:
+---
+
+### 🔹 Шаг 1. Включение темы в `/etc/sddm.conf`
+
+Откройте файл конфигурации:
 ```bash
 sudo nano /etc/sddm.conf
 ```
 
-Убедитесь, что указаны следующие секции:
+Убедитесь, что прописаны следующие параметры:
 ```ini
 [Theme]
-# Устанавливаем sm1tee как текущую тему
 Current=sm1tee
 
 [General]
-# Включаем виртуальную клавиатуру и пути к модулям темы
 InputMethod=qtvirtualkeyboard
 GreeterEnvironment=QML2_IMPORT_PATH=/usr/share/sddm/themes/sm1tee/components/,QT_IM_MODULE=qtvirtualkeyboard
 ```
 
 ---
 
-### 2️⃣ Переключение активного дизайна темы
+### 🔹 Шаг 2. Выбор активного дизайна темы
 
-Для быстрой смены внешнего вида отредактируйте:
+Каждая из 59 тем имеет свой конфигурационный файл в папке `configs/`. Чтобы переключить тему, отредактируйте файл `metadata.desktop`:
+
 ```bash
 sudo nano /usr/share/sddm/themes/sm1tee/metadata.desktop
 ```
 
-Измените строку на нужный конфиг:
+Укажите нужный конфиг в параметре `ConfigFile`:
 ```ini
-ConfigFile=configs/<название_темы>.conf
+ConfigFile=configs/dark_knight_storm.conf
 ```
-> 💡 *Все 59 вариантов тем закомментированы в конце файла для удобного копирования.*
+*(В конце этого файла закомментирован полный список всех 59 тем — достаточно просто скопировать нужное имя)*
 
 <br>
 
 </details>
-
-<br>
 
 <details>
 <summary><font size="4"><strong>👤 Установка пользовательского аватара</strong></font></summary>
 
 <br>
 
-> [!TIP]
-> Скрипт автоустановщика умеет сам конвертировать и применять аватар. Для ручной настройки выберите один из способов ниже:
+> 💡 **Автоматически:** скрипт автоустановки сам умеет находить, конвертировать и устанавливать аватар.  
+> Если вы настраиваете аватар **вручную**, используйте один из вариантов ниже:
 
-<br>
+---
 
-### 1️⃣ Способ 1: Домашняя папка пользователя (`~/.face.icon`)
+### 🔹 Вариант 1: Через домашнюю папку (`~/.face.icon`)
+*(Стандартный способ для большинства окружений: KDE, Hyprland, Sway, XFCE)*
 
-Подходит для большинства рабочих окружений (KDE, Hyprland, Sway, XFCE):
-
+Обрезать картинку в квадрат 512×512 и положить в корень домашней директории:
 ```bash
 magick /полный/путь/к/картинке.jpg -auto-orient -resize 512x512^ -gravity center -extent 512x512 PNG32:"$HOME/.face.icon"
 chmod 644 "$HOME/.face.icon"
@@ -582,79 +558,69 @@ chmod 644 "$HOME/.face.icon"
 
 ---
 
-### 2️⃣ Способ 2: Дистрибутивы с AccountsService (Ubuntu, Fedora, Arch с GNOME)
+### 🔹 Вариант 2: Для систем с AccountsService (Ubuntu, Fedora, Arch с GNOME)
+*(Используйте этот вариант, если аватар не подхватывается из домашней папки)*
 
-Скопируйте подготовленный аватар в системную директорию:
+1. Скопировать подготовленный аватар в системный каталог:
+   ```bash
+   sudo install -m 644 "$HOME/.face.icon" "/var/lib/AccountsService/icons/$USER"
+   ```
 
-```bash
-sudo install -m 644 "$HOME/.face.icon" "/var/lib/AccountsService/icons/$USER"
-```
-
-Затем откройте файл профиля пользователя:
-```bash
-sudo nano /var/lib/AccountsService/users/$USER
-```
-
-И укажите путь в секции `[User]`:
-```ini
-[User]
-Icon=/var/lib/AccountsService/icons/ваше_имя_пользователя
-```
+2. Указать путь в файле конфигурации пользователя (`/var/lib/AccountsService/users/$USER`):
+   ```ini
+   [User]
+   Icon=/var/lib/AccountsService/icons/ваше_имя_пользователя
+   ```
 
 ---
 
-> [!NOTE]
-> Дефолтный аватар темы расположен в папке `icons/user-default.png`.
+> ℹ️ **Справка:** дефолтный аватар темы расположен в файле `themes/sm1tee/icons/user-default.png`.
 
 <br>
 
 </details>
-
-<br>
 
 <details>
 <summary><font size="4"><strong>🔍 Предварительный просмотр темы</strong></font></summary>
 
 <br>
 
-### 👀 Быстрая проверка внешнего вида без перезагрузки
+> 💡 Вы можете протестировать любую тему в отдельном окне прямо в вашей рабочей сессии, не перезагружая компьютер и не выходя из системы.
 
-Вы можете проверить внешний вид любой темы в отдельном окне прямо в рабочей системе, не выходя из графической сессии:
+---
 
-#### Способ 1: Скрипт быстрого теста из репозитория
+### 🔹 Способ 1: Скрипт быстрого теста (из этого репозитория)
+
+Запускает выбранную тему в одно действие:
 ```bash
-./test-theme.sh <название_темы>
-# Пример:
 ./test-theme.sh wraith_king
+# или любая другая тема:
+./test-theme.sh dark_knight_storm
 ```
 
-#### Способ 2: Стандартная команда SDDM
+---
+
+### 🔹 Способ 2: Нативная команда SDDM
+
 ```bash
 QT_QPA_PLATFORM=xcb sddm-greeter-qt6 --test-mode --theme /usr/share/sddm/themes/sm1tee
 ```
 
-> [!TIP]
-> Используйте тестовый режим для быстрой проверки шрифтов, иконок и расположения полей перед окончательным применением.
-
 <br>
 
 </details>
-
-<br>
 
 <details>
 <summary><font size="4"><strong>📁 Структура проекта</strong></font></summary>
 
 <br>
 
-### 🗂️ Назначение файлов и папок
-
 ```text
 themes/sm1tee/
 ├── 📁 backgrounds/          # Живые видео-фоны (MP4) и статические обои (PNG)
 ├── 📁 components/           # Модульные QML-компоненты интерфейса
 ├── 📁 configs/              # 59 конфигурационных файлов (.conf) со стилями и координатами
-├── 📁 docs/                 # Превью, скриншоты и графические баннеры
+├── 📁 docs/                 # Превью тем в Full HD и графические материалы
 ├── 📁 fonts/                # Кастомные шрифты для тем
 ├── 📁 icons/                # Системные иконки и дефолтный аватар
 ├── 📄 Main.qml              # Главный файл темы SDDM
@@ -666,8 +632,6 @@ themes/sm1tee/
 
 </details>
 
-<br>
-
 <details>
 <summary><font size="4"><strong>🛠️ Решение проблем (FAQ)</strong></font></summary>
 
@@ -676,62 +640,83 @@ themes/sm1tee/
 ### ❓ Частые вопросы и диагностика
 
 <details>
-<summary><strong>1. Тема не отображается или появляется стандартный экран</strong></summary>
+<summary><strong>1. Тема не отображается или появляется стандартный серый экран SDDM</strong></summary>
 
 <br>
 
 1. Проверьте, что в `/etc/sddm.conf` в секции `[Theme]` указано `Current=sm1tee`.
-2. Проверьте права на директорию темы: `sudo chmod -R 755 /usr/share/sddm/themes/sm1tee`.
-3. Запустите тест в терминале для выявления ошибок: `QT_QPA_PLATFORM=xcb sddm-greeter-qt6 --test-mode --theme /usr/share/sddm/themes/sm1tee`.
+2. Проверьте права на директорию темы:
+   ```bash
+   sudo chmod -R 755 /usr/share/sddm/themes/sm1tee
+   ```
+3. Запустите тему в тестовом режиме через терминал — в консоли сразу появится точная причина ошибки:
+   ```bash
+   QT_QPA_PLATFORM=xcb sddm-greeter-qt6 --test-mode --theme /usr/share/sddm/themes/sm1tee
+   ```
 
 <br>
 
 </details>
 
 <details>
-<summary><strong>2. Видео-фон черный или не воспроизводится</strong></summary>
+<summary><strong>2. Видео-фон чёрный или не воспроизводится</strong></summary>
 
 <br>
 
 1. Убедитесь, что установлен пакет `qt6-multimedia` (в Arch: `qt6-multimedia-ffmpeg`).
-2. Проверьте установку кодеков FFmpeg / GStreamer в системе.
-3. Убедитесь, что файл видео существует по пути `/usr/share/sddm/themes/sm1tee/backgrounds/<тема>.mp4`.
+2. Проверьте наличие кодеков FFmpeg в системе.
+3. Проверьте, что файл видео существует по пути:
+   `/usr/share/sddm/themes/sm1tee/backgrounds/<тема>.mp4`
 
 <br>
 
 </details>
 
 <details>
-<summary><strong>3. Кастомные шрифты не отображаются (дефолтный шрифт)</strong></summary>
+<summary><strong>3. Кастомные шрифты не отображаются (вместо них стандартный шрифт)</strong></summary>
 
 <br>
 
-1. Убедитесь, что шрифты скопированы в `/usr/share/fonts/`: `sudo cp -r themes/sm1tee/fonts/* /usr/share/fonts/`.
-2. Обновите системный кэш шрифтов: `sudo fc-cache -fv`.
+1. Убедитесь, что шрифты скопированы в общесистемную директорию:
+   ```bash
+   sudo cp -r themes/sm1tee/fonts/* /usr/share/fonts/
+   ```
+2. Обновите кэш шрифтов системы:
+   ```bash
+   sudo fc-cache -fv
+   ```
 
 <br>
 
 </details>
 
 <details>
-<summary><strong>4. Скрипт автоустановки выдает ошибку</strong></summary>
+<summary><strong>4. Скрипт автоустановки выдаёт ошибку</strong></summary>
 
 <br>
 
 1. Проверьте интернет-соединение.
-2. Убедитесь, что в системе установлены `curl` или `wget` и оболочка `bash`.
-3. Попробуйте скачать скрипт напрямую: `curl -fsSL https://raw.githubusercontent.com/Sm1tee/Sm1tee-sddm-themes/main/install.sh > install.sh && bash install.sh`.
+2. Убедитесь, что установлены `curl` или `wget` и оболочка `bash`.
+3. Запустите скрипт вручную с выводом подробностей:
+   ```bash
+   curl -fsSL https://raw.githubusercontent.com/Sm1tee/Sm1tee-sddm-themes/main/install.sh > install.sh
+   bash -x install.sh
+   ```
 
 <br>
 
 </details>
 
 <details>
-<summary><strong>5. Другие вопросы и отладка</strong></summary>
+<summary><strong>5. Другие вопросы и диагностика</strong></summary>
 
 <br>
 
-Скопируйте вывод терминала или ошибку тестового режима `sddm-greeter-qt6 --test-mode` и отправьте в диалог с любой языковой моделью (ChatGPT, Claude и т.д.) для мгновенного нахождения решения.
+Запустите команду тестирования в терминале:
+```bash
+QT_QPA_PLATFORM=xcb sddm-greeter-qt6 --test-mode --theme /usr/share/sddm/themes/sm1tee
+```
+Скопируйте текст ошибки из терминала и отправьте его в любой чат с ИИ (ChatGPT, Claude и т.д.) — решение найдётся за секунду.
 
 <br>
 
@@ -740,8 +725,6 @@ themes/sm1tee/
 <br>
 
 </details>
-
-<br>
 
 <details>
 <summary><font size="4"><strong>🙏 Благодарности и первоисточник</strong></font></summary>
