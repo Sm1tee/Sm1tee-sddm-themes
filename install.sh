@@ -193,14 +193,15 @@ install_dependencies() {
     
     case $DISTRO in
         "arch"|"manjaro"|"endeavouros"|"cachyos"|"artix"|"arcolinux"|"garuda"|"crystal"|"rebornos")
-            packages="sddm qt6-svg qt6-virtualkeyboard qt6-multimedia-ffmpeg imagemagick"
+            packages="sddm qt6-svg qt6-virtualkeyboard qt6-multimedia-ffmpeg imagemagick xorg-xsetroot"
             install_cmd="sudo pacman -S --needed --noconfirm"
             explanation="Эти пакеты нужны для работы SDDM с темами Qt6:
 • sddm - менеджер дисплея (экран входа)
 • qt6-svg - поддержка SVG иконок в интерфейсе
 • qt6-virtualkeyboard - виртуальная клавиатура на экране
 • qt6-multimedia-ffmpeg - воспроизведение видео фонов
-• imagemagick - обработка аватаров"
+• imagemagick - обработка аватаров
+• xorg-xsetroot - корректная инициализация курсора в X11-режиме SDDM"
             ;;
         "fedora"|"rhel"|"centos"|"rocky"|"almalinux"|"nobara")
             packages="sddm qt6-qtsvg qt6-qtvirtualkeyboard qt6-qtmultimedia ImageMagick"
@@ -286,7 +287,7 @@ install_dependencies() {
             echo ""
             echo -e "${YELLOW}Используйте пакетный менеджер вашего дистрибутива для установки.${NC}"
             echo -e "${YELLOW}Например:${NC}"
-            echo "  • Arch/Manjaro/CachyOS: sudo pacman -S sddm qt6-svg qt6-virtualkeyboard qt6-multimedia-ffmpeg imagemagick"
+            echo "  • Arch/Manjaro/CachyOS: sudo pacman -S sddm qt6-svg qt6-virtualkeyboard qt6-multimedia-ffmpeg imagemagick xorg-xsetroot"
             echo "  • Fedora/RHEL: sudo dnf install sddm qt6-qtsvg qt6-qtvirtualkeyboard qt6-qtmultimedia ImageMagick"
             echo "  • Ubuntu/Debian: sudo apt install sddm qt6-svg-dev qml6-module-qtquick-virtualkeyboard qml6-module-qtmultimedia imagemagick"
             echo "  • openSUSE: sudo zypper install sddm-qt6 libQt6Svg6 qt6-virtualkeyboard qt6-multimedia ImageMagick"
@@ -603,7 +604,8 @@ download_single_theme() {
                 "/themes/sm1tee/qmldir" \
                 "/themes/sm1tee/configs/${theme_name}.conf" \
                 "/themes/sm1tee/backgrounds/${theme_name}.mp4" \
-                "/themes/sm1tee/backgrounds/${theme_name}.png"
+                "/themes/sm1tee/backgrounds/${theme_name}.png" \
+                "/themes/sm1tee/backgrounds/${theme_name}.jpg"
             
             # Проверяем существование файлов темы
             if [ ! -f "themes/sm1tee/configs/${theme_name}.conf" ]; then
@@ -626,23 +628,41 @@ download_single_theme() {
     fi
 }
 
+# Поиск локальной папки темы или ее подпапки
+resolve_theme_subpath() {
+    local subpath="$1"
+    local script_dir
+    script_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+    local candidates=(
+        "Sm1tee-sddm-themes/${subpath}"
+        "${subpath}"
+        "sddm-theme/${subpath}"
+        "${script_dir}/${subpath}"
+    )
+
+    for candidate in "${candidates[@]}"; do
+        if [ -d "$candidate" ]; then
+            echo "$candidate"
+            return 0
+        fi
+    done
+
+    return 1
+}
+
 # Функция для копирования файлов темы
 install_theme_files() {
     print_step_header "ШАГ 5: Установка файлов темы в систему                       "
     
-    local source_dir="Sm1tee-sddm-themes/themes/sm1tee"
-    if [ ! -d "$source_dir" ] && [ -d "themes/sm1tee" ]; then
-        source_dir="themes/sm1tee"
-    elif [ ! -d "$source_dir" ] && [ -d "sddm-theme/themes/sm1tee" ]; then
-        source_dir="sddm-theme/themes/sm1tee"
-    fi
+    local source_dir
+    source_dir=$(resolve_theme_subpath "themes/sm1tee" || echo "themes/sm1tee")
     local target_dir="/usr/share/sddm/themes/sm1tee"
     
     echo -e "${BLUE}Буду копировать файлы темы в системную папку SDDM.${NC}"
     echo -e "Откуда: $source_dir"
     echo -e "Куда: $target_dir"
     echo ""
-    echo -e "${YELLOW}Команда для копирования:${NC} sudo cp -r $source_dir $target_dir"
+    echo -e "${YELLOW}Команда для копирования:${NC} sudo cp -r $source_dir $target_dir && sudo chmod -R a+rX $target_dir"
     echo ""
     
     if [ ! -d "$source_dir" ]; then
@@ -665,7 +685,7 @@ install_theme_files() {
             fi
         fi
         echo -e "${BLUE}${INFO} Копирование файлов темы...${NC}"
-        if sudo cp -r "$source_dir" "$target_dir"; then
+        if sudo cp -r "$source_dir" "$target_dir" && sudo chmod -R a+rX "$target_dir"; then
             echo -e "${GREEN}${CHECK} Файлы темы успешно установлены${NC}"
             add_to_report "Установка файлов темы в $target_dir" "performed"
             return 0
@@ -683,13 +703,9 @@ install_theme_files() {
 install_fonts() {
     print_step_header "ШАГ 6: Установка шрифтов темы                                "
     
-    local source_dir="Sm1tee-sddm-themes/themes/sm1tee/fonts"
-    if [ ! -d "$source_dir" ] && [ -d "themes/sm1tee/fonts" ]; then
-        source_dir="themes/sm1tee/fonts"
-    elif [ ! -d "$source_dir" ] && [ -d "sddm-theme/themes/sm1tee/fonts" ]; then
-        source_dir="sddm-theme/themes/sm1tee/fonts"
-    fi
-    local target_dir="/usr/share/fonts"
+    local source_dir
+    source_dir=$(resolve_theme_subpath "themes/sm1tee/fonts" || echo "themes/sm1tee/fonts")
+    local target_dir="/usr/share/fonts/sm1tee-sddm"
     
     if [ ! -d "$source_dir" ]; then
         echo -e "${YELLOW}${WARNING} Папка шрифтов не найдена: $source_dir${NC}"
@@ -704,13 +720,13 @@ install_fonts() {
     echo -e "Куда: $target_dir"
     echo ""
     echo -e "${YELLOW}Команды которые будут выполнены:${NC}"
-    echo -e "sudo cp -r $source_dir/* $target_dir/"
+    echo -e "sudo mkdir -p $target_dir && sudo cp -r $source_dir/* $target_dir/ && sudo chmod -R a+rX $target_dir"
     echo -e "sudo fc-cache -fv"
     echo ""
     
     if ask_confirmation "Установить шрифты?" "Шрифты нужны для корректного отображения тем"; then
         echo -e "${BLUE}${INFO} Копирование шрифтов...${NC}"
-        if sudo cp -r "$source_dir"/* "$target_dir"/; then
+        if sudo mkdir -p "$target_dir" && sudo cp -r "$source_dir"/* "$target_dir"/ && sudo chmod -R a+rX "$target_dir"; then
             echo -e "${BLUE}${INFO} Обновление кэша шрифтов...${NC}"
             if sudo fc-cache -fv > /dev/null 2>&1; then
                 echo -e "${GREEN}${CHECK} Шрифты успешно установлены и кэш обновлен${NC}"
@@ -765,29 +781,79 @@ configure_theme() {
     fi
 }
 
+# Определяем тему курсора пользователя
+detect_cursor_theme() {
+    local user_home="$1"
+    local theme=""
+    local index_file
+
+    if [ -n "${XCURSOR_THEME:-}" ]; then
+        theme="$XCURSOR_THEME"
+    fi
+    for index_file in "$user_home/.icons/default/index.theme" "$user_home/.local/share/icons/default/index.theme"; do
+        if [ -z "$theme" ] && [ -f "$index_file" ]; then
+            theme=$(grep -i "^Inherits=" "$index_file" 2>/dev/null | head -n 1 | cut -d= -f2 | sed 's/^[[:space:]]*//;s/[[:space:]]*$//')
+        fi
+    done
+    if [ -z "$theme" ] && command -v gsettings &>/dev/null; then
+        theme=$(gsettings get org.gnome.desktop.interface cursor-theme 2>/dev/null | tr -d "'" | sed 's/^[[:space:]]*//;s/[[:space:]]*$//')
+    fi
+    if [ -z "$theme" ]; then
+        theme="default"
+    fi
+
+    echo "$theme"
+}
+
+# Гарантируем, что выбранный курсор доступен системному пользователю sddm
+ensure_system_cursor_theme() {
+    local cursor_theme="$1"
+    local user_home="$2"
+    RESOLVED_CURSOR_THEME="$cursor_theme"
+
+    if [ -z "$cursor_theme" ] || [ "$cursor_theme" = "default" ]; then
+        RESOLVED_CURSOR_THEME="default"
+        return 0
+    fi
+
+    if [ -d "/usr/share/icons/$cursor_theme" ]; then
+        return 0
+    fi
+
+    local user_cursor_dir=""
+    for candidate in "$user_home/.local/share/icons/$cursor_theme" "$user_home/.icons/$cursor_theme"; do
+        if [ -d "$candidate" ]; then
+            user_cursor_dir="$candidate"
+            break
+        fi
+    done
+
+    if [ -n "$user_cursor_dir" ]; then
+        echo -e "${BLUE}${INFO} Копирую курсор '$cursor_theme' в /usr/share/icons/ для доступа SDDM...${NC}"
+        if sudo cp -a "$user_cursor_dir" "/usr/share/icons/$cursor_theme" && sudo chmod -R a+rX "/usr/share/icons/$cursor_theme"; then
+            add_to_report "Копирование курсора $cursor_theme в /usr/share/icons/" "performed"
+            return 0
+        fi
+    fi
+
+    echo -e "${YELLOW}${WARNING} Тема курсора '$cursor_theme' не найдена в /usr/share/icons/, использую 'default'.${NC}"
+    RESOLVED_CURSOR_THEME="default"
+}
+
 # Функция для настройки SDDM
 configure_sddm() {
     print_step_header "ШАГ 8: Настройка конфигурации SDDM                          "
 
     local config_file="/etc/sddm.conf"
+    local username="${SUDO_USER:-$(whoami)}"
+    local user_home
+    user_home=$(get_user_home "$username")
 
-    # Определяем текущий курсор
-    local cursor_theme=""
-    if [ -f "$HOME/.icons/default/index.theme" ]; then
-        cursor_theme=$(grep -i "^Inherits=" "$HOME/.icons/default/index.theme" 2>/dev/null | cut -d= -f2)
-    fi
-    if [ -z "$cursor_theme" ] && command -v gsettings &>/dev/null; then
-        cursor_theme=$(gsettings get org.gnome.desktop.interface cursor-theme 2>/dev/null | tr -d "'")
-    fi
-    if [ -z "$cursor_theme" ]; then
-        cursor_theme="default"
-    fi
+    local cursor_theme
+    cursor_theme=$(detect_cursor_theme "$user_home")
 
-    # Определяем display server
-    local display_server="wayland"
-    if [ "$XDG_SESSION_TYPE" = "x11" ]; then
-        display_server="x11"
-    fi
+    # Используем X11 для SDDM: Wayland-режим в SDDM экспериментальный и ломает Numlock=on, раскладки и часть курсоров
+    local display_server="x11"
 
     echo -e "${BLUE}Буду настраивать SDDM для использования установленной темы.${NC}"
     echo -e "Файл конфигурации: $config_file"
@@ -806,6 +872,9 @@ configure_sddm() {
     echo ""
 
     if ask_confirmation "Создать конфигурацию SDDM?" "Файл $config_file будет создан/перезаписан"; then
+        ensure_system_cursor_theme "$cursor_theme" "$user_home"
+        cursor_theme="$RESOLVED_CURSOR_THEME"
+
         # Бэкап существующего конфига
         if [ -f "$config_file" ]; then
             local backup_path="${config_file}.bak.$(date +%Y%m%d_%H%M%S)"
