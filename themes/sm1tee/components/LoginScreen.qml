@@ -51,13 +51,6 @@ Item {
         target: sddm
     }
 
-    // FIX: Critical connections memory leak prevention?
-    Component.onDestruction: {
-        if (typeof connections !== 'undefined') {
-            connections.target = null;
-        }
-    }
-
     function updateCapsLock() {
         _updateLockWarnings();
     }
@@ -371,7 +364,7 @@ Item {
         hoverEnabled: true
         onClicked: {
             if (loginScreen.state === "selectingUser") {
-                state = "normal";
+                loginScreen.state = "normal";
             }
         }
         onWheel: event => {

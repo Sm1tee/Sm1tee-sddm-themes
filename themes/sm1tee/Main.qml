@@ -29,6 +29,8 @@ Item {
         loginScreen.updateNumLock();
     }
 
+    readonly property int maxBackgroundBlur: Math.max(0, Config.lockScreenBlur, Config.loginScreenBlur)
+
     states: [
         State {
             name: "lockState"
@@ -42,7 +44,7 @@ Item {
             }
             PropertyChanges {
                 target: backgroundBlur
-                blurMax: Config.lockScreenBlur
+                blur: root.maxBackgroundBlur > 0 ? Math.max(0, Config.lockScreenBlur) / root.maxBackgroundBlur : 0.0
             }
             PropertyChanges {
                 target: loginScreen.loginContainer
@@ -65,7 +67,7 @@ Item {
             }
             PropertyChanges {
                 target: backgroundBlur
-                blurMax: Config.loginScreenBlur
+                blur: root.maxBackgroundBlur > 0 ? Math.max(0, Config.loginScreenBlur) / root.maxBackgroundBlur : 0.0
             }
             PropertyChanges {
                 target: loginScreen.loginContainer
@@ -80,16 +82,19 @@ Item {
     transitions: Transition {
         enabled: Config.enableAnimations
         PropertyAnimation {
-            duration: 150
+            duration: 250
             properties: "opacity"
+            easing.type: Easing.InOutQuad
         }
         PropertyAnimation {
             duration: 400
-            properties: "blurMax"
+            properties: "blur"
+            easing.type: Easing.InOutQuad
         }
         PropertyAnimation {
             duration: 400
             properties: "brightness"
+            easing.type: Easing.InOutQuad
         }
     }
 
@@ -121,10 +126,8 @@ Item {
             property string placeholder: Config.animatedBackgroundPlaceholder // Idea stolen from astronaut-theme. Not a fan of it, but works...
 
             anchors.fill: parent
-            anchors.margins: {
-                var b = root.state === "lockState" ? Config.lockScreenBlur : Config.loginScreenBlur;
-                return b > 0 ? -Math.max(b, 60) : 0;
-            }
+            anchors.margins: root.maxBackgroundBlur > 0 ? -Math.max(root.maxBackgroundBlur, 60) : 0
+            fillMode: Image.PreserveAspectCrop
             source: {
                 if (displayColor) return "";
                 if (isVideo && placeholder.length > 0) return "backgrounds/" + placeholder;
@@ -161,6 +164,7 @@ Item {
 
                 sourceComponent: Video {
                     id: backgroundVideo
+                    fillMode: VideoOutput.PreserveAspectCrop
                     autoPlay: true
                     loops: MediaPlayer.Infinite
                     muted: true
@@ -187,8 +191,8 @@ Item {
             id: backgroundBlur
             source: backgroundImage
             anchors.fill: backgroundImage
-            blurEnabled: backgroundImage.visible && blurMax > 0
-            blur: blurMax > 0 ? 1.0 : 0.0
+            blurMax: root.maxBackgroundBlur
+            blurEnabled: backgroundImage.visible && root.maxBackgroundBlur > 0
             autoPaddingEnabled: false
         }
 

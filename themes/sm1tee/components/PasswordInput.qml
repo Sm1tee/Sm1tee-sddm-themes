@@ -10,7 +10,6 @@ Item {
 
     property alias input: textField
     property alias text: textField.text
-    property bool enabled: true
 
     width: Config.passwordInputWidth
     height: Config.passwordInputHeight
